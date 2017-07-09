@@ -1,0 +1,6 @@
+framework module Pods_Perinatal {
+  umbrella header "Pods-Perinatal-umbrella.h"
+
+  export *
+  module * { export * }
+}
