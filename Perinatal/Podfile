@@ -1,9 +1,6 @@
 platform :ios, '9.0'
 target 'Perinatal' do
-
-pod 'ReactiveCocoa', '~> 5.0.0'
-pod 'AFNetworking', '~> 3.0'
-pod 'MBProgressHUD', '~> 1.0.0'
-pod 'IQKeyboardManager'
+   pod "ReactiveCocoa", '~> 2.5'# RAC,一个支持响应式编程的库.
+   pod 'IQKeyboardManager'
+   pod 'AFNetworking', '~> 3.0'
 end
-use_frameworks!

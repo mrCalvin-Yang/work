@@ -39,10 +39,12 @@
 		0D3DE63C1F0E338500680C56 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DE63B1F0E338500680C56 /* HomeVC.m */; };
 		0D3DE63F1F0E33C600680C56 /* MedicalServiceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DE63E1F0E33C600680C56 /* MedicalServiceVC.m */; };
 		0D3DE6421F0E342D00680C56 /* PersonalCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DE6411F0E342D00680C56 /* PersonalCenterVC.m */; };
-		0D5A09951F12189600845BEC /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5A09941F12189600845BEC /* ReactiveCocoa.framework */; };
+		0D6D0BF81F1240730059ACE6 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6D0BF51F1240730059ACE6 /* libAFNetworking.a */; };
+		0D6D0BF91F1240730059ACE6 /* libIQKeyboardManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6D0BF61F1240730059ACE6 /* libIQKeyboardManager.a */; };
+		0D6D0BFA1F1240730059ACE6 /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6D0BF71F1240730059ACE6 /* libReactiveCocoa.a */; };
 		0D9825B81F0E447A0077FF5C /* HomePageMessageTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9825B71F0E447A0077FF5C /* HomePageMessageTV.m */; };
 		0D9825BB1F0E460D0077FF5C /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9825BA1F0E460D0077FF5C /* MessageCell.m */; };
-		53EC0D4694847511AFD5DB16 /* Pods_Perinatal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97839B4FB72FE24E95D67358 /* Pods_Perinatal.framework */; };
+		CA1CB7F10AAE7E647BA2EFBE /* libPods-Perinatal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9CCDFECBE787CF89732E70 /* libPods-Perinatal.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D2201BD1F123353001EA41B /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "Pods/../build/Debug-iphoneos/ReactiveCocoa/ReactiveCocoa.framework"; sourceTree = "<group>"; };
 		0D345E3B1F0F1933005AC0D8 /* HYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYViewController.h; sourceTree = "<group>"; };
 		0D345E3C1F0F1933005AC0D8 /* HYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYViewController.m; sourceTree = "<group>"; };
 		0D345E3D1F0F1933005AC0D8 /* UIViewController+NavBarHidden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavBarHidden.h"; sourceTree = "<group>"; };
@@ -133,13 +136,15 @@
 		0D3DE63E1F0E33C600680C56 /* MedicalServiceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalServiceVC.m; sourceTree = "<group>"; };
 		0D3DE6401F0E342D00680C56 /* PersonalCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCenterVC.h; sourceTree = "<group>"; };
 		0D3DE6411F0E342D00680C56 /* PersonalCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterVC.m; sourceTree = "<group>"; };
-		0D5A09941F12189600845BEC /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Perinatal-dmiejpivsnpjosejizldzabagxsz/Build/Products/Debug-iphonesimulator/ReactiveCocoa/ReactiveCocoa.framework"; sourceTree = "<group>"; };
+		0D6D0BF51F1240730059ACE6 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
+		0D6D0BF61F1240730059ACE6 /* libIQKeyboardManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIQKeyboardManager.a; path = "Pods/../build/Debug-iphoneos/IQKeyboardManager/libIQKeyboardManager.a"; sourceTree = "<group>"; };
+		0D6D0BF71F1240730059ACE6 /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "Pods/../build/Debug-iphoneos/ReactiveCocoa/libReactiveCocoa.a"; sourceTree = "<group>"; };
 		0D9825B61F0E447A0077FF5C /* HomePageMessageTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageMessageTV.h; sourceTree = "<group>"; };
 		0D9825B71F0E447A0077FF5C /* HomePageMessageTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageMessageTV.m; sourceTree = "<group>"; };
 		0D9825B91F0E460D0077FF5C /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
 		0D9825BA1F0E460D0077FF5C /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		5C9CCDFECBE787CF89732E70 /* libPods-Perinatal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Perinatal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA4F21DE2541C2181D451DC /* Pods-Perinatal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perinatal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Perinatal/Pods-Perinatal.release.xcconfig"; sourceTree = "<group>"; };
-		97839B4FB72FE24E95D67358 /* Pods_Perinatal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Perinatal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A919F081B6DC270552D83B8E /* Pods-Perinatal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perinatal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Perinatal/Pods-Perinatal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,8 +153,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D5A09951F12189600845BEC /* ReactiveCocoa.framework in Frameworks */,
-				53EC0D4694847511AFD5DB16 /* Pods_Perinatal.framework in Frameworks */,
+				0D6D0BF81F1240730059ACE6 /* libAFNetworking.a in Frameworks */,
+				0D6D0BF91F1240730059ACE6 /* libIQKeyboardManager.a in Frameworks */,
+				0D6D0BFA1F1240730059ACE6 /* libReactiveCocoa.a in Frameworks */,
+				CA1CB7F10AAE7E647BA2EFBE /* libPods-Perinatal.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,8 +463,11 @@
 		73F4B46592829B6DA689DCCA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0D5A09941F12189600845BEC /* ReactiveCocoa.framework */,
-				97839B4FB72FE24E95D67358 /* Pods_Perinatal.framework */,
+				0D6D0BF51F1240730059ACE6 /* libAFNetworking.a */,
+				0D6D0BF61F1240730059ACE6 /* libIQKeyboardManager.a */,
+				0D6D0BF71F1240730059ACE6 /* libReactiveCocoa.a */,
+				0D2201BD1F123353001EA41B /* ReactiveCocoa.framework */,
+				5C9CCDFECBE787CF89732E70 /* libPods-Perinatal.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -816,10 +826,21 @@
 			baseConfigurationReference = A919F081B6DC270552D83B8E /* Pods-Perinatal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ReactiveCocoa",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/oy/Documents/work/默尼/Perinatal/Perinatal/Supporting File/PrefixHeader.pch";
 				INFOPLIST_FILE = "Perinatal/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/IQKeyboardManager",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ReactiveCocoa",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.moni.Perinatal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -830,10 +851,21 @@
 			baseConfigurationReference = 8BA4F21DE2541C2181D451DC /* Pods-Perinatal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ReactiveCocoa",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/oy/Documents/work/默尼/Perinatal/Perinatal/Supporting File/PrefixHeader.pch";
 				INFOPLIST_FILE = "Perinatal/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/IQKeyboardManager",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ReactiveCocoa",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.moni.Perinatal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

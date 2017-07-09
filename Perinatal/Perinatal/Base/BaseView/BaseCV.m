@@ -70,15 +70,15 @@
 
 //UICollectionView被选中时调用的方法
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-//    if (self.selectItemSignal) {
-//        [self.selectItemSignal sendNext:indexPath];
-//    }
+    if (self.selectItemSignal) {
+        [self.selectItemSignal sendNext:indexPath];
+    }
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-//    if (self.scrollSignal) {
-//        [self.scrollSignal sendNext:scrollView];
-//    }
+    if (self.scrollSignal) {
+        [self.scrollSignal sendNext:scrollView];
+    }
 }
 
 @end

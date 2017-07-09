@@ -42,9 +42,9 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//    if (self.selectItemSignal) {
-//        [self.selectItemSignal sendNext:indexPath];
-//    }
+    if (self.selectItemSignal) {
+        [self.selectItemSignal sendNext:indexPath];
+    }
 }
 
 - (CGFloat)totalHeight{

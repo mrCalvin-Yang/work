@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BaseTabarController.h"
+#import <IQKeyboardManager.h>
 
 @interface AppDelegate ()
 
