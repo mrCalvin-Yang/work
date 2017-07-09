@@ -6,12 +6,12 @@
 //  Copyright © 2017年 OY. All rights reserved.
 //
 
-#import "HomeVC.h"
+#import "PerinatalHomeVC.h"
 #import "HomePageMessageTV.h"
 #import "MessageModel.h"
 #import "ProblemAskTV.h"
 #import "TitleBtn.h"
-@interface HomeVC ()
+@interface PerinatalHomeVC ()
 {
     NSArray *titleArr, *imageArr;
 }
@@ -20,7 +20,7 @@
 @property (nonatomic, strong) NSMutableArray *dataArr;
 @end
 
-@implementation HomeVC
+@implementation PerinatalHomeVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

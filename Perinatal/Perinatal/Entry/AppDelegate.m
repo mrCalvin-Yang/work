@@ -24,8 +24,12 @@
     [self.window makeKeyAndVisible];
     
     
-    
-    
+    //键盘管理
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;
+    manager.shouldResignOnTouchOutside = YES;
+    manager.shouldToolbarUsesTextFieldTintColor = YES;
+    manager.enableAutoToolbar = NO;
     return YES;
 }
 

@@ -7,9 +7,9 @@
 //
 
 #import "BaseTabarController.h"
-#import "HomeVC.h"
-#import "MedicalServiceVC.h"
-#import "PersonalCenterVC.h"
+#import "PerinatalPersonalCenterVC.h"
+#import "PerinatalHomeVC.h"
+#import "PerinatalMedicalServiceVC.h"
 #import "BaseNavigationController.h"
 
 @interface BaseTabarController ()
@@ -25,9 +25,9 @@
 }
 //添加子控制器
 -(void)setupchildVC{
-    [self addchildVCWithVC:[HomeVC new] title:@"首页" imageName:@""];
-    [self addchildVCWithVC:[MedicalServiceVC new] title:@"医疗服务" imageName:@""];
-    [self addchildVCWithVC:[PersonalCenterVC new] title:@"个人中心" imageName:@""];
+    [self addchildVCWithVC:[PerinatalHomeVC new] title:@"首页" imageName:@""];
+    [self addchildVCWithVC:[PerinatalMedicalServiceVC new] title:@"医疗服务" imageName:@""];
+    [self addchildVCWithVC:[PerinatalPersonalCenterVC new] title:@"个人中心" imageName:@""];
 }
 
 

@@ -351,6 +351,7 @@
 ///常用颜色
 #define global_color    UIColorFromRGB(0xFF6767)//全局色
 #define kBackColor UIColorFromRGB(0xEFEFF4)//背景色
+
 #define black_color     [UIColor blackColor]
 #define blue_color      [UIColor blueColor]
 #define brown_color     [UIColor brownColor]

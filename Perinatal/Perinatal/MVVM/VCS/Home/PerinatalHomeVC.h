@@ -1,5 +1,5 @@
 //
-//  MedicalServiceVC.h
+//  HomeVC.h
 //  Perinatal
 //
 //  Created by OY on 2017/7/6.
@@ -7,7 +7,8 @@
 //
 
 #import "BaseVC.h"
+#import "HYViewController.h"
 
-@interface MedicalServiceVC : BaseVC
+@interface PerinatalHomeVC : HYViewController
 
 @end

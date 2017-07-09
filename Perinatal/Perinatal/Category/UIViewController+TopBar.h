@@ -10,7 +10,10 @@
 
 @interface UIViewController (TopBar)
 
-
+/**
+ *  显示顶部提示按钮
+ */
+-(void)showItemImg;
 /**
  *  显示顶部右边个人中心按钮
  */

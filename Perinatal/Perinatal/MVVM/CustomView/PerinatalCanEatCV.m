@@ -1,17 +1,16 @@
 //
-//  CanEatCV.m
+//  PerinatalCanEatCV.m
 //  Perinatal
 //
-//  Created by OY on 2017/7/7.
+//  Created by OY on 2017/7/9.
 //  Copyright © 2017年 OY. All rights reserved.
 //
 
-#import "CanEatCV.h"
+#import "PerinatalCanEatCV.h"
 #import "CanEatModel.h"
 #import "TitleBtn.h"
 
-@implementation CanEatCV
-
+@implementation PerinatalCanEatCV
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     static NSString * CellIdentifier = @"UICollectionViewCell";
     UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
@@ -30,13 +29,11 @@
     return cell;
 }
 
-
-
 //定义每个Item 的大小
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     return CGSizeMake(collectionView.width/3-10, collectionView.width/3-10);
-    
-    
 }
+
+
 @end

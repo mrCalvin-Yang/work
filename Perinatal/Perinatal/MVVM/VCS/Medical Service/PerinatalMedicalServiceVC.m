@@ -6,22 +6,22 @@
 //  Copyright © 2017年 OY. All rights reserved.
 //
 
-#import "MedicalServiceVC.h"
-#import "CanEatCV.h"
+#import "PerinatalMedicalServiceVC.h"
+#import "MedicalServiceCV.h"
 #import "CanEatModel.h"
 
-@interface MedicalServiceVC ()
+@interface PerinatalMedicalServiceVC ()
 {
     NSMutableArray *dataArr;
 }
 
 @end
 
-@implementation MedicalServiceVC
+@implementation PerinatalMedicalServiceVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = white_color;
+    self.view.backgroundColor = kBackColor;
     self.navigationController.navigationBar.hidden = YES;
     [self getData];
     [self setsubviews];
@@ -29,7 +29,7 @@
 
 -(void)getData{
     dataArr = [NSMutableArray array];
-    for (NSInteger i = 0; i < 7; i++) {
+    for (NSInteger i = 0; i < 5; i++) {
         CanEatModel *model = [[CanEatModel alloc] init];
         model.title = @"孕e家";
         model.imageUrl = @"img";
@@ -38,7 +38,7 @@
 }
 
 -(void)setsubviews{
-    CanEatCV *cv = [[CanEatCV alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
+    MedicalServiceCV *cv = [[MedicalServiceCV alloc] initWithFrame:CGRectMake(0, -20, SCREENWIDTH, SCREENHEIGHT+80)];
     cv.dataList = dataArr;
     [cv reloadData];
     [self.view addSubview:cv];

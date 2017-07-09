@@ -12,10 +12,11 @@
     {
         //注册Cell，必须要有
         [self registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
+        [self registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"headid"];
         self.dataSource=self;
         self.delegate=self;
         
-        self.backgroundColor = gray_color;
+        self.backgroundColor = kBackColor;
     }
  
     return self;

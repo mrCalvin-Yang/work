@@ -1,5 +1,5 @@
 //
-//  PersonalCenterVC.h
+//  MedicalServiceVC.h
 //  Perinatal
 //
 //  Created by OY on 2017/7/6.
@@ -8,6 +8,6 @@
 
 #import "BaseVC.h"
 
-@interface PersonalCenterVC : BaseVC
+@interface PerinatalMedicalServiceVC : BaseVC
 
 @end

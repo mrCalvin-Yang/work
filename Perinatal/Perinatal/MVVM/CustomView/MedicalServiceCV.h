@@ -8,6 +8,6 @@
 
 #import "BaseCV.h"
 
-@interface CanEatCV : BaseCV
+@interface MedicalServiceCV : BaseCV
 
 @end

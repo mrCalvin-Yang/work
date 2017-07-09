@@ -10,7 +10,7 @@
 		0D345E3F1F0F1933005AC0D8 /* HYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D345E3C1F0F1933005AC0D8 /* HYViewController.m */; };
 		0D345E401F0F1933005AC0D8 /* UIViewController+NavBarHidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D345E3E1F0F1933005AC0D8 /* UIViewController+NavBarHidden.m */; };
 		0D345E431F0F237A005AC0D8 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D345E421F0F237A005AC0D8 /* MessageModel.m */; };
-		0D345E461F0F5231005AC0D8 /* CanEatCV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D345E451F0F5231005AC0D8 /* CanEatCV.m */; };
+		0D345E461F0F5231005AC0D8 /* MedicalServiceCV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D345E451F0F5231005AC0D8 /* MedicalServiceCV.m */; };
 		0D345E491F0F5885005AC0D8 /* CanEatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D345E481F0F5885005AC0D8 /* CanEatModel.m */; };
 		0D345E4C1F0F5E53005AC0D8 /* TitleBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D345E4B1F0F5E53005AC0D8 /* TitleBtn.m */; };
 		0D345E4F1F0F6F7B005AC0D8 /* ProblemAskTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D345E4E1F0F6F7B005AC0D8 /* ProblemAskTV.m */; };
@@ -36,12 +36,13 @@
 		0D3DE6241F0E29E100680C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3DE6201F0E29E100680C56 /* LaunchScreen.storyboard */; };
 		0D3DE6251F0E29E100680C56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DE6211F0E29E100680C56 /* main.m */; };
 		0D3DE6311F0E30EA00680C56 /* BaseTabarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DE6301F0E30EA00680C56 /* BaseTabarController.m */; };
-		0D3DE63C1F0E338500680C56 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DE63B1F0E338500680C56 /* HomeVC.m */; };
-		0D3DE63F1F0E33C600680C56 /* MedicalServiceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DE63E1F0E33C600680C56 /* MedicalServiceVC.m */; };
-		0D3DE6421F0E342D00680C56 /* PersonalCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DE6411F0E342D00680C56 /* PersonalCenterVC.m */; };
+		0D3DE63C1F0E338500680C56 /* PerinatalHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DE63B1F0E338500680C56 /* PerinatalHomeVC.m */; };
+		0D3DE63F1F0E33C600680C56 /* PerinatalMedicalServiceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DE63E1F0E33C600680C56 /* PerinatalMedicalServiceVC.m */; };
+		0D3DE6421F0E342D00680C56 /* PerinatalPersonalCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DE6411F0E342D00680C56 /* PerinatalPersonalCenterVC.m */; };
 		0D6D0BF81F1240730059ACE6 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6D0BF51F1240730059ACE6 /* libAFNetworking.a */; };
 		0D6D0BF91F1240730059ACE6 /* libIQKeyboardManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6D0BF61F1240730059ACE6 /* libIQKeyboardManager.a */; };
 		0D6D0BFA1F1240730059ACE6 /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6D0BF71F1240730059ACE6 /* libReactiveCocoa.a */; };
+		0D6D0BFD1F127C400059ACE6 /* PerinatalCanEatCV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D0BFC1F127C400059ACE6 /* PerinatalCanEatCV.m */; };
 		0D9825B81F0E447A0077FF5C /* HomePageMessageTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9825B71F0E447A0077FF5C /* HomePageMessageTV.m */; };
 		0D9825BB1F0E460D0077FF5C /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9825BA1F0E460D0077FF5C /* MessageCell.m */; };
 		CA1CB7F10AAE7E647BA2EFBE /* libPods-Perinatal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9CCDFECBE787CF89732E70 /* libPods-Perinatal.a */; };
@@ -72,8 +73,8 @@
 		0D345E3E1F0F1933005AC0D8 /* UIViewController+NavBarHidden.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavBarHidden.m"; sourceTree = "<group>"; };
 		0D345E411F0F237A005AC0D8 /* MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
 		0D345E421F0F237A005AC0D8 /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
-		0D345E441F0F5231005AC0D8 /* CanEatCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanEatCV.h; sourceTree = "<group>"; };
-		0D345E451F0F5231005AC0D8 /* CanEatCV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanEatCV.m; sourceTree = "<group>"; };
+		0D345E441F0F5231005AC0D8 /* MedicalServiceCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalServiceCV.h; sourceTree = "<group>"; };
+		0D345E451F0F5231005AC0D8 /* MedicalServiceCV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalServiceCV.m; sourceTree = "<group>"; };
 		0D345E471F0F5885005AC0D8 /* CanEatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanEatModel.h; sourceTree = "<group>"; };
 		0D345E481F0F5885005AC0D8 /* CanEatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanEatModel.m; sourceTree = "<group>"; };
 		0D345E4A1F0F5E53005AC0D8 /* TitleBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleBtn.h; sourceTree = "<group>"; };
@@ -130,15 +131,17 @@
 		0D3DE62E1F0E2BBE00680C56 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0D3DE62F1F0E30EA00680C56 /* BaseTabarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabarController.h; sourceTree = "<group>"; };
 		0D3DE6301F0E30EA00680C56 /* BaseTabarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabarController.m; sourceTree = "<group>"; };
-		0D3DE63A1F0E338500680C56 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
-		0D3DE63B1F0E338500680C56 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
-		0D3DE63D1F0E33C600680C56 /* MedicalServiceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalServiceVC.h; sourceTree = "<group>"; };
-		0D3DE63E1F0E33C600680C56 /* MedicalServiceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalServiceVC.m; sourceTree = "<group>"; };
-		0D3DE6401F0E342D00680C56 /* PersonalCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCenterVC.h; sourceTree = "<group>"; };
-		0D3DE6411F0E342D00680C56 /* PersonalCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterVC.m; sourceTree = "<group>"; };
+		0D3DE63A1F0E338500680C56 /* PerinatalHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalHomeVC.h; sourceTree = "<group>"; };
+		0D3DE63B1F0E338500680C56 /* PerinatalHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalHomeVC.m; sourceTree = "<group>"; };
+		0D3DE63D1F0E33C600680C56 /* PerinatalMedicalServiceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalMedicalServiceVC.h; sourceTree = "<group>"; };
+		0D3DE63E1F0E33C600680C56 /* PerinatalMedicalServiceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalMedicalServiceVC.m; sourceTree = "<group>"; };
+		0D3DE6401F0E342D00680C56 /* PerinatalPersonalCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalPersonalCenterVC.h; sourceTree = "<group>"; };
+		0D3DE6411F0E342D00680C56 /* PerinatalPersonalCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalPersonalCenterVC.m; sourceTree = "<group>"; };
 		0D6D0BF51F1240730059ACE6 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
 		0D6D0BF61F1240730059ACE6 /* libIQKeyboardManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIQKeyboardManager.a; path = "Pods/../build/Debug-iphoneos/IQKeyboardManager/libIQKeyboardManager.a"; sourceTree = "<group>"; };
 		0D6D0BF71F1240730059ACE6 /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "Pods/../build/Debug-iphoneos/ReactiveCocoa/libReactiveCocoa.a"; sourceTree = "<group>"; };
+		0D6D0BFB1F127C400059ACE6 /* PerinatalCanEatCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalCanEatCV.h; sourceTree = "<group>"; };
+		0D6D0BFC1F127C400059ACE6 /* PerinatalCanEatCV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalCanEatCV.m; sourceTree = "<group>"; };
 		0D9825B61F0E447A0077FF5C /* HomePageMessageTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageMessageTV.h; sourceTree = "<group>"; };
 		0D9825B71F0E447A0077FF5C /* HomePageMessageTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageMessageTV.m; sourceTree = "<group>"; };
 		0D9825B91F0E460D0077FF5C /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
@@ -369,8 +372,10 @@
 				0D9825B71F0E447A0077FF5C /* HomePageMessageTV.m */,
 				0D345E4D1F0F6F7B005AC0D8 /* ProblemAskTV.h */,
 				0D345E4E1F0F6F7B005AC0D8 /* ProblemAskTV.m */,
-				0D345E441F0F5231005AC0D8 /* CanEatCV.h */,
-				0D345E451F0F5231005AC0D8 /* CanEatCV.m */,
+				0D345E441F0F5231005AC0D8 /* MedicalServiceCV.h */,
+				0D345E451F0F5231005AC0D8 /* MedicalServiceCV.m */,
+				0D6D0BFB1F127C400059ACE6 /* PerinatalCanEatCV.h */,
+				0D6D0BFC1F127C400059ACE6 /* PerinatalCanEatCV.m */,
 				0D345E4A1F0F5E53005AC0D8 /* TitleBtn.h */,
 				0D345E4B1F0F5E53005AC0D8 /* TitleBtn.m */,
 				0D9825B91F0E460D0077FF5C /* MessageCell.h */,
@@ -429,8 +434,8 @@
 		0D3DE6361F0E332900680C56 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				0D3DE63A1F0E338500680C56 /* HomeVC.h */,
-				0D3DE63B1F0E338500680C56 /* HomeVC.m */,
+				0D3DE63A1F0E338500680C56 /* PerinatalHomeVC.h */,
+				0D3DE63B1F0E338500680C56 /* PerinatalHomeVC.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -445,8 +450,8 @@
 		0D3DE6381F0E332900680C56 /* Medical Service */ = {
 			isa = PBXGroup;
 			children = (
-				0D3DE63D1F0E33C600680C56 /* MedicalServiceVC.h */,
-				0D3DE63E1F0E33C600680C56 /* MedicalServiceVC.m */,
+				0D3DE63D1F0E33C600680C56 /* PerinatalMedicalServiceVC.h */,
+				0D3DE63E1F0E33C600680C56 /* PerinatalMedicalServiceVC.m */,
 			);
 			path = "Medical Service";
 			sourceTree = "<group>";
@@ -454,8 +459,8 @@
 		0D3DE6391F0E332900680C56 /* Personal Center */ = {
 			isa = PBXGroup;
 			children = (
-				0D3DE6401F0E342D00680C56 /* PersonalCenterVC.h */,
-				0D3DE6411F0E342D00680C56 /* PersonalCenterVC.m */,
+				0D3DE6401F0E342D00680C56 /* PerinatalPersonalCenterVC.h */,
+				0D3DE6411F0E342D00680C56 /* PerinatalPersonalCenterVC.m */,
 			);
 			path = "Personal Center";
 			sourceTree = "<group>";
@@ -669,15 +674,15 @@
 				0D345E4F1F0F6F7B005AC0D8 /* ProblemAskTV.m in Sources */,
 				0D3DE5FF1F0E27EB00680C56 /* UIView+frameAccessor.m in Sources */,
 				0D3DE5FB1F0E27EB00680C56 /* UIColor+Extension.m in Sources */,
-				0D345E461F0F5231005AC0D8 /* CanEatCV.m in Sources */,
+				0D345E461F0F5231005AC0D8 /* MedicalServiceCV.m in Sources */,
 				0D345E401F0F1933005AC0D8 /* UIViewController+NavBarHidden.m in Sources */,
 				0D3DE6041F0E291600680C56 /* AppDelegate.m in Sources */,
 				0D3DE6191F0E297700680C56 /* BaseVC.m in Sources */,
 				0D3DE61A1F0E297700680C56 /* BaseCV.m in Sources */,
 				0D345E4C1F0F5E53005AC0D8 /* TitleBtn.m in Sources */,
-				0D3DE63C1F0E338500680C56 /* HomeVC.m in Sources */,
+				0D3DE63C1F0E338500680C56 /* PerinatalHomeVC.m in Sources */,
 				0D3DE6001F0E27EB00680C56 /* UIViewController+TopBar.m in Sources */,
-				0D3DE6421F0E342D00680C56 /* PersonalCenterVC.m in Sources */,
+				0D3DE6421F0E342D00680C56 /* PerinatalPersonalCenterVC.m in Sources */,
 				0D9825B81F0E447A0077FF5C /* HomePageMessageTV.m in Sources */,
 				0D3DE5FD1F0E27EB00680C56 /* UISearchBar+Extension.m in Sources */,
 				0D345E491F0F5885005AC0D8 /* CanEatModel.m in Sources */,
@@ -687,11 +692,12 @@
 				0D345E3F1F0F1933005AC0D8 /* HYViewController.m in Sources */,
 				0D345E531F0F6FFD005AC0D8 /* ProblemAskCell.m in Sources */,
 				0D3DE5FC1F0E27EB00680C56 /* UIImage+Extension.m in Sources */,
-				0D3DE63F1F0E33C600680C56 /* MedicalServiceVC.m in Sources */,
+				0D3DE63F1F0E33C600680C56 /* PerinatalMedicalServiceVC.m in Sources */,
 				0D9825BB1F0E460D0077FF5C /* MessageCell.m in Sources */,
 				0D3DE5FA1F0E27EB00680C56 /* NSString+Formatter.m in Sources */,
 				0D3DE5F91F0E27EB00680C56 /* NSArray+Extension.m in Sources */,
 				0D3DE6251F0E29E100680C56 /* main.m in Sources */,
+				0D6D0BFD1F127C400059ACE6 /* PerinatalCanEatCV.m in Sources */,
 				0D3DE6181F0E297700680C56 /* BaseNavigationController.m in Sources */,
 				0D3DE6311F0E30EA00680C56 /* BaseTabarController.m in Sources */,
 			);

@@ -96,7 +96,15 @@
     self.navigationItem.rightBarButtonItem.tintColor = orange_color;
 }
 
+-(void)showItemImg{
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:V_IMAGE(@"img") style:UIBarButtonItemStylePlain target:self action:@selector(clickItem:)];
+    self.navigationItem.rightBarButtonItem.tintColor = white_color;
+}
+
 -(void)clickSearch:(id)sender{
+    
+}
+-(void)clickItem:(id)sender{
     
 }
 - (void)gotoUserCenter:(id)sender {
