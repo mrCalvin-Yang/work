@@ -23,13 +23,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = white_color;
+    [self setSubviews];
 }
 
 -(void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
 
 }
+
 
 
 -(void)showRightBarWithNormal:(NSString *)imageName selectedImg:(NSString *)selecteImg block:(ClickRightBarBlock)clickRightBarBlock{
@@ -88,9 +90,6 @@
         loadingIndicator.center = centerPoint;//只能设置中心，不能设置大小
         [self.view addSubview:loadingIndicator];
         loadingIndicator.color = [UIColor orangeColor]; // 改变圈圈的颜色为红色； iOS5引入
-#if SMART
-        loadingIndicator.color = [UIColor whiteColor];
-#endif
         [loadingIndicator setHidesWhenStopped:YES]; //当旋转结束时隐藏
     }
     [loadingIndicator startAnimating]; // 开始旋转
@@ -126,17 +125,20 @@
     
 }
 
--(NSUInteger)supportedInterfaceOrientations{
-    if (self.canLand) {
-        return [super supportedInterfaceOrientations];
-    }
-    //
-        return UIInterfaceOrientationPortraitUpsideDown;
+
+-(void)setNavigationBar:(UIColor *)color{
+//    self.navigationItem.titleView = [UIView new];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:color] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
 }
 
 //-(UIStatusBarStyle)preferredStatusBarStyle{
 //    return UIStatusBarStyleLightContent;
 //}
+
+-(void)setSubviews{
+    
+}
 
 @end
 

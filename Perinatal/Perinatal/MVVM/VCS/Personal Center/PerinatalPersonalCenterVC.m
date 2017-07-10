@@ -7,9 +7,11 @@
 //
 
 #import "PerinatalPersonalCenterVC.h"
+#import <CoreLocation/CoreLocation.h>
 
-@interface PerinatalPersonalCenterVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface PerinatalPersonalCenterVC ()<UITableViewDelegate,UITableViewDataSource,CLLocationManagerDelegate>
 @property(nonatomic, strong) UITableView *personTableView;
+
 @end
 
 @implementation PerinatalPersonalCenterVC

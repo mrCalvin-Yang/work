@@ -14,4 +14,6 @@
 
 @property (nonatomic, copy)NSString *title;
 
+-(instancetype)initWithImg:(NSString *)img title:(NSString *)title;
+
 @end

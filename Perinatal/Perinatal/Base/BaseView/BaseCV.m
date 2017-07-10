@@ -7,6 +7,8 @@
 - (id)initWithFrame:(CGRect)frame{
     UICollectionViewFlowLayout *flowLayout=[[UICollectionViewFlowLayout alloc] init];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+    flowLayout.minimumLineSpacing = 1;
+    flowLayout.minimumInteritemSpacing = 1;
     self = [super initWithFrame:frame collectionViewLayout:flowLayout];
     if (self)
     {
@@ -51,7 +53,7 @@
 
 //定义每个UICollectionView 的 margin
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
-    return UIEdgeInsetsMake(5, 5, 5, 5);
+    return UIEdgeInsetsMake(1, 0, 1, 0);
 }
 
 - (CGFloat)totalHeight{

@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MessageModel.h"
 
 @interface MessageCell : UITableViewCell
 @property(nonatomic, strong)UILabel *statuLabel;
 @property(nonatomic, strong)UILabel *messageLabel;
+@property(nonatomic, strong) MessageModel *model;
 @end

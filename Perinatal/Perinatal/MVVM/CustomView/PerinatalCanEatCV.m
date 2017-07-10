@@ -19,7 +19,7 @@
     cell.backgroundColor = white_color;
     CanEatModel *dic = [self.dataList objectAtIndex:row];
     TitleBtn *btn = [TitleBtn buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(0, 0, collectionView.width/3-10, collectionView.width/3-10);
+    btn.frame = CGRectMake(0, 0, (collectionView.width-2)/3, (collectionView.width-2)/3);
     btn.title = dic.title;
     btn.imageName = dic.imageUrl;
     for (id subView in cell.contentView.subviews) {
@@ -32,7 +32,7 @@
 //定义每个Item 的大小
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    return CGSizeMake(collectionView.width/3-10, collectionView.width/3-10);
+    return CGSizeMake((collectionView.width-2)/3, (collectionView.width-2)/3);
 }
 
 

@@ -94,6 +94,8 @@
 #define RECT_CHANGE_size(v,w,h)     CGRectMake(X(v), Y(v), w, h)
 
 /// 系统控件默认高度
+#define ui_offset               (10.f)
+
 #define kStatusBarHeight        (20.f)
 
 #define kTopBarHeight           (44.f)
@@ -349,8 +351,17 @@
 #define HB8 [UIFont boldSystemFontOfSize:8]
 
 ///常用颜色
-#define global_color    UIColorFromRGB(0xFF6767)//全局色
+#define global_color    UIColorFromRGB(0xFF6767)//产品色
 #define kBackColor UIColorFromRGB(0xEFEFF4)//背景色
+#define kAssistColor UIColorFromRGB(0xF7B12E)//辅助色
+#define kImportFontColor UIColorFromRGB(0x333333)//重要文字颜色色
+#define kNormalFontColor UIColorFromRGB(0x666666)//一般文字颜色
+#define kFontColor UIColorFromRGB(0x999999)//次要文字颜色
+#define kTableColor UIColorFromRGB(0xCCCCCC)//表单预设内容颜色
+#define kLineColor UIColorFromRGB(0xC8C7CC)//分割线颜色
+#define kAgreementColor UIColorFromRGB(0x4A90E2)//协议链接颜色色
+#define kPriceColor UIColorFromRGB(0xFF001F)//价格颜色
+#define kFreeColor UIColorFromRGB(0x7ED321)//限时免费颜色
 
 #define black_color     [UIColor blackColor]
 #define blue_color      [UIColor blueColor]
@@ -381,7 +392,7 @@
 
 //屏幕高、宽
 #define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
-#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height - 64
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
 
 ///系统版本号
 #define VersionLargerThan7  ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)

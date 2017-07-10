@@ -30,6 +30,11 @@
 -(void)showBack;
 
 /**
+ *  显示关闭按钮
+ */
+-(void)showClose;
+
+/**
  *  显示返回按钮，按钮按照指定的颜色
  *
  *  @param tintColor 按钮图片的颜色
@@ -48,6 +53,7 @@
  *  @param channelId 搜索的频道id
  */
 -(void)showRightSearch:(NSInteger) channelId;
+
 
 
 

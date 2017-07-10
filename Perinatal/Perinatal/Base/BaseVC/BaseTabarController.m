@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tabBar.tintColor = orange_color;
+    self.tabBar.tintColor = global_color;
     [self setupchildVC];
 }
 //添加子控制器
@@ -30,6 +30,15 @@
     [self addchildVCWithVC:[PerinatalPersonalCenterVC new] title:@"个人中心" imageName:@""];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.tabBar.hidden = NO;
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    self.tabBar.hidden = YES;
+}
 
 -(void)addchildVCWithVC:(UIViewController *)vc title:(NSString *)title imageName:(NSString *)imageName{
     vc.tabBarItem.image = V_IMAGE(imageName);

@@ -10,4 +10,12 @@
 
 @implementation CanEatModel
 
+-(instancetype)initWithImg:(NSString *)img title:(NSString *)title{
+    if (self = [super init]) {
+        _imageUrl = img;
+        _title = title;
+    }
+    return self;
+}
+
 @end

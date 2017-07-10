@@ -20,6 +20,10 @@
 
 @property(nonatomic, copy) NSString *babyNote;
 
+@property(nonatomic)NSInteger sectionNumber;
+
+@property(nonatomic)CGFloat cellHeight;
+
 
 
 

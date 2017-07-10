@@ -7,14 +7,10 @@
 //
 
 #import "UIViewController+TopBar.h"
-//#import "RadioPlayerManage.h"
-//#import "UserCenterViewController.h"
-//#import <ReactiveCocoa/ReactiveCocoa.h>
-//#import "UIViewController+MFSideMenuAdditions.h"
-//#import "MFSideMenu.h"
-//#import "LeftMenuViewController.h"
-//#import "VideoSearchMainVC.h"
-//#import "UserCenterVC.h"
+#import <ReactiveCocoa.h>
+#import "PerinatalLoginVC.h"
+
+#import "BaseNavigationController.h"
 
 
 @implementation UIViewController (TopBar)
@@ -30,12 +26,21 @@
 }
 
 -(void)showBack{
-    [self showBackWithTintColor:[UIColor colorWithRed:235.0/255.0 green:97.0/255.0 blue:0.0 alpha:1]];
+    [self showBackWithTintColor:global_color];
 
 }
 
+-(void)showClose{
+    [self showCloseWithTintColor:global_color];
+}
+
 -(void)showBackWithTintColor:(UIColor *)tintColor{
-//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:PNG_IMAGE_NAMED(@"back") style:UIBarButtonItemStylePlain target:self action:@selector(clickBack:)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(clickBack:)];
+    self.navigationItem.leftBarButtonItem.tintColor = tintColor;
+}
+
+-(void)showCloseWithTintColor:(UIColor *)tintColor{
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"关闭" style:UIBarButtonItemStylePlain target:self action:@selector(clickBack:)];
     self.navigationItem.leftBarButtonItem.tintColor = tintColor;
 }
 
@@ -50,9 +55,6 @@
     UIViewController *vc = [self.navigationController popViewControllerAnimated:YES];
     
     if (vc == nil) {
-//        [self.menuContainerViewController toggleLeftSideMenuCompletion:^{
-//            
-//        }];
         [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
@@ -87,7 +89,7 @@
 }
 
 -(UIBarButtonItem *)loginOut{
-    UIBarButtonItem *rightBar = [[UIBarButtonItem alloc] initWithTitle:@"注销" style:UIBarButtonItemStylePlain target:self action:@selector(gotoUserCenter:)];
+    UIBarButtonItem *rightBar = [[UIBarButtonItem alloc] initWithTitle:@"注销" style:UIBarButtonItemStylePlain target:self action:@selector(gotoLogin:)];
     rightBar.tintColor = white_color;
     return rightBar;
 }
@@ -101,6 +103,8 @@
     self.navigationItem.rightBarButtonItem.tintColor = white_color;
 }
 
+
+
 -(void)clickSearch:(id)sender{
     
 }
@@ -108,7 +112,14 @@
     
 }
 - (void)gotoUserCenter:(id)sender {
+    
+}
 
+-(void)gotoLogin:(id)sender{
+    BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:[PerinatalLoginVC new]];
+    [self presentViewController:nav animated:YES completion:^{
+        
+    }];
 }
 
 @end

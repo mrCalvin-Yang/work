@@ -11,6 +11,8 @@
 #import "MessageModel.h"
 #import "ProblemAskTV.h"
 #import "TitleBtn.h"
+#import "PerinatalCanEatVC.h"
+#import <ReactiveCocoa.h>
 @interface PerinatalHomeVC ()
 {
     NSArray *titleArr, *imageArr;
@@ -24,8 +26,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self showMenuMessageAndLoginOut];
     [self setNavigationBar];
+    [self showMenuMessageAndLoginOut];
     [self getdata];
     [self setupSubviews];
     
@@ -48,13 +50,22 @@
     [self setKeyScrollView:self.scrollView scrolOffsetY:122 options:HYHidenControlOptionLeft | HYHidenControlOptionTitle];
 }
 
+
 //getdata
 -(void)getdata{
     _dataArr = [NSMutableArray array];
     MessageModel *model = [[MessageModel alloc] init];
-    model.pregnantWomanNote = @"撒上看见阿哥克里斯朵夫加辣酱豆腐";
-    model.prenatalEducation = @"撒娇饭卡第十届立法局阿里斯顿放假啦";
-    model.babyNote          = @"啊就哭了多少积分卡就是打飞机啦可是江东父老看见阿莱克斯大家费拉达斯肌肤";
+    model.pregnantWomanNote = @"撒上看见阿哥克里斯朵夫加辣酱豆腐啊深刻的高发家里都快解放啦就是领导机构啦快点放假啊深刻的经历可噶家里都是克己奉公啦家里的咖啡机阿莱克斯的经历法就是打飞机啦啊快速的减肥";
+    model.sectionNumber = 1;
+    [_dataArr addObject:model];
+    model = [[MessageModel alloc] init];
+    model.pregnantWomanNote = @"撒上看见阿哥克里斯朵夫加辣酱豆腐啊深刻的高发家里都快解放啦就是领导机构啦快点放假啊深刻的经历可噶家里都是克己奉公啦家里的咖啡机阿莱克斯的经历法就是打飞机啦啊快速的减肥";
+    model.sectionNumber = 2;
+    [_dataArr addObject:model];
+    
+    model = [[MessageModel alloc] init];
+    model.pregnantWomanNote = @"撒上看见阿哥克里斯朵夫加辣酱豆腐啊深刻的高发家里都快解放啦就是领导机构啦快点放假啊深刻的经历可噶家里都是克己奉公啦家里的咖啡机阿莱克斯的经历法就是打飞机啦啊快速的减肥";
+    model.sectionNumber = 3;
     [_dataArr addObject:model];
     titleArr = @[@"孕期能否吃",@"孕期忌做",@"孕期该做",@"孕期食谱"];
     imageArr = @[@"img",@"img",@"img",@"img"];
@@ -67,11 +78,11 @@
     messagetv.scrollEnabled = NO;
     messagetv.dataList = self.dataArr;
     [messagetv reloadData];
-    messagetv.height = messagetv.totalHeight * 3 + 250;
+    messagetv.height = messagetv.totalHeight + 320;
     [_scrollView addSubview:messagetv];
     CGFloat y = messagetv.bottom + 5;
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, y, SCREENWIDTH, 15)];
-    lineView.backgroundColor = gray_color;
+    lineView.backgroundColor = kBackColor;
     lineView.alpha = 0.4;
     [_scrollView addSubview:lineView];
     y = lineView.bottom;
@@ -79,7 +90,7 @@
     [_scrollView addSubview:toolView];
     y = toolView.bottom;
     lineView = [[UIView alloc] initWithFrame:CGRectMake(0, y, SCREENWIDTH, 15)];
-    lineView.backgroundColor = gray_color;
+    lineView.backgroundColor = kBackColor;
     lineView.alpha = 0.4;
     [_scrollView addSubview:lineView];
     y = lineView.bottom;
@@ -90,7 +101,7 @@
     [patv reloadData];
     patv.height = 390;
     [_scrollView addSubview:patv];
-    y = patv.bottom + 20;
+    y = patv.bottom + 40;
     [_scrollView setContentSize:CGSizeMake(SCREENWIDTH, y)];
     
     
@@ -110,6 +121,9 @@
         button.titleLabel.font = H12;
         [button setTitleColor:gray_color forState:UIControlStateNormal];
         button.imageName = imageArr[i];
+        [[button rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(UIButton *bt) {
+            [self.navigationController pushViewController:[PerinatalCanEatVC new] animated:YES];
+        }];
         [load addSubview:button];
         x += cx;
     }

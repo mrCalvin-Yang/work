@@ -53,4 +53,11 @@ typedef void (^ClickRightBarBlock)(UIButton *sender);
  */
 -(void)hideLoadingIndicator;
 
+/**
+ *  设置导航栏颜色
+ */
+-(void)setNavigationBar:(UIColor *)color;
+
+-(void)setSubviews;
+
 @end

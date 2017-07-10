@@ -12,37 +12,33 @@
 
 @implementation HomePageMessageTV
 
+-(instancetype)initWithFrame:(CGRect)frame{
+    if (self = [super initWithFrame:frame]) {
+        self.rowHeight = UITableViewAutomaticDimension;
+        self.estimatedRowHeight = 60;
+    }
+    return self;
+}
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *identifier = @"tableviewcell";
     MessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
         cell = [[MessageCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
-    cell.statuLabel.textColor = black_color;
-    cell.messageLabel.textColor = black_color;
-//    MessageModel *model = [self.dataList firstObject];
-    switch (indexPath.row) {
-        case 0:
-            cell.statuLabel.text = @"今日胎宝宝发育变化";
-            cell.messageLabel.text = @"asdasdasdfasdfasdgasdf";
-            break;
-        case 1:
-            cell.statuLabel.text = @"今日孕妈需要注意";
-            cell.messageLabel.text = @"asdfadsagdafdsafasfasdfas";
-            break;
-        case 2:
-            cell.statuLabel.text = @"每日胎教";
-            cell.messageLabel.text = @"asdfadagadsdafasdfadsfasf";
-            break;
-            
-        default:
-            break;
-    }
+    cell.statuLabel.textColor = kNormalFontColor;
+    MessageModel *model = [self.dataList objectAtIndex:indexPath.section];
+    cell.model = model;
     return cell;
 }
 
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return 1;
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return self.dataList.count;
 }
 
 
@@ -51,12 +47,18 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 40;
+    return section == 0 ? 40 : 0.1f;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return section == 2 ? 0.1f : 15.f;
 }
 
 
-
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    if (section > 0) {
+        return nil;
+    }
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, SCREENWIDTH-40, 20)];
     label.backgroundColor = white_color;
     label.textColor = global_color;
