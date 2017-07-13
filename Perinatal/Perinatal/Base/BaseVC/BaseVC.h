@@ -10,7 +10,7 @@
 #import "UIViewController+TopBar.h"
 
 typedef void (^ClickBlock)();
-typedef void (^ClickRightBarBlock)(UIButton *sender);
+typedef void (^ClickRightBarBlock)(UIBarButtonItem *sender);
 
 @interface BaseVC : UIViewController
 
@@ -59,5 +59,9 @@ typedef void (^ClickRightBarBlock)(UIButton *sender);
 -(void)setNavigationBar:(UIColor *)color;
 
 -(void)setSubviews;
+
+-(void)pushVC:(UIViewController *)vc;
+
+-(void)presentVC:(UIViewController *)vc;
 
 @end

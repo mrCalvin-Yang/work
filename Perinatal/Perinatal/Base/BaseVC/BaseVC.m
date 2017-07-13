@@ -31,23 +31,24 @@
     [super viewDidDisappear:animated];
 
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+//    [self showTabBar];
+}
 
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+}
 
 
 -(void)showRightBarWithNormal:(NSString *)imageName selectedImg:(NSString *)selecteImg block:(ClickRightBarBlock)clickRightBarBlock{
     self.clickRgihtBarBlock = clickRightBarBlock;
-    
-//    UIImage *img = PNG_IMAGE_NAMED(imageName);
-//    CGRect btnFrame = CGRectMake(0,0,img.size.width,img.size.height);
-//    UIButton* btn = [[UIButton alloc] initWithFrame:btnFrame];
-//    [btn setImage:img forState:UIControlStateNormal];
-//    [btn setImage:PNG_IMAGE_NAMED(selecteImg) forState:UIControlStateSelected];
-//    [btn addTarget:self action:@selector(clickRightBarBtn:) forControlEvents:UIControlEventTouchUpInside];
-//    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
-//    self.navigationItem.rightBarButtonItem = buttonItem;
+    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithTitle:imageName style:UIBarButtonItemStylePlain target:self action:@selector(clickRightBarBtn:)];
+    buttonItem.tintColor = global_color;
+    self.navigationItem.rightBarButtonItem = buttonItem;
 }
 
--(void)clickRightBarBtn:(UIButton *)sender{
+-(void)clickRightBarBtn:(UIBarButtonItem *)sender{
     if(self.clickRgihtBarBlock){
         self.clickRgihtBarBlock(sender);
     }
@@ -113,21 +114,9 @@
     return YES;
 }
 
--(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation{
-    if (self.canLand) {
-        return [super shouldAutorotateToInterfaceOrientation:interfaceOrientation];
-    }
-    //if ([UTVGO IsHDApp]) {
-       // return ((interfaceOrientation ==UIDeviceOrientationLandscapeLeft)||(interfaceOrientation ==UIDeviceOrientationLandscapeRight));
-    //}else{
-        return UIInterfaceOrientationPortraitUpsideDown;
-    //}
-    
-}
 
 
 -(void)setNavigationBar:(UIColor *)color{
-//    self.navigationItem.titleView = [UIView new];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:color] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
 }
@@ -138,6 +127,18 @@
 
 -(void)setSubviews{
     
+}
+
+-(void)pushVC:(UIViewController *)vc{
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+    vc.hidesBottomBarWhenPushed = NO;
+}
+
+-(void)presentVC:(UIViewController *)vc{
+    [self presentViewController:vc animated:YES completion:^{
+        
+    }];
 }
 
 @end

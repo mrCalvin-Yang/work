@@ -17,6 +17,18 @@
         self.delegate=self;
         self.backgroundColor = [UIColor whiteColor];
 //        self.separatorStyle = UITableViewCellSeparatorStyleNone;
+        self.separatorColor = kLineColor;
+    }
+    return self;
+}
+
+-(instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style{
+    if (self = [super initWithFrame:frame style:style]) {
+        self.dataSource=self;
+        self.delegate=self;
+        self.backgroundColor = [UIColor whiteColor];
+        //        self.separatorStyle = UITableViewCellSeparatorStyleNone;
+        self.separatorColor = kLineColor;
     }
     return self;
 }
@@ -29,7 +41,7 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100.f;
+    return UITableViewAutomaticDimension;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -49,7 +61,7 @@
 
 - (CGFloat)totalHeight{
     CGFloat itemHeight = [self tableView:self heightForRowAtIndexPath:[NSIndexPath new]];
-    return itemHeight*self.dataList.count+5;
+    return itemHeight*self.dataList.count;
 }
 
 @end

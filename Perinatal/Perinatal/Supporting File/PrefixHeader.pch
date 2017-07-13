@@ -18,5 +18,6 @@
 #import "UIView+frameAccessor.h"
 #import <AFNetworking/AFNetworking.h>
 #import <IQKeyboardManager/IQKeyboardManager.h>
-
+#import <ReactiveCocoa.h>
+#import <Masonry.h>
 #endif /* PrefixHeader_pch */

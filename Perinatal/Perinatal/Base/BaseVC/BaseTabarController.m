@@ -32,12 +32,11 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    self.tabBar.hidden = NO;
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    self.tabBar.hidden = YES;
+    
 }
 
 -(void)addchildVCWithVC:(UIViewController *)vc title:(NSString *)title imageName:(NSString *)imageName{
@@ -45,7 +44,7 @@
     NSString *selectImg = [NSString stringWithFormat:@"%@_sel",imageName];
     vc.tabBarItem.image = V_IMAGE(selectImg);
     vc.title = title;
-    UINavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:vc];
+    BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
 }
 

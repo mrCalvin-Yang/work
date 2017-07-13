@@ -10,6 +10,7 @@
 #import "PerinatalCanEatCV.h"
 #import "CanEatModel.h"
 #import <ReactiveCocoa.h>
+#import "PerinatalCanEatDetailVC.h"
 @interface PerinatalCanEatVC ()
 @property (nonatomic, strong)NSMutableArray *dataArr;
 @end
@@ -18,9 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"能不能吃";
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:white_color] forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage imageWithColor:kLineColor];
+    [self showTitle:@"能不能吃"];
+    [self showWhiteNav];
 }
 
 
@@ -58,7 +58,7 @@
     [self.view addSubview:cv];
     cv.selectItemSignal = [RACSubject subject];
     [cv.selectItemSignal subscribeNext:^(NSIndexPath *path) {
-        
+        [self pushVC:[PerinatalCanEatDetailVC new]];
     }];
 }
 

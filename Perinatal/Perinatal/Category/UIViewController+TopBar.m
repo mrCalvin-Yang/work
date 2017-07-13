@@ -47,7 +47,6 @@
 -(void)showRightSearch:(NSInteger) channelId{
 //    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:PNG_IMAGE_NAMED(@"搜索") style:UIBarButtonItemStylePlain target:self action:@selector(clickSearch:)];
 //    self.navigationItem.rightBarButtonItem.tintColor = [UIColor colorWithRed:235.0/255.0 green:97.0/255.0 blue:0.0 alpha:1];
-    self.navigationItem.rightBarButtonItem.tag = channelId;
 }
 
 //点击返回按钮时需要调用的函数，用以显示侧边栏
@@ -68,7 +67,7 @@
     titleL.text= self.title;
     titleL.backgroundColor=[UIColor clearColor];
     titleL.font=[UIFont systemFontOfSize:18];
-    titleL.textColor=[UIColor colorWithRed:235.0/255.0 green:97.0/255.0 blue:0.0 alpha:1];
+    titleL.textColor= kImportFontColor;
     titleL.lineBreakMode=NSLineBreakByTruncatingTail;
     self.navigationItem.titleView=titleL;
 }
@@ -120,6 +119,43 @@
     [self presentViewController:nav animated:YES completion:^{
         
     }];
+}
+
+-(void)pushVC:(UIViewController *)vc{
+//    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+//    vc.hidesBottomBarWhenPushed = NO;
+}
+
+-(void)presentVC:(UIViewController *)vc{
+    [self presentViewController:vc animated:YES completion:^{
+        
+    }];
+}
+
+- (void)showWhiteNav {
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:white_color] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [UIImage imageWithColor:kLineColor];
+}
+
+- (void)showTabBar
+
+{
+    if (self.tabBarController.tabBar.hidden == NO)
+    {
+        return;
+    }
+    UIView *contentView;
+    if ([[self.tabBarController.view.subviews objectAtIndex:0] isKindOfClass:[UITabBar class]])
+        
+        contentView = [self.tabBarController.view.subviews objectAtIndex:1];
+    
+    else
+        
+        contentView = [self.tabBarController.view.subviews objectAtIndex:0];
+    contentView.frame = CGRectMake(contentView.bounds.origin.x, contentView.bounds.origin.y,  contentView.bounds.size.width, contentView.bounds.size.height - self.tabBarController.tabBar.frame.size.height);
+    self.tabBarController.tabBar.hidden = NO;
+    
 }
 
 @end

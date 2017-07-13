@@ -17,6 +17,7 @@
         self.statuLabel.font = H12;
         self.statuLabel.textAlignment = NSTextAlignmentLeft;
         self.statuLabel.numberOfLines = 0;
+        self.statuLabel.frame = CGRectMake(15, 15, SCREENWIDTH - 30, self.statuLabel.height);
         [self addSubview:self.statuLabel];
         
     }
@@ -43,9 +44,12 @@
             [attributedStr addAttribute:NSFontAttributeName value:HB14 range:NSMakeRange(0, 7)];
             self.statuLabel.attributedText = attributedStr;
         }
-        [self.statuLabel sizeToFit];
+        NSString *str = model.pregnantWomanNote;
+        CGRect rect = [str boundingRectWithSize:CGSizeMake(SCREENWIDTH - 30, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:H12} context:nil];
+        self.statuLabel.frame = CGRectMake(15, 15, rect.size.width, rect.size.height);
+        self.statuLabel.tag = 11;
         [self layoutIfNeeded];
-        self.model.cellHeight = self.statuLabel.bottom + 10;
+        self.model.cellHeight = self.statuLabel.bottom + 15;
     }
 }
 

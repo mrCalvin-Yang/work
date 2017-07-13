@@ -3,4 +3,5 @@ target 'Perinatal' do
    pod "ReactiveCocoa", '~> 2.5'# RAC,一个支持响应式编程的库.
    pod 'IQKeyboardManager'
    pod 'AFNetworking', '~> 3.0'
+   pod 'Masonry'
 end

@@ -7,8 +7,7 @@
 //
 
 #import "BaseVC.h"
-#import "HYViewController.h"
 
-@interface PerinatalHomeVC : HYViewController
+@interface PerinatalHomeVC : BaseVC
 
 @end

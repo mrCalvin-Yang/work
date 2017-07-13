@@ -54,7 +54,12 @@
  */
 -(void)showRightSearch:(NSInteger) channelId;
 
+-(void)pushVC:(UIViewController *)vc;
 
+-(void)presentVC:(UIViewController *)vc;
 
+- (void)showWhiteNav;
+
+- (void)showTabBar;
 
 @end

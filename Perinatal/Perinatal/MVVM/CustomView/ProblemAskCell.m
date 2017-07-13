@@ -12,12 +12,15 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    self.ProblemLabel.font = H14;
+    self.ProblemLabel.textColor = kNormalFontColor;
     self.payLabel.layer.masksToBounds = YES;
     self.payLabel.layer.cornerRadius = 5.0f;
     self.userImageView.layer.masksToBounds = YES;
-    self.userImageView.layer.cornerRadius = 25.f;
+    self.userImageView.layer.cornerRadius = 20.f;
+    self.askMsgLabel.textColor = kFontColor;
     self.sourceLabel.layer.masksToBounds = YES;
-    self.sourceLabel.layer.cornerRadius = 5.f;
+    self.sourceLabel.layer.cornerRadius = 8.f;
     self.sourceLabel.layer.borderWidth = 0.5f;
     self.sourceLabel.layer.borderColor = gray_color.CGColor;
 }

@@ -9,6 +9,7 @@
 #import "PerinatalCanEatCV.h"
 #import "CanEatModel.h"
 #import "TitleBtn.h"
+#import <ReactiveCocoa.h>
 
 @implementation PerinatalCanEatCV
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -22,6 +23,11 @@
     btn.frame = CGRectMake(0, 0, (collectionView.width-2)/3, (collectionView.width-2)/3);
     btn.title = dic.title;
     btn.imageName = dic.imageUrl;
+    [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        if (self.selectItemSignal) {
+            [self.selectItemSignal sendNext:indexPath];
+        }
+    }];
     for (id subView in cell.contentView.subviews) {
         [subView removeFromSuperview];
     }

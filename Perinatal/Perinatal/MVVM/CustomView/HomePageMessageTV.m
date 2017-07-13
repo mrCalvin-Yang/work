@@ -10,15 +10,12 @@
 #import "MessageCell.h"
 #import "MessageModel.h"
 
+
+@interface MessageCell ()
+@property(nonatomic,strong)MessageCell * msgCell;
+@end
 @implementation HomePageMessageTV
 
--(instancetype)initWithFrame:(CGRect)frame{
-    if (self = [super initWithFrame:frame]) {
-        self.rowHeight = UITableViewAutomaticDimension;
-        self.estimatedRowHeight = 60;
-    }
-    return self;
-}
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *identifier = @"tableviewcell";
@@ -41,10 +38,14 @@
     return self.dataList.count;
 }
 
-
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100.f;
+-(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 55.f;
 }
+
+//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    return  UITableViewAutomaticDimension;
+//}
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return section == 0 ? 40 : 0.1f;
