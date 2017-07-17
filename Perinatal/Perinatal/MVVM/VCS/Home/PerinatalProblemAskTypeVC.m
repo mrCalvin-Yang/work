@@ -21,6 +21,7 @@
     self.title = @"问题类型";
     self.view.backgroundColor = kBackColor;
     [self showTitle:self.title];
+    [self showBack];
     [self.view addSubview:self.tableView];
 }
 
@@ -63,6 +64,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifer];
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.selectedBackgroundView = [UIView new];
     cell.textLabel.text = self.dataArr[indexPath.row];

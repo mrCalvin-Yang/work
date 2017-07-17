@@ -18,5 +18,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *photoCountLabel;
 @property (nonatomic,strong) NSArray *images;
 @property (nonnull ,copy) NSString *textViewStr;
-@property (nonatomic,strong)RACSubject *imageSignal;
+
 @end

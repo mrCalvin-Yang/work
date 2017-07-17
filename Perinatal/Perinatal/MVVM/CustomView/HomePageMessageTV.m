@@ -22,6 +22,7 @@
     MessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
         cell = [[MessageCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     cell.statuLabel.textColor = kNormalFontColor;
     MessageModel *model = [self.dataList objectAtIndex:indexPath.section];
@@ -38,17 +39,16 @@
     return self.dataList.count;
 }
 
--(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 55.f;
+    MessageModel *model = self.dataList[indexPath.section];
+    CGFloat height = [MessageCell cellHeight:model];
+    return height;
 }
 
-//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    return  UITableViewAutomaticDimension;
-//}
-
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return section == 0 ? 40 : 0.1f;
+    return section == 0 ? 47 : 0.1f;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
@@ -60,12 +60,23 @@
     if (section > 0) {
         return nil;
     }
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, SCREENWIDTH-40, 20)];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 47)];
+    view.backgroundColor = white_color;
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(15.f, 15.f, SCREENWIDTH-30.f, 17.f)];
     label.backgroundColor = white_color;
     label.textColor = global_color;
     label.font = H12;
-    label.text = @"\t距预产期：221天|胎重：19g|身长：2.15cm";
-    return label;
+    label.text = @"距预产期：221天|胎重：19g|身长：2.15cm";
+    [view addSubview:label];
+    return view;
+}
+
+-(CGFloat)totalHeight{
+    CGFloat height = 0;
+    for (MessageModel *model in self.dataList) {
+        height += [MessageCell cellHeight:model];
+    }
+    return height + 77.f;
 }
 
 @end

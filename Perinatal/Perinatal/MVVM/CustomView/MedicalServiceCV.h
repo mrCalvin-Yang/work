@@ -9,5 +9,5 @@
 #import "BaseCV.h"
 
 @interface MedicalServiceCV : BaseCV
-
+@property (nonatomic , strong)RACSubject *btnSelectSignal;
 @end

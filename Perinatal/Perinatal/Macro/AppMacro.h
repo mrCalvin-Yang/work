@@ -9,8 +9,8 @@
  *  本类放app相关的宏定义 
  */
 
-//内网
-#define REQUEST_URL @"https://www.baidu.com"
+//
+#define REQUEST_URL @"http://192.168.1.182:8090/"
 
 // 正式
 //#define REQUEST_URL @"http://api.qijiwang.cn/app_v1.0/"

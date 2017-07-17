@@ -20,7 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self showTitle:@"能不能吃"];
+    [self showBack];
     [self showWhiteNav];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = NO;
 }
 
 
@@ -45,6 +51,10 @@
 //        [_dataArr addObject:[[CanEatModel alloc] initWithImg:@"img" title:@"主食"]];
     }
     return _dataArr;
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleDefault;
 }
 
 -(void)getData{

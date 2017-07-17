@@ -92,8 +92,8 @@
         [view addSubview:bt];
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(bt.right + 7, 15, SCREENWIDTH - bt.right- 7 - 15, 16)];
         label.textColor = kFontColor;
-        label.font = H10;
-        [label setNeedsDisplay];
+        label.font = H11;
+        label.adjustsFontSizeToFitWidth = YES;
         NSString *str = @"允许匿名公开，答案每被人付费围观一次，你可分成¥0.4";
         NSMutableAttributedString *attributestr = [[NSMutableAttributedString alloc] initWithString:str];
         [attributestr addAttribute:NSForegroundColorAttributeName value:RGBCOLOR(255, 0, 31) range:NSMakeRange(23, 4)];

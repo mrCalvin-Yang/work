@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *doctorLabel;
 @property (weak, nonatomic) IBOutlet UILabel *askMsgLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sourceLabel;
-@property (weak, nonatomic) IBOutlet UILabel *payLabel;
+@property (strong, nonatomic) UILabel *payLabel;
+@property (strong, nonatomic) UIImageView *CombinedImageView;
 
 @end

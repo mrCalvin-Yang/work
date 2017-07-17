@@ -23,6 +23,19 @@
     self.sourceLabel.layer.cornerRadius = 8.f;
     self.sourceLabel.layer.borderWidth = 0.5f;
     self.sourceLabel.layer.borderColor = gray_color.CGColor;
+    self.CombinedImageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.userImageView.right + 15, self.userImageView.y, 187, 40)];
+    UIImage *image = V_IMAGE(@"Combined Shape Red");
+    image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(10, 15, 10, 15) resizingMode:UIImageResizingModeStretch];
+    self.CombinedImageView.image = image;
+    [self.contentView addSubview:self.CombinedImageView];
+    
+    self.payLabel = [[UILabel alloc] init];
+    self.payLabel.text = @"支付一元围观";
+    self.payLabel.frame = self.CombinedImageView.frame;
+    self.payLabel.font = H14;
+    self.payLabel.textColor = white_color;
+    self.payLabel.textAlignment = NSTextAlignmentRight;
+    [self.contentView addSubview:self.payLabel];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

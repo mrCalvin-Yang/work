@@ -13,4 +13,5 @@
 @property(nonatomic, strong)UILabel *statuLabel;
 @property(nonatomic, strong)UILabel *messageLabel;
 @property(nonatomic, strong) MessageModel *model;
++(CGFloat)cellHeight:(MessageModel *)model;
 @end

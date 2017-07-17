@@ -32,7 +32,6 @@
 		0D3DE61A1F0E297700680C56 /* BaseCV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DE6151F0E297700680C56 /* BaseCV.m */; };
 		0D3DE61B1F0E297700680C56 /* BaseTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DE6171F0E297700680C56 /* BaseTV.m */; };
 		0D3DE6221F0E29E100680C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D3DE61E1F0E29E100680C56 /* Assets.xcassets */; };
-		0D3DE6231F0E29E100680C56 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D3DE61F1F0E29E100680C56 /* Info.plist */; };
 		0D3DE6241F0E29E100680C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3DE6201F0E29E100680C56 /* LaunchScreen.storyboard */; };
 		0D3DE6251F0E29E100680C56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DE6211F0E29E100680C56 /* main.m */; };
 		0D3DE6311F0E30EA00680C56 /* BaseTabarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DE6301F0E30EA00680C56 /* BaseTabarController.m */; };
@@ -45,6 +44,27 @@
 		0D6D0BFD1F127C400059ACE6 /* PerinatalCanEatCV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D0BFC1F127C400059ACE6 /* PerinatalCanEatCV.m */; };
 		0D9825B81F0E447A0077FF5C /* HomePageMessageTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9825B71F0E447A0077FF5C /* HomePageMessageTV.m */; };
 		0D9825BB1F0E460D0077FF5C /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9825BA1F0E460D0077FF5C /* MessageCell.m */; };
+		0D9865521F1870C4008497DE /* TextfildCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9865501F1870C4008497DE /* TextfildCell.m */; };
+		0D9865531F1870C4008497DE /* TextfildCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D9865511F1870C4008497DE /* TextfildCell.xib */; };
+		0D9865561F187474008497DE /* PerinatalUserMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9865551F187474008497DE /* PerinatalUserMessageVC.m */; };
+		0D9865591F189D62008497DE /* PerinatalUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9865581F189D62008497DE /* PerinatalUserModel.m */; };
+		0D98655C1F1B46C8008497DE /* PerinatalMyCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D98655B1F1B46C8008497DE /* PerinatalMyCardVC.m */; };
+		0D98655F1F1B4723008497DE /* PrinatalCareDcotorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D98655E1F1B4723008497DE /* PrinatalCareDcotorVC.m */; };
+		0D9865621F1B47AC008497DE /* PerinatalMyConsultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9865611F1B47AC008497DE /* PerinatalMyConsultVC.m */; };
+		0D9865651F1B48A1008497DE /* PerinatalMyIncomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9865641F1B48A1008497DE /* PerinatalMyIncomeVC.m */; };
+		0D9865681F1B493B008497DE /* PerinatalSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9865671F1B493B008497DE /* PerinatalSettingVC.m */; };
+		0D98656B1F1B4978008497DE /* PerinatalAboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D98656A1F1B4978008497DE /* PerinatalAboutVC.m */; };
+		0D98656E1F1B4ABB008497DE /* PerinatalAddCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D98656D1F1B4ABB008497DE /* PerinatalAddCardVC.m */; };
+		0D9865711F1B4AF8008497DE /* PrinatalCardDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9865701F1B4AF8008497DE /* PrinatalCardDetailVC.m */; };
+		0D9865741F1B4B6A008497DE /* PrinatalMyIncomeDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9865731F1B4B6A008497DE /* PrinatalMyIncomeDetailVC.m */; };
+		0D9865771F1C62A9008497DE /* PerinatalCurrentHospitalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9865761F1C62A9008497DE /* PerinatalCurrentHospitalVC.m */; };
+		0D98657A1F1C6308008497DE /* PerinatalSelectCityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9865791F1C6308008497DE /* PerinatalSelectCityVC.m */; };
+		0D98657D1F1C6359008497DE /* PerinatalAutoCreateFileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D98657C1F1C6359008497DE /* PerinatalAutoCreateFileVC.m */; };
+		0D9865801F1C63AC008497DE /* PerinatalHospitalIntroduceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D98657F1F1C63AC008497DE /* PerinatalHospitalIntroduceVC.m */; };
+		0D9865831F1C63D4008497DE /* PerinatalHospitalNewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9865821F1C63D4008497DE /* PerinatalHospitalNewsVC.m */; };
+		0D9865861F1C8F69008497DE /* PerinatalAppApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9865851F1C8F69008497DE /* PerinatalAppApi.m */; };
+		0D98658B1F1CA6A1008497DE /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9865881F1CA6A1008497DE /* APIClient.m */; };
+		0D98658C1F1CA6A1008497DE /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D98658A1F1CA6A1008497DE /* HttpRequest.m */; };
 		0DA931B11F137D8E0038E893 /* PerinatalMsgVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA931B01F137D8E0038E893 /* PerinatalMsgVC.m */; };
 		0DA931B41F1382C30038E893 /* PerinatalCanEatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA931B31F1382C30038E893 /* PerinatalCanEatVC.m */; };
 		0DAB018B1F1312F60077F63C /* PerinatalLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAB018A1F1312F60077F63C /* PerinatalLoginVC.m */; };
@@ -167,6 +187,10 @@
 		0DAF3EC41F175B87001831B5 /* foregroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DAF3EBE1F175B87001831B5 /* foregroundStar.png */; };
 		0DAF3EC51F175B87001831B5 /* foregroundStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DAF3EBF1F175B87001831B5 /* foregroundStar@2x.png */; };
 		0DAF3EC61F175B87001831B5 /* TQStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF3EC11F175B87001831B5 /* TQStarRatingView.m */; };
+		0DAF3EC91F176228001831B5 /* DoctorHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF3EC81F176228001831B5 /* DoctorHomeCell.m */; };
+		0DAF3ECC1F17678D001831B5 /* DoctorHomeTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF3ECB1F17678D001831B5 /* DoctorHomeTV.m */; };
+		0DAF3ECF1F177783001831B5 /* AlerVCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF3ECE1F177783001831B5 /* AlerVCManager.m */; };
+		0DAF3ED51F1778D4001831B5 /* ProblemDetailTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF3ED41F1778D4001831B5 /* ProblemDetailTV.m */; };
 		CA1CB7F10AAE7E647BA2EFBE /* libPods-Perinatal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9CCDFECBE787CF89732E70 /* libPods-Perinatal.a */; };
 /* End PBXBuildFile section */
 
@@ -268,6 +292,49 @@
 		0D9825B71F0E447A0077FF5C /* HomePageMessageTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageMessageTV.m; sourceTree = "<group>"; };
 		0D9825B91F0E460D0077FF5C /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
 		0D9825BA1F0E460D0077FF5C /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		0D98654B1F186624008497DE /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		0D98654D1F186648008497DE /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		0D98654F1F1870C4008497DE /* TextfildCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextfildCell.h; sourceTree = "<group>"; };
+		0D9865501F1870C4008497DE /* TextfildCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextfildCell.m; sourceTree = "<group>"; };
+		0D9865511F1870C4008497DE /* TextfildCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextfildCell.xib; sourceTree = "<group>"; };
+		0D9865541F187474008497DE /* PerinatalUserMessageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalUserMessageVC.h; sourceTree = "<group>"; };
+		0D9865551F187474008497DE /* PerinatalUserMessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalUserMessageVC.m; sourceTree = "<group>"; };
+		0D9865571F189D62008497DE /* PerinatalUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalUserModel.h; sourceTree = "<group>"; };
+		0D9865581F189D62008497DE /* PerinatalUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalUserModel.m; sourceTree = "<group>"; };
+		0D98655A1F1B46C8008497DE /* PerinatalMyCardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalMyCardVC.h; sourceTree = "<group>"; };
+		0D98655B1F1B46C8008497DE /* PerinatalMyCardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalMyCardVC.m; sourceTree = "<group>"; };
+		0D98655D1F1B4723008497DE /* PrinatalCareDcotorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinatalCareDcotorVC.h; sourceTree = "<group>"; };
+		0D98655E1F1B4723008497DE /* PrinatalCareDcotorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrinatalCareDcotorVC.m; sourceTree = "<group>"; };
+		0D9865601F1B47AC008497DE /* PerinatalMyConsultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalMyConsultVC.h; sourceTree = "<group>"; };
+		0D9865611F1B47AC008497DE /* PerinatalMyConsultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalMyConsultVC.m; sourceTree = "<group>"; };
+		0D9865631F1B48A1008497DE /* PerinatalMyIncomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalMyIncomeVC.h; sourceTree = "<group>"; };
+		0D9865641F1B48A1008497DE /* PerinatalMyIncomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalMyIncomeVC.m; sourceTree = "<group>"; };
+		0D9865661F1B493B008497DE /* PerinatalSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalSettingVC.h; sourceTree = "<group>"; };
+		0D9865671F1B493B008497DE /* PerinatalSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalSettingVC.m; sourceTree = "<group>"; };
+		0D9865691F1B4978008497DE /* PerinatalAboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalAboutVC.h; sourceTree = "<group>"; };
+		0D98656A1F1B4978008497DE /* PerinatalAboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalAboutVC.m; sourceTree = "<group>"; };
+		0D98656C1F1B4ABB008497DE /* PerinatalAddCardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalAddCardVC.h; sourceTree = "<group>"; };
+		0D98656D1F1B4ABB008497DE /* PerinatalAddCardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalAddCardVC.m; sourceTree = "<group>"; };
+		0D98656F1F1B4AF8008497DE /* PrinatalCardDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinatalCardDetailVC.h; sourceTree = "<group>"; };
+		0D9865701F1B4AF8008497DE /* PrinatalCardDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrinatalCardDetailVC.m; sourceTree = "<group>"; };
+		0D9865721F1B4B6A008497DE /* PrinatalMyIncomeDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinatalMyIncomeDetailVC.h; sourceTree = "<group>"; };
+		0D9865731F1B4B6A008497DE /* PrinatalMyIncomeDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrinatalMyIncomeDetailVC.m; sourceTree = "<group>"; };
+		0D9865751F1C62A9008497DE /* PerinatalCurrentHospitalVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalCurrentHospitalVC.h; sourceTree = "<group>"; };
+		0D9865761F1C62A9008497DE /* PerinatalCurrentHospitalVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalCurrentHospitalVC.m; sourceTree = "<group>"; };
+		0D9865781F1C6308008497DE /* PerinatalSelectCityVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalSelectCityVC.h; sourceTree = "<group>"; };
+		0D9865791F1C6308008497DE /* PerinatalSelectCityVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalSelectCityVC.m; sourceTree = "<group>"; };
+		0D98657B1F1C6359008497DE /* PerinatalAutoCreateFileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalAutoCreateFileVC.h; sourceTree = "<group>"; };
+		0D98657C1F1C6359008497DE /* PerinatalAutoCreateFileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalAutoCreateFileVC.m; sourceTree = "<group>"; };
+		0D98657E1F1C63AC008497DE /* PerinatalHospitalIntroduceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalHospitalIntroduceVC.h; sourceTree = "<group>"; };
+		0D98657F1F1C63AC008497DE /* PerinatalHospitalIntroduceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalHospitalIntroduceVC.m; sourceTree = "<group>"; };
+		0D9865811F1C63D4008497DE /* PerinatalHospitalNewsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalHospitalNewsVC.h; sourceTree = "<group>"; };
+		0D9865821F1C63D4008497DE /* PerinatalHospitalNewsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalHospitalNewsVC.m; sourceTree = "<group>"; };
+		0D9865841F1C8F69008497DE /* PerinatalAppApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalAppApi.h; sourceTree = "<group>"; };
+		0D9865851F1C8F69008497DE /* PerinatalAppApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalAppApi.m; sourceTree = "<group>"; };
+		0D9865871F1CA6A1008497DE /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		0D9865881F1CA6A1008497DE /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		0D9865891F1CA6A1008497DE /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		0D98658A1F1CA6A1008497DE /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
 		0DA931AF1F137D8E0038E893 /* PerinatalMsgVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalMsgVC.h; sourceTree = "<group>"; };
 		0DA931B01F137D8E0038E893 /* PerinatalMsgVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalMsgVC.m; sourceTree = "<group>"; };
 		0DA931B21F1382C30038E893 /* PerinatalCanEatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalCanEatVC.h; sourceTree = "<group>"; };
@@ -441,6 +508,14 @@
 		0DAF3EBF1F175B87001831B5 /* foregroundStar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foregroundStar@2x.png"; sourceTree = "<group>"; };
 		0DAF3EC01F175B87001831B5 /* TQStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQStarRatingView.h; sourceTree = "<group>"; };
 		0DAF3EC11F175B87001831B5 /* TQStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQStarRatingView.m; sourceTree = "<group>"; };
+		0DAF3EC71F176228001831B5 /* DoctorHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorHomeCell.h; sourceTree = "<group>"; };
+		0DAF3EC81F176228001831B5 /* DoctorHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorHomeCell.m; sourceTree = "<group>"; };
+		0DAF3ECA1F17678D001831B5 /* DoctorHomeTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorHomeTV.h; sourceTree = "<group>"; };
+		0DAF3ECB1F17678D001831B5 /* DoctorHomeTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorHomeTV.m; sourceTree = "<group>"; };
+		0DAF3ECD1F177783001831B5 /* AlerVCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlerVCManager.h; sourceTree = "<group>"; };
+		0DAF3ECE1F177783001831B5 /* AlerVCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlerVCManager.m; sourceTree = "<group>"; };
+		0DAF3ED31F1778D4001831B5 /* ProblemDetailTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemDetailTV.h; sourceTree = "<group>"; };
+		0DAF3ED41F1778D4001831B5 /* ProblemDetailTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemDetailTV.m; sourceTree = "<group>"; };
 		5C9CCDFECBE787CF89732E70 /* libPods-Perinatal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Perinatal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA4F21DE2541C2181D451DC /* Pods-Perinatal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perinatal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Perinatal/Pods-Perinatal.release.xcconfig"; sourceTree = "<group>"; };
 		A919F081B6DC270552D83B8E /* Pods-Perinatal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perinatal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Perinatal/Pods-Perinatal.debug.xcconfig"; sourceTree = "<group>"; };
@@ -626,6 +701,8 @@
 		0D3DE61C1F0E299D00680C56 /* Utinity */ = {
 			isa = PBXGroup;
 			children = (
+				0DAF3ECD1F177783001831B5 /* AlerVCManager.h */,
+				0DAF3ECE1F177783001831B5 /* AlerVCManager.m */,
 				0DAB019B1F13168E0077F63C /* SweetTextField.h */,
 				0DAB019C1F13168E0077F63C /* SweetTextField.m */,
 				0DAF3EB71F1725AC001831B5 /* PerinatalPaymentVC.h */,
@@ -674,6 +751,8 @@
 				0D9825B71F0E447A0077FF5C /* HomePageMessageTV.m */,
 				0D345E4D1F0F6F7B005AC0D8 /* ProblemAskTV.h */,
 				0D345E4E1F0F6F7B005AC0D8 /* ProblemAskTV.m */,
+				0DAF3ED31F1778D4001831B5 /* ProblemDetailTV.h */,
+				0DAF3ED41F1778D4001831B5 /* ProblemDetailTV.m */,
 				0D345E441F0F5231005AC0D8 /* MedicalServiceCV.h */,
 				0D345E451F0F5231005AC0D8 /* MedicalServiceCV.m */,
 				0D6D0BFB1F127C400059ACE6 /* PerinatalCanEatCV.h */,
@@ -684,6 +763,8 @@
 				0DAF3DD21F14C2B5001831B5 /* PerinatalDoctorTV.m */,
 				0DAF3DE21F15FB7B001831B5 /* IWantConsultTV.h */,
 				0DAF3DE31F15FB7B001831B5 /* IWantConsultTV.m */,
+				0DAF3ECA1F17678D001831B5 /* DoctorHomeTV.h */,
+				0DAF3ECB1F17678D001831B5 /* DoctorHomeTV.m */,
 				0DAF3DD71F14C357001831B5 /* DoctorCell.h */,
 				0DAF3DD81F14C357001831B5 /* DoctorCell.m */,
 				0DAF3DD91F14C357001831B5 /* DoctorCell.xib */,
@@ -702,9 +783,14 @@
 				0DAF3DE71F15FCF2001831B5 /* FlowCell.xib */,
 				0DAF3DEA1F15FD29001831B5 /* DoctorMsgCell.h */,
 				0DAF3DEB1F15FD29001831B5 /* DoctorMsgCell.m */,
+				0DAF3EC71F176228001831B5 /* DoctorHomeCell.h */,
+				0DAF3EC81F176228001831B5 /* DoctorHomeCell.m */,
 				0DAF3DED1F1621E2001831B5 /* ConsultContentCell.h */,
 				0DAF3DEE1F1621E2001831B5 /* ConsultContentCell.m */,
 				0DAF3DEF1F1621E2001831B5 /* ConsultContentCell.xib */,
+				0D98654F1F1870C4008497DE /* TextfildCell.h */,
+				0D9865501F1870C4008497DE /* TextfildCell.m */,
+				0D9865511F1870C4008497DE /* TextfildCell.xib */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -714,6 +800,8 @@
 			children = (
 				0D345E411F0F237A005AC0D8 /* MessageModel.h */,
 				0D345E421F0F237A005AC0D8 /* MessageModel.m */,
+				0D9865571F189D62008497DE /* PerinatalUserModel.h */,
+				0D9865581F189D62008497DE /* PerinatalUserModel.m */,
 				0D345E471F0F5885005AC0D8 /* CanEatModel.h */,
 				0D345E481F0F5885005AC0D8 /* CanEatModel.m */,
 			);
@@ -740,6 +828,12 @@
 		0D3DE62D1F0E2B2300680C56 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				0D9865841F1C8F69008497DE /* PerinatalAppApi.h */,
+				0D9865851F1C8F69008497DE /* PerinatalAppApi.m */,
+				0D9865871F1CA6A1008497DE /* APIClient.h */,
+				0D9865881F1CA6A1008497DE /* APIClient.m */,
+				0D9865891F1CA6A1008497DE /* HttpRequest.h */,
+				0D98658A1F1CA6A1008497DE /* HttpRequest.m */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -806,6 +900,16 @@
 			children = (
 				0D3DE63D1F0E33C600680C56 /* PerinatalMedicalServiceVC.h */,
 				0D3DE63E1F0E33C600680C56 /* PerinatalMedicalServiceVC.m */,
+				0D9865751F1C62A9008497DE /* PerinatalCurrentHospitalVC.h */,
+				0D9865761F1C62A9008497DE /* PerinatalCurrentHospitalVC.m */,
+				0D9865781F1C6308008497DE /* PerinatalSelectCityVC.h */,
+				0D9865791F1C6308008497DE /* PerinatalSelectCityVC.m */,
+				0D98657B1F1C6359008497DE /* PerinatalAutoCreateFileVC.h */,
+				0D98657C1F1C6359008497DE /* PerinatalAutoCreateFileVC.m */,
+				0D98657E1F1C63AC008497DE /* PerinatalHospitalIntroduceVC.h */,
+				0D98657F1F1C63AC008497DE /* PerinatalHospitalIntroduceVC.m */,
+				0D9865811F1C63D4008497DE /* PerinatalHospitalNewsVC.h */,
+				0D9865821F1C63D4008497DE /* PerinatalHospitalNewsVC.m */,
 			);
 			path = "Medical Service";
 			sourceTree = "<group>";
@@ -815,6 +919,26 @@
 			children = (
 				0D3DE6401F0E342D00680C56 /* PerinatalPersonalCenterVC.h */,
 				0D3DE6411F0E342D00680C56 /* PerinatalPersonalCenterVC.m */,
+				0D9865541F187474008497DE /* PerinatalUserMessageVC.h */,
+				0D9865551F187474008497DE /* PerinatalUserMessageVC.m */,
+				0D98655A1F1B46C8008497DE /* PerinatalMyCardVC.h */,
+				0D98655B1F1B46C8008497DE /* PerinatalMyCardVC.m */,
+				0D98655D1F1B4723008497DE /* PrinatalCareDcotorVC.h */,
+				0D98655E1F1B4723008497DE /* PrinatalCareDcotorVC.m */,
+				0D9865601F1B47AC008497DE /* PerinatalMyConsultVC.h */,
+				0D9865611F1B47AC008497DE /* PerinatalMyConsultVC.m */,
+				0D9865631F1B48A1008497DE /* PerinatalMyIncomeVC.h */,
+				0D9865641F1B48A1008497DE /* PerinatalMyIncomeVC.m */,
+				0D9865661F1B493B008497DE /* PerinatalSettingVC.h */,
+				0D9865671F1B493B008497DE /* PerinatalSettingVC.m */,
+				0D9865691F1B4978008497DE /* PerinatalAboutVC.h */,
+				0D98656A1F1B4978008497DE /* PerinatalAboutVC.m */,
+				0D98656C1F1B4ABB008497DE /* PerinatalAddCardVC.h */,
+				0D98656D1F1B4ABB008497DE /* PerinatalAddCardVC.m */,
+				0D98656F1F1B4AF8008497DE /* PrinatalCardDetailVC.h */,
+				0D9865701F1B4AF8008497DE /* PrinatalCardDetailVC.m */,
+				0D9865721F1B4B6A008497DE /* PrinatalMyIncomeDetailVC.h */,
+				0D9865731F1B4B6A008497DE /* PrinatalMyIncomeDetailVC.m */,
 				0DA931AF1F137D8E0038E893 /* PerinatalMsgVC.h */,
 				0DA931B01F137D8E0038E893 /* PerinatalMsgVC.m */,
 			);
@@ -968,6 +1092,8 @@
 		73F4B46592829B6DA689DCCA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D98654D1F186648008497DE /* AssetsLibrary.framework */,
+				0D98654B1F186624008497DE /* PhotosUI.framework */,
 				0DAF3EB51F170B80001831B5 /* Photos.framework */,
 				0D6D0BF51F1240730059ACE6 /* libAFNetworking.a */,
 				0D6D0BF61F1240730059ACE6 /* libIQKeyboardManager.a */,
@@ -1116,7 +1242,6 @@
 				0DAF3EA61F17080B001831B5 /* multimedia_videocard_play@2x.png in Resources */,
 				0DAF3E901F17080B001831B5 /* compose_live_photo_close_icon@3x.png in Resources */,
 				0DAF3E881F17080B001831B5 /* compose_gifbutton_background@2x.png in Resources */,
-				0D3DE6231F0E29E100680C56 /* Info.plist in Resources */,
 				0DAF3E941F17080B001831B5 /* compose_live_photo_open_only_icon@3x.png in Resources */,
 				0DAF3E9E1F17080B001831B5 /* compose_photo_video@2x.png in Resources */,
 				0DAF3EA01F17080B001831B5 /* compose_pic_add@2x.png in Resources */,
@@ -1168,6 +1293,7 @@
 				0DAF3E9F1F17080B001831B5 /* compose_photo_video_highlighted@2x.png in Resources */,
 				0DAF3E931F17080B001831B5 /* compose_live_photo_open_only_icon@2x.png in Resources */,
 				0DAF3EB11F17080B001831B5 /* 椭圆-1@2x.png in Resources */,
+				0D9865531F1870C4008497DE /* TextfildCell.xib in Resources */,
 				0DAF3E871F17080B001831B5 /* compose_delete@2x.png in Resources */,
 				0DAF3DE91F15FCF2001831B5 /* FlowCell.xib in Resources */,
 			);
@@ -1248,16 +1374,23 @@
 				0D3DE5FB1F0E27EB00680C56 /* UIColor+Extension.m in Sources */,
 				0DAF3EB41F17080B001831B5 /* UIView+HXExtension.m in Sources */,
 				0DAF3E701F17080B001831B5 /* HXPresentTransition.m in Sources */,
+				0D9865561F187474008497DE /* PerinatalUserMessageVC.m in Sources */,
+				0D98655C1F1B46C8008497DE /* PerinatalMyCardVC.m in Sources */,
 				0DAF3E681F17080B001831B5 /* HXPhotoModel.m in Sources */,
+				0DAF3ECC1F17678D001831B5 /* DoctorHomeTV.m in Sources */,
 				0DAF3E601F17080B001831B5 /* HXAlbumListView.m in Sources */,
 				0DAF3EB91F1725AD001831B5 /* PerinatalPaymentVC.m in Sources */,
 				0D345E461F0F5231005AC0D8 /* MedicalServiceCV.m in Sources */,
 				0DAF3E671F17080B001831B5 /* HXPhotoManager.m in Sources */,
 				0DAF3E631F17080B001831B5 /* HXCameraPreviewViewController.m in Sources */,
+				0D9865521F1870C4008497DE /* TextfildCell.m in Sources */,
 				0D345E401F0F1933005AC0D8 /* UIViewController+NavBarHidden.m in Sources */,
 				0DA931B11F137D8E0038E893 /* PerinatalMsgVC.m in Sources */,
+				0D9865621F1B47AC008497DE /* PerinatalMyConsultVC.m in Sources */,
+				0D9865861F1C8F69008497DE /* PerinatalAppApi.m in Sources */,
 				0D3DE6041F0E291600680C56 /* AppDelegate.m in Sources */,
 				0DAB01971F1313CC0077F63C /* PerinatalPregnacyVC.m in Sources */,
+				0D9865711F1B4AF8008497DE /* PrinatalCardDetailVC.m in Sources */,
 				0D3DE6191F0E297700680C56 /* BaseVC.m in Sources */,
 				0D3DE61A1F0E297700680C56 /* BaseCV.m in Sources */,
 				0DAF3DE81F15FCF2001831B5 /* FlowCell.m in Sources */,
@@ -1265,21 +1398,31 @@
 				0D345E4C1F0F5E53005AC0D8 /* TitleBtn.m in Sources */,
 				0DAB01911F1313760077F63C /* PerinatalForgetPasswordVC.m in Sources */,
 				0D3DE63C1F0E338500680C56 /* PerinatalHomeVC.m in Sources */,
+				0D98658B1F1CA6A1008497DE /* APIClient.m in Sources */,
 				0DAF3E711F17080B001831B5 /* HXTransition.m in Sources */,
 				0D3DE6001F0E27EB00680C56 /* UIViewController+TopBar.m in Sources */,
+				0D98656B1F1B4978008497DE /* PerinatalAboutVC.m in Sources */,
 				0D3DE6421F0E342D00680C56 /* PerinatalPersonalCenterVC.m in Sources */,
 				0DAF3DDE1F15F36C001831B5 /* PerinatalWantConsultVC.m in Sources */,
 				0DAF3DEC1F15FD29001831B5 /* DoctorMsgCell.m in Sources */,
 				0DAF3E611F17080B001831B5 /* HXAlbumModel.m in Sources */,
 				0DAF3EB21F17080B001831B5 /* UIButton+HXExtension.m in Sources */,
 				0DAF3DCA1F1482DF001831B5 /* PerinatalProblemAskTypeVC.m in Sources */,
+				0D9865831F1C63D4008497DE /* PerinatalHospitalNewsVC.m in Sources */,
+				0D98655F1F1B4723008497DE /* PrinatalCareDcotorVC.m in Sources */,
+				0D9865801F1C63AC008497DE /* PerinatalHospitalIntroduceVC.m in Sources */,
 				0DAF3E641F17080B001831B5 /* HXCameraViewController.m in Sources */,
 				0DAF3DDA1F14C357001831B5 /* DoctorCell.m in Sources */,
 				0DAF3DE11F15F3DF001831B5 /* PerinatalDoctorHomeVC.m in Sources */,
 				0DAB01A01F1323A00077F63C /* InputView.m in Sources */,
 				0DAB018E1F13133B0077F63C /* PerinatalRigisterVC.m in Sources */,
 				0DAF3DD31F14C2B5001831B5 /* PerinatalDoctorTV.m in Sources */,
+				0D9865591F189D62008497DE /* PerinatalUserModel.m in Sources */,
+				0D98656E1F1B4ABB008497DE /* PerinatalAddCardVC.m in Sources */,
+				0DAF3ECF1F177783001831B5 /* AlerVCManager.m in Sources */,
 				0DAB019A1F1313F00077F63C /* PerinatalBindMoblieVC.m in Sources */,
+				0D9865651F1B48A1008497DE /* PerinatalMyIncomeVC.m in Sources */,
+				0D98657A1F1C6308008497DE /* PerinatalSelectCityVC.m in Sources */,
 				0D9825B81F0E447A0077FF5C /* HomePageMessageTV.m in Sources */,
 				0DAF3DC71F14826A001831B5 /* PerinatalProblemDetailVC.m in Sources */,
 				0D3DE5FD1F0E27EB00680C56 /* UISearchBar+Extension.m in Sources */,
@@ -1291,11 +1434,15 @@
 				0DA931B41F1382C30038E893 /* PerinatalCanEatVC.m in Sources */,
 				0DAF3E6F1F17080B001831B5 /* HXPhotoViewController.m in Sources */,
 				0DAF3DD01F14B74B001831B5 /* PerinatalDoctorListVC.m in Sources */,
+				0D9865741F1B4B6A008497DE /* PrinatalMyIncomeDetailVC.m in Sources */,
 				0DAF3DC01F146876001831B5 /* CanEatCell.m in Sources */,
 				0DAF3E6B1F17080B001831B5 /* HXPhotoSubViewCell.m in Sources */,
 				0DAF3DF01F1621E2001831B5 /* ConsultContentCell.m in Sources */,
+				0DAF3ED51F1778D4001831B5 /* ProblemDetailTV.m in Sources */,
+				0D9865681F1B493B008497DE /* PerinatalSettingVC.m in Sources */,
 				0D3DE61B1F0E297700680C56 /* BaseTV.m in Sources */,
 				0D345E3F1F0F1933005AC0D8 /* HYViewController.m in Sources */,
+				0D9865771F1C62A9008497DE /* PerinatalCurrentHospitalVC.m in Sources */,
 				0DAB018B1F1312F60077F63C /* PerinatalLoginVC.m in Sources */,
 				0DAF3E6E1F17080B001831B5 /* HXPhotoViewCell.m in Sources */,
 				0DAF3E621F17080B001831B5 /* HXAlbumTitleButton.m in Sources */,
@@ -1308,13 +1455,16 @@
 				0D3DE5FC1F0E27EB00680C56 /* UIImage+Extension.m in Sources */,
 				0DAF3DCD1F1483A0001831B5 /* PerinatalAskContentVC.m in Sources */,
 				0DAF3E721F17080B001831B5 /* HXVideoPresentTransition.m in Sources */,
+				0D98657D1F1C6359008497DE /* PerinatalAutoCreateFileVC.m in Sources */,
 				0D3DE63F1F0E33C600680C56 /* PerinatalMedicalServiceVC.m in Sources */,
+				0D98658C1F1CA6A1008497DE /* HttpRequest.m in Sources */,
 				0D9825BB1F0E460D0077FF5C /* MessageCell.m in Sources */,
 				0DAF3E6C1F17080B001831B5 /* HXPhotoTools.m in Sources */,
 				0D3DE5FA1F0E27EB00680C56 /* NSString+Formatter.m in Sources */,
 				0DAF3E6A1F17080B001831B5 /* HXPhotoPreviewViewController.m in Sources */,
 				0D3DE5F91F0E27EB00680C56 /* NSArray+Extension.m in Sources */,
 				0D3DE6251F0E29E100680C56 /* main.m in Sources */,
+				0DAF3EC91F176228001831B5 /* DoctorHomeCell.m in Sources */,
 				0DAF3E6D1F17080B001831B5 /* HXPhotoView.m in Sources */,
 				0D6D0BFD1F127C400059ACE6 /* PerinatalCanEatCV.m in Sources */,
 				0D3DE6181F0E297700680C56 /* BaseNavigationController.m in Sources */,

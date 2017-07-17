@@ -25,9 +25,9 @@
 }
 //添加子控制器
 -(void)setupchildVC{
-    [self addchildVCWithVC:[PerinatalHomeVC new] title:@"首页" imageName:@""];
-    [self addchildVCWithVC:[PerinatalMedicalServiceVC new] title:@"医疗服务" imageName:@""];
-    [self addchildVCWithVC:[PerinatalPersonalCenterVC new] title:@"个人中心" imageName:@""];
+    [self addchildVCWithVC:[PerinatalHomeVC new] title:@"首页" imageName:@"icon-Home"];
+    [self addchildVCWithVC:[PerinatalMedicalServiceVC new] title:@"医疗服务" imageName:@"icon-HospitalService"];
+    [self addchildVCWithVC:[PerinatalPersonalCenterVC new] title:@"个人中心" imageName:@"icon-IndividualCenter"];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -40,9 +40,13 @@
 }
 
 -(void)addchildVCWithVC:(UIViewController *)vc title:(NSString *)title imageName:(NSString *)imageName{
-    vc.tabBarItem.image = V_IMAGE(imageName);
-    NSString *selectImg = [NSString stringWithFormat:@"%@_sel",imageName];
-    vc.tabBarItem.image = V_IMAGE(selectImg);
+    UIImage *image = V_IMAGE(imageName);
+    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    vc.tabBarItem.image = image;
+    NSString *selectImg = [NSString stringWithFormat:@"%@ Clicked",imageName];
+    UIImage *selectImage = V_IMAGE(selectImg);
+    selectImage = [selectImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    vc.tabBarItem.selectedImage = selectImage;
     vc.title = title;
     BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];

@@ -24,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self showBack];
 //    [self.view addSubview:self.scrollView];
     
     

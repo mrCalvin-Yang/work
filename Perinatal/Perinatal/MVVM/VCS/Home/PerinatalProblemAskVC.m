@@ -19,14 +19,11 @@
     [super viewDidLoad];
     self.title = @"孕期问答";
     [self showTitle:self.title];
+    [self showBack];
     [self showWhiteNav];
-    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     
 }
 
--(UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleDefault;
-}
 
 -(void)setSubviews{
     
@@ -40,7 +37,7 @@
     }];
     [self.view addSubview:tv];
     
-    UIButton *bt = [[UIButton alloc] initWithFrame:CGRectMake(0, self.view.bottom - 114.f, SCREENWIDTH, 50.f)];
+    UIButton *bt = [[UIButton alloc] init];
     [bt setTitle:@"我要咨询" forState:UIControlStateNormal];
     [bt setTitleColor:white_color forState:UIControlStateNormal];
     bt.backgroundColor = global_color;
@@ -48,6 +45,10 @@
         [self pushVC:[ PerinatalProblemAskTypeVC new]];
     }];
     [self.view addSubview:bt];
+    [bt mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(SCREENWIDTH, 50));
+        make.left.bottom.right.offset(0);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

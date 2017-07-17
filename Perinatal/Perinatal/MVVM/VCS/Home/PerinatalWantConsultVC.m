@@ -22,21 +22,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self showTitle:@"我要咨询"];
+    [self showBack];
     self.view.backgroundColor = kBackColor;
 }
 
 -(void)setSubviews{
-    tv = [[IWantConsultTV alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT-64 - 58) style:UITableViewStyleGrouped];
+    tv = [[IWantConsultTV alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT-64 - 48) style:UITableViewStyleGrouped];
     [tv reloadData];
     [self.view addSubview:tv];
     
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, tv.bottom + 10, SCREENWIDTH - 150,48)];
+    UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.text = @"付费咨询:";
     titleLabel.font = H14;
     titleLabel.backgroundColor = RGBCOLOR(255, 236, 240);
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(SCREENWIDTH - 150, tv.bottom + 10, 150, 48);
+//    button.frame = CGRectMake(SCREENWIDTH - 150, SCREENHEIGHT - 48 - 64, 150, 48);
     [button setTitle:@"提交咨询" forState:UIControlStateNormal];
     button.titleLabel.font = H14;
     [button setTitleColor:white_color forState:UIControlStateNormal];
@@ -44,6 +45,19 @@
     [button addTarget:self action:@selector(btnCommit:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     [self.view addSubview:titleLabel];
+    
+    [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(SCREENWIDTH - 150, 48));
+        make.left.offset(0);
+        make.bottom.offset(0);
+    }];
+    
+    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.equalTo(titleLabel);
+        make.right.offset(0);
+        make.bottom.offset(0);
+        make.left.equalTo(titleLabel.mas_right).with.offset(0);
+    }];
     
     
 }

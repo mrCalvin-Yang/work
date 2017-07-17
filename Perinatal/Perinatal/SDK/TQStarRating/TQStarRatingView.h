@@ -9,8 +9,8 @@
 
 #import <UIKit/UIKit.h>
 
-#define kBACKGROUND_STAR @"backgroundStar"
-#define kFOREGROUND_STAR @"foregroundStar"
+#define kBACKGROUND_STAR @"icon-Star"
+#define kFOREGROUND_STAR @"icon-Star Selected"
 #define kNUMBER_OF_STAR  5
 
 @class TQStarRatingView;

@@ -11,6 +11,7 @@
 #define PrefixHeader_pch
 
 #import "ACMacros.h"
+#import "AppMacro.h"
 #import "UIColor+Extension.h"
 #import "UIImage+Extension.h"
 #import "UIView+Extension.h"
@@ -20,4 +21,5 @@
 #import <IQKeyboardManager/IQKeyboardManager.h>
 #import <ReactiveCocoa.h>
 #import <Masonry.h>
+#import "AlerVCManager.h"
 #endif /* PrefixHeader_pch */

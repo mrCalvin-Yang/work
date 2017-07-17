@@ -23,7 +23,7 @@
 
 -(UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT-64 - 58) style:UITableViewStyleGrouped];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, SCREENWIDTH, SCREENHEIGHT-48 - 64) style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.separatorColor = kLineColor;
@@ -34,12 +34,12 @@
 
 -(void)setSubviews{
     
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.tableView.bottom + 10, SCREENWIDTH - 150,48)];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, SCREENHEIGHT - 48.f, SCREENWIDTH - 150,48)];
     titleLabel.text = @"付费咨询:";
     titleLabel.font = H14;
     titleLabel.backgroundColor = RGBCOLOR(255, 236, 240);
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(SCREENWIDTH - 150, self.tableView.bottom + 10, 150, 48);
+    button.frame = CGRectMake(SCREENWIDTH - 150, SCREENHEIGHT - 48.f, 150, 48);
     [button setTitle:@"确认支付" forState:UIControlStateNormal];
     button.titleLabel.font = H14;
     [button setTitleColor:white_color forState:UIControlStateNormal];

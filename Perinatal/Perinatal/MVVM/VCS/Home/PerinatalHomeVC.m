@@ -14,7 +14,8 @@
 #import "PerinatalCanEatVC.h"
 #import <ReactiveCocoa.h>
 #import "PerinatalProblemAskVC.h"
-@interface PerinatalHomeVC ()
+#import "PerinatalProblemDetailVC.h"
+@interface PerinatalHomeVC ()<UIScrollViewDelegate>
 {
     NSArray *titleArr, *imageArr;
 }
@@ -40,8 +41,8 @@
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
-//    self.hidesBottomBarWhenPushed = YES;;
-//    [self hideTabBar];
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBar.hidden = NO;
 }
 //lazy init
 -(UIScrollView *)scrollView{
@@ -49,18 +50,26 @@
         _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT+64)];
         _scrollView.backgroundColor = white_color;
         _scrollView.showsVerticalScrollIndicator = NO;
+        _scrollView.delegate = self;
     }
     return _scrollView;
 }
 //set nav
 -(void)setNavigationBar{
-    self.navigationItem.titleView = [UIView new];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:global_color] forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
-//    [self setKeyScrollView:self.scrollView scrolOffsetY:122 options:HYHidenControlOptionLeft | HYHidenControlOptionTitle];
+    self.navigationController.navigationBar.hidden = YES;
+    UIView *navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 64)];
+    navView.backgroundColor = global_color;
+    navView.alpha = 1;
+    [navView bringSubviewToFront:self.scrollView];
+    [self.view addSubview:navView];
 }
 
-
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    
+}
+-(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
+    
+}
 
 
 
@@ -85,15 +94,17 @@
 }
 //addsubviews
 -(void)setupSubviews{
-    HomePageMessageTV *messagetv = [[HomePageMessageTV alloc] initWithFrame:CGRectMake(0, -64, SCREENWIDTH, 0)];
-    messagetv.tableHeaderView = [self tableHeaderView];
+    UIView *headView = [self tableHeaderView];
+    [self.scrollView addSubview:headView];
+    CGFloat y = headView.bottom;
+    HomePageMessageTV *messagetv = [[HomePageMessageTV alloc] initWithFrame:CGRectMake(0, y, SCREENWIDTH, 0)];
     messagetv.showsVerticalScrollIndicator = NO;
     messagetv.scrollEnabled = NO;
     messagetv.dataList = self.dataArr;
     [messagetv reloadData];
-    messagetv.height = messagetv.rowHeight + messagetv.tableHeaderView.height;
+    messagetv.height = messagetv.totalHeight;
     [_scrollView addSubview:messagetv];
-    CGFloat y = messagetv.bottom + 5;
+    y = messagetv.bottom;
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, y, SCREENWIDTH, 15)];
     lineView.backgroundColor = kBackColor;
     lineView.alpha = 0.4;
@@ -132,10 +143,10 @@
     patv.height = 350;
     patv.selectItemSignal = [RACSubject subject];
     [patv.selectItemSignal subscribeNext:^(id x) {
-        [self pushVC:[PerinatalProblemAskVC new]];
+        [self pushVC:[PerinatalProblemDetailVC new]];
     }];
     [_scrollView addSubview:patv];
-    y = patv.bottom + 119;
+    y = patv.bottom+64;
     [_scrollView setContentSize:CGSizeMake(SCREENWIDTH, y)];
     
     
@@ -173,7 +184,7 @@
 
 
 -(UIView *)tableHeaderView{
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 250)];
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, -20, SCREENWIDTH, 256)];
     headerView.backgroundColor = global_color;
     UIImageView *imageview = [[UIImageView alloc] initWithFrame:CGRectMake(headerView.center.x - 40, headerView.center.y - 40, 80, 80)];
     imageview.backgroundColor = gray_color;
@@ -190,6 +201,10 @@
     statusLabel.textColor = white_color;
     [headerView addSubview:statusLabel];
     return headerView;
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 

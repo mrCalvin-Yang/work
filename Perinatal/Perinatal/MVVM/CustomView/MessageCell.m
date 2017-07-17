@@ -12,13 +12,15 @@
 
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.statuLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, SCREENWIDTH - 20, 0)];
+        self.messageLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 15, SCREENWIDTH, 20)];
+        self.messageLabel.font = HB14;
+        [self.contentView addSubview:self.messageLabel];
         
+        self.statuLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, self.messageLabel.bottom, SCREENWIDTH - 30, 100)];
         self.statuLabel.font = H12;
         self.statuLabel.textAlignment = NSTextAlignmentLeft;
         self.statuLabel.numberOfLines = 0;
-        self.statuLabel.frame = CGRectMake(15, 15, SCREENWIDTH - 30, self.statuLabel.height);
-        [self addSubview:self.statuLabel];
+        [self.contentView addSubview:self.statuLabel];
         
     }
     return self;
@@ -28,29 +30,36 @@
     if (model) {
         _model = model;
         if (model.sectionNumber == 1) {
-            NSString *str = string(@"孕妈每日必看:", model.pregnantWomanNote);
-            NSMutableAttributedString *attributedStr = [[NSMutableAttributedString alloc] initWithString:str];
-            [attributedStr addAttribute:NSFontAttributeName value:HB14 range:NSMakeRange(0, 7)];
-            self.statuLabel.attributedText = attributedStr;
+            self.messageLabel.text = @"今日胎宝宝发育变化";
+            self.statuLabel.text = model.pregnantWomanNote;
+            CGRect rect = self.statuLabel.frame;
+            rect.size.height = [[self class] addressHeight:model.pregnantWomanNote];
+            self.statuLabel.frame = rect;
             
         }else if (model.sectionNumber == 2){
-            NSString *str = string(@"孕妈每日必看:", model.pregnantWomanNote);
-            NSMutableAttributedString *attributedStr = [[NSMutableAttributedString alloc] initWithString:str];
-            [attributedStr addAttribute:NSFontAttributeName value:HB14 range:NSMakeRange(0, 7)];
-            self.statuLabel.attributedText = attributedStr;
+            self.messageLabel.text = @"今日孕妈需要注意";
+            self.statuLabel.text = model.pregnantWomanNote;
+            CGRect rect = self.statuLabel.frame;
+            rect.size.height = [[self class] addressHeight:model.pregnantWomanNote];
+            self.statuLabel.frame = rect;
         }else{
-            NSString *str = string(@"孕妈每日必看:", model.pregnantWomanNote);
-            NSMutableAttributedString *attributedStr = [[NSMutableAttributedString alloc] initWithString:str];
-            [attributedStr addAttribute:NSFontAttributeName value:HB14 range:NSMakeRange(0, 7)];
-            self.statuLabel.attributedText = attributedStr;
+            self.messageLabel.text = @"每日胎教";
+            self.statuLabel.text = model.pregnantWomanNote;
+            CGRect rect = self.statuLabel.frame;
+            rect.size.height = [[self class] addressHeight:model.pregnantWomanNote];
+            self.statuLabel.frame = rect;
         }
-        NSString *str = model.pregnantWomanNote;
-        CGRect rect = [str boundingRectWithSize:CGSizeMake(SCREENWIDTH - 30, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:H12} context:nil];
-        self.statuLabel.frame = CGRectMake(15, 15, rect.size.width, rect.size.height);
-        self.statuLabel.tag = 11;
-        [self layoutIfNeeded];
-        self.model.cellHeight = self.statuLabel.bottom + 15;
     }
+}
+
++(CGFloat)cellHeight:(MessageModel *)model{
+    CGFloat height = [self addressHeight:model.pregnantWomanNote] + 50;
+    return height;
+}
+
++(CGFloat)addressHeight:(NSString *)address{
+    CGRect rect = [address boundingRectWithSize:CGSizeMake(SCREENWIDTH - 30, 1000) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:H12} context:nil];
+    return rect.size.height;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

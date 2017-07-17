@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="395" height="485"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="395" height="485"/>
+                <rect key="frame" x="0.0" y="0.0" width="395" height="484.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="咨询内容" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nww-4u-Awt">
@@ -75,6 +75,7 @@
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="MdF-zb-CNs" secondAttribute="bottom" constant="15" id="0Xw-vE-lsK"/>
                     <constraint firstItem="nfp-r0-UeP" firstAttribute="top" secondItem="5OH-k4-F7D" secondAttribute="bottom" constant="15" id="39T-vJ-fgw"/>
                     <constraint firstAttribute="trailing" secondItem="kvd-BE-RrN" secondAttribute="trailing" constant="15" id="4qj-U8-lTe"/>
                     <constraint firstAttribute="trailing" secondItem="jJU-QB-kQC" secondAttribute="trailing" id="9RP-kv-Ntk"/>
@@ -89,7 +90,6 @@
                     <constraint firstAttribute="trailing" secondItem="MdF-zb-CNs" secondAttribute="trailing" constant="15" id="cw5-Ey-MM5"/>
                     <constraint firstItem="kvd-BE-RrN" firstAttribute="top" secondItem="Nww-4u-Awt" secondAttribute="bottom" constant="15" id="eMQ-ng-pQq"/>
                     <constraint firstAttribute="bottom" secondItem="tKC-SS-KvU" secondAttribute="bottom" constant="187" id="fRI-QR-CTJ"/>
-                    <constraint firstItem="MdF-zb-CNs" firstAttribute="top" secondItem="nfp-r0-UeP" secondAttribute="bottom" id="gTI-9F-fDy"/>
                     <constraint firstItem="tKC-SS-KvU" firstAttribute="top" secondItem="kvd-BE-RrN" secondAttribute="bottom" constant="5" id="mnk-wk-D4h"/>
                     <constraint firstItem="5OH-k4-F7D" firstAttribute="top" secondItem="jJU-QB-kQC" secondAttribute="bottom" constant="15" id="ugI-sZ-Uw3"/>
                     <constraint firstItem="5OH-k4-F7D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="wE2-Jl-LQ7"/>

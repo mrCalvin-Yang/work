@@ -33,11 +33,13 @@
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = NO;
 //    [self showTabBar];
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
+    self.navigationController.navigationBar.hidden = YES;
 }
 
 
@@ -107,18 +109,9 @@
     [super didReceiveMemoryWarning];
 }
 
-- (BOOL)shouldAutorotate{
-    if (self.canLand) {
-        return [super shouldAutorotate];
-    }
-    return YES;
-}
-
-
 
 -(void)setNavigationBar:(UIColor *)color{
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:color] forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
 }
 
 //-(UIStatusBarStyle)preferredStatusBarStyle{
@@ -129,10 +122,12 @@
     
 }
 
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleDefault;
+}
+
 -(void)pushVC:(UIViewController *)vc{
-    vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
-    vc.hidesBottomBarWhenPushed = NO;
 }
 
 -(void)presentVC:(UIViewController *)vc{

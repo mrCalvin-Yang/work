@@ -28,24 +28,11 @@
     [super pushViewController:viewController animated:YES];
 }
 
-#pragma mark - Rotation
-
--(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return UIInterfaceOrientationIsPortrait(interfaceOrientation);
+- (UIViewController *)childViewControllerForStatusBarStyle{
+    return self.topViewController;
 }
 
--(UIInterfaceOrientationMask)supportedInterfaceOrientations
-{
-    return UIInterfaceOrientationMaskPortrait;
-}
-
-- (BOOL)shouldAutorotate
-{
-    return YES;
-}
-
--(UIStatusBarStyle)preferredStatusBarStyle NS_AVAILABLE_IOS(7_0)
+-(UIStatusBarStyle)preferredStatusBarStyle
 {
     if (self.topViewController) {
         return UIStatusBarStyleLightContent;

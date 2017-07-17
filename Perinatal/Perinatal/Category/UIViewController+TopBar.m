@@ -9,7 +9,6 @@
 #import "UIViewController+TopBar.h"
 #import <ReactiveCocoa.h>
 #import "PerinatalLoginVC.h"
-
 #import "BaseNavigationController.h"
 
 
@@ -20,7 +19,7 @@
 }
 
 -(void)showMenu{
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"top_bar_logo"] style:UIBarButtonItemStylePlain target:self action:@selector(clickBack:)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon-Back Red"] style:UIBarButtonItemStylePlain target:self action:@selector(clickBack:)];
     self.navigationItem.leftBarButtonItem.tintColor = [UIColor colorWithRed:235.0/255.0 green:97.0/255.0 blue:0.0 alpha:1];
 
 }
@@ -35,7 +34,7 @@
 }
 
 -(void)showBackWithTintColor:(UIColor *)tintColor{
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(clickBack:)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon-Back Red"] style:UIBarButtonItemStylePlain target:self action:@selector(clickBack:)];
     self.navigationItem.leftBarButtonItem.tintColor = tintColor;
 }
 
@@ -82,23 +81,23 @@
 
 
 -(UIBarButtonItem *)message{
-    UIBarButtonItem *rightBar = [[UIBarButtonItem alloc] initWithTitle:@"消息" style:UIBarButtonItemStylePlain target:self action:@selector(gotoUserCenter:)];
+    UIBarButtonItem *rightBar = [[UIBarButtonItem alloc] initWithImage:V_IMAGE(@"icon-Messages On") style:UIBarButtonItemStylePlain target:self action:@selector(gotoUserCenter:)];
     rightBar.tintColor = white_color;
     return rightBar;
 }
 
 -(UIBarButtonItem *)loginOut{
-    UIBarButtonItem *rightBar = [[UIBarButtonItem alloc] initWithTitle:@"注销" style:UIBarButtonItemStylePlain target:self action:@selector(gotoLogin:)];
+    UIBarButtonItem *rightBar = [[UIBarButtonItem alloc] initWithImage:V_IMAGE(@"icon-Messages On") style:UIBarButtonItemStylePlain target:self action:@selector(gotoLogin:)];
     rightBar.tintColor = white_color;
     return rightBar;
 }
 -(void)showItem{
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStylePlain target:self action:@selector(clickSearch:)];
-    self.navigationItem.rightBarButtonItem.tintColor = orange_color;
+    self.navigationItem.rightBarButtonItem.tintColor = global_color;
 }
 
 -(void)showItemImg{
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:V_IMAGE(@"img") style:UIBarButtonItemStylePlain target:self action:@selector(clickItem:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:V_IMAGE(@"icon-Messages") style:UIBarButtonItemStylePlain target:self action:@selector(clickItem:)];
     self.navigationItem.rightBarButtonItem.tintColor = white_color;
 }
 

@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self showBack];
     self.title = @"能不能吃";
 }
 
