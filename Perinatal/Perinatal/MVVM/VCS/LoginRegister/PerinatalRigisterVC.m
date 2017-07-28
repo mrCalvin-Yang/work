@@ -8,8 +8,11 @@
 
 #import "PerinatalRigisterVC.h"
 #import "InputView.h"
-#import <ReactiveCocoa.h>
 #import "PerinatalPregnacyVC.h"
+#import "SweetTextField.h"
+#import "CountdownButton.h"
+#import "SendMessageViewModel.h"
+#import "RegisterVM.h"
 
 @interface PerinatalRigisterVC ()<UITextFieldDelegate>
 {
@@ -18,7 +21,8 @@
     UIView *_howToFindSmartCardIDView,*bgView;
     UIButton *_helpButton, *_checkButton, *_rigisterBtn;
     
-    UITextField *_NameTextField, *_AreaTextField, *_CardIDTextField, *_CATVIDTextField, *_PasswordTextField, *_ValidatePasswordTextField, *_accountTextField, *_emailFeild;
+    UITextField *_PasswordTextField, *_ValidatePasswordTextField, *_accountTextField, *_emailFeild;
+    SweetTextField *acountView;
     UILabel *_NameLabel, *_AreaTextLabel, *_CardIDLabel, *_CATVIDLabel, *_PasswordLabel, *_ValidatePasswordLabel, *_accountLabel, *_EmailLabel;
     
     NSArray * _areaArray,*_emailArray;
@@ -33,8 +37,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"注册新用户";
     self.navigationController.navigationBar.shadowImage = [UIImage imageWithColor:kLineColor];
+    self.title = @"注册新用户";
+    [self showBack];
     CGFloat y = [self loadRigsterView];
     [self addBttonWithMaxY:y];
 }
@@ -44,8 +49,8 @@
  */
 -(CGFloat)loadRigsterView
 {
-    UIImage *image = V_IMAGE(@"img");
-    CGFloat x = ui_offset*4, y = ui_offset, cx = SCREENWIDTH-2*x, cy = image.size.height + 2*ui_offset;
+    UIImage *image = V_IMAGE(@"icon-Cellphone");
+    CGFloat x = ui_offset*4, y = ui_offset*1.2, cx = SCREENWIDTH-2*x, cy = 48;
 #pragma -mark 邮箱
     InputView *emailView = [[InputView alloc] initWithFrame:CGRectMake(x, y, cx, cy) title:@"" image:image placeHolder:@"输入手机号" isPassword:NO];
     emailView.inputTextfield.keyboardType = UIKeyboardTypePhonePad;
@@ -61,13 +66,30 @@
     [self.view addSubview:lineLabel];
     
 #pragma -mark 用户名
-    image = V_IMAGE(@"img");
+    image = V_IMAGE(@"icon-Verification Code");
     y = CGRectGetMaxY(lineLabel.frame);
-    InputView *acountView = [[InputView alloc] initWithFrame:CGRectMake(x, y, cx, cy) title:@"" image:image placeHolder:@"请输入手机验证码" isPassword:NO];
-    acountView.inputTextfield.keyboardType = UIKeyboardTypePhonePad;
-    acountView.inputTextfield.delegate = self;
+    acountView = [[SweetTextField alloc] initWithFrame:CGRectMake(x, y, cx, cy) fieldStyle:TextFieldStyleCaptcha];
+    acountView.keyboardType = UIKeyboardTypePhonePad;
+    acountView.imgName = @"icon-Verification Code";
+    acountView.placeholder = @"输入手机验证码";
+    acountView.btnSelect = [RACSubject subject];
+    [acountView.btnSelect subscribeNext:^(CountdownButton *x) {
+        [SendMessageViewModel sendMessageWithPhoneNumber:_emailFeild.text sucess:^(NSDictionary *respone) {
+            NSInteger code = [[respone valueForKeyPath:@"code"] integerValue];
+            if (code == 0) {
+                [x timeFailBeginFrom:60];
+#if DEBUG
+                NSDictionary *dic = [respone valueForKeyPath:@"data"];
+                NSString *varificationCode = [dic valueForKeyPath:@"verificationCode"];
+                acountView.text = varificationCode;
+#endif
+            }
+        } fail:^(NSString *error) {
+            
+        }];
+        [x timeFailBeginFrom:60];
+    }];
     [self.view addSubview:acountView];
-    _accountTextField = acountView.inputTextfield;
     
     y = CGRectGetMaxY(acountView.frame);
     lineLabel = [[UILabel alloc] initWithFrame:CGRectMake(x, y, cx, 1)];
@@ -76,7 +98,7 @@
     [self.view addSubview:lineLabel];
     
 #pragma -mark 密码
-    image = V_IMAGE(@"img");
+    image = V_IMAGE(@"icon-Confirm Password");
     y = CGRectGetMaxY(lineLabel.frame);
     InputView *pswView = [[InputView alloc] initWithFrame:CGRectMake(x, y, cx, cy) title:@"" image:image placeHolder:@"请设置密码" isPassword:YES];
     pswView.inputTextfield.delegate = self;
@@ -91,7 +113,6 @@
     [self.view addSubview:lineLabel];
     
 #pragma -mark 确认密码
-    image = V_IMAGE(@"img");
     y = CGRectGetMaxY(lineLabel.frame);
     InputView *vaildPswView = [[InputView alloc] initWithFrame:CGRectMake(x, y, cx, cy) title:@"" image:image placeHolder:@"再次确认密码" isPassword:YES];
     vaildPswView.inputTextfield.delegate = self;
@@ -110,28 +131,20 @@
     
     //阅读label
     x = ui_offset * 4;
-    UILabel *label = [[UILabel alloc] init];
-    label.text = @"使用本平台服务意味着您同意并接受";
-    [label sizeToFit];
-    label.font = H12;
-    label.textColor = kNormalFontColor;
-    label.frame = CGRectMake(x, buttonY + ui_offset*2, label.frame.size.width, label.frame.size.height);
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(x, buttonY + ui_offset*4.7, SCREENWIDTH - 2*x, 16)];
+    NSString *agrement = @"使用本平台服务意味着您同意并接受《孕e家用户协议》";
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:agrement];
+    [str addAttribute:NSForegroundColorAttributeName value:RGBCOLOR(74, 144, 226) range:NSMakeRange(16, 9)];
+    [str addAttribute:NSForegroundColorAttributeName value:kFontColor range:NSMakeRange(0, 16)];
+    label.attributedText = str;
+    label.adjustsFontSizeToFitWidth = YES;
+    label.font = H11;
+//    label.frame = CGRectMake(x, buttonY + ui_offset*4.7, SCREENWIDTH - 2*x, label.frame.size.height);
     [self.view addSubview:label];
     
-    x = label.right + x;
-    UIButton *agreeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    agreeBtn.frame = CGRectMake(x, buttonY + ui_offset*2, 80, label.frame.size.height);
-    agreeBtn.titleLabel.textAlignment = NSTextAlignmentLeft;
-    [agreeBtn setTitle:@"《***用户协议》" forState:UIControlStateNormal];
-    agreeBtn.titleLabel.font = H12;
-    [agreeBtn setTitleColor:kAgreementColor forState:UIControlStateNormal];
-    [agreeBtn setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
-    [[agreeBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        
-    }];
-    [self.view addSubview:agreeBtn];
     
-    return agreeBtn.bottom;
+    
+    return label.bottom;
 }
 
 /**
@@ -143,7 +156,7 @@
 {
     CGFloat x = ui_offset * 4, cx = SCREENWIDTH-2*x, cy = 40;
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(x, y + 4*ui_offset, cx, cy);
+    button.frame = CGRectMake(x, y + 2*ui_offset, cx, cy);
     [button setTitle: @"下一步" forState:UIControlStateNormal];
     //    button.enabled = NO;
     //    button.backgroundColor = [UIColor grayColor];
@@ -159,9 +172,23 @@
 
 
 -(void)onClickedSubmitButton:(UIButton *)btn{
+    if (![_PasswordTextField.text isEqualToString:_ValidatePasswordTextField.text]) {
+        return;
+    }
+    if (!_emailFeild.text) {
+        return;
+    }
+//    [self pushVC:[PerinatalPregnacyVC new]];
+    [RegisterVM registerWithPhoneNumber:_emailFeild.text code:acountView.text password:_ValidatePasswordTextField.text sucess:^(NSDictionary *respone) {
+        NSInteger code = [[respone valueForKeyPath:@"code"] integerValue];
+        if (code == 0) {
+            [self.navigationController pushViewController:[PerinatalPregnacyVC new] animated:YES];
+        }
+        
+    } fail:^(NSString *error) {
+        
+    }];
     
-    
-    [self.navigationController pushViewController:[PerinatalPregnacyVC new] animated:YES];
 }
 
 

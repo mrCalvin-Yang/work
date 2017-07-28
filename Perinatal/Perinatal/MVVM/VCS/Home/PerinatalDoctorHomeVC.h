@@ -7,7 +7,7 @@
 //
 
 #import "BaseVC.h"
-
+#import "DoctorMsgModel.h"
 @interface PerinatalDoctorHomeVC : BaseVC
-
+@property(nonatomic,strong)DoctorMsgModel *doctorMsgModel;
 @end

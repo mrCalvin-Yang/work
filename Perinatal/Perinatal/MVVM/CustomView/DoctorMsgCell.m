@@ -80,7 +80,7 @@
     CGFloat padding15 = 15.f;
     CGFloat padding14 = 14.f;
     CGFloat padding10 = 10.f;
-    CGFloat w = 50;
+    CGFloat w = 70;
     CGFloat h = 20.f;
     [self.topImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.offset(padding15);

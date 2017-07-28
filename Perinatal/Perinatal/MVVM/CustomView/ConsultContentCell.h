@@ -17,6 +17,6 @@
 @property (weak, nonatomic) IBOutlet HXPhotoView *photoView;
 @property (weak, nonatomic) IBOutlet UILabel *photoCountLabel;
 @property (nonatomic,strong) NSArray *images;
-@property (nonnull ,copy) NSString *textViewStr;
+@property (nonatomic ,copy) NSString *textViewStr;
 
 @end

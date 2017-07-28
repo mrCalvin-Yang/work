@@ -30,6 +30,8 @@ typedef NS_ENUM(NSUInteger, TextFieldStyle){
 
 @property(nonatomic, copy)NSString *imgName;
 
+@property(nonatomic, strong)RACSubject *btnSelect;
+
 -(instancetype)initWithFrame:(CGRect)frame fieldStyle:(TextFieldStyle)style;
 
 @end

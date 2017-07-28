@@ -14,8 +14,11 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - BAPickView (1.0.6)
   - IQKeyboardManager (4.0.10)
   - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.12)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -23,19 +26,35 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - UMengUShare/Core (6.4.5):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.4.5)
+  - UMengUShare/Social/ReducedQQ (6.4.5):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedWeChat (6.4.5):
+    - UMengUShare/Core
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - BAPickView
   - IQKeyboardManager
   - Masonry
+  - MBProgressHUD (~> 1.0.0)
+  - MJRefresh
   - ReactiveCocoa (~> 2.5)
+  - UMengUShare/Social/ReducedQQ
+  - UMengUShare/Social/ReducedWeChat
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BAPickView: 51de49055a2bcd6139c99fe8c7ec4bc642a75b26
   IQKeyboardManager: 593ee99b88381f4b9ccb22bd680f22606351bd41
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  UMengUShare: a5711c54e640b04e3048e931d2b88d50f9cfa55c
 
-PODFILE CHECKSUM: 796cc850eefc52bf25baba8a41c16eaa0f9ba2d6
+PODFILE CHECKSUM: c1edcb5ecc505e6369b6ce93b3fbaf4a61640a2e
 
 COCOAPODS: 1.2.1

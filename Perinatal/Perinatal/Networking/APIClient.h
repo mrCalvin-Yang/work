@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-void (^httpFailBlock)(NSString *respone);
+//void (^httpFailBlock)(NSString *respone);
 
 @interface APIClient : AFHTTPSessionManager
 

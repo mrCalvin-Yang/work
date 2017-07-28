@@ -419,7 +419,9 @@
 ///获取Xcode的版本号
 #define XcodeAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
+#define KTerminalUserId @"terminalUserId"
 
+#define KtickNo @"ticketNo"
 
 /* ****************************************************************************************************************** */
 #pragma mark - Constants (宏 常量)

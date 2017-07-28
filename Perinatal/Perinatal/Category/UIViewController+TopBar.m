@@ -10,6 +10,7 @@
 #import <ReactiveCocoa.h>
 #import "PerinatalLoginVC.h"
 #import "BaseNavigationController.h"
+#import "PerinatalMsgVC.h"
 
 
 @implementation UIViewController (TopBar)
@@ -81,7 +82,7 @@
 
 
 -(UIBarButtonItem *)message{
-    UIBarButtonItem *rightBar = [[UIBarButtonItem alloc] initWithImage:V_IMAGE(@"icon-Messages On") style:UIBarButtonItemStylePlain target:self action:@selector(gotoUserCenter:)];
+    UIBarButtonItem *rightBar = [[UIBarButtonItem alloc] initWithImage:V_IMAGE(@"icon-Today") style:UIBarButtonItemStylePlain target:self action:@selector(gotoUserCenter:)];
     rightBar.tintColor = white_color;
     return rightBar;
 }
@@ -107,7 +108,7 @@
     
 }
 -(void)clickItem:(id)sender{
-    
+    [self pushVC:[PerinatalMsgVC new]];
 }
 - (void)gotoUserCenter:(id)sender {
     
@@ -137,24 +138,5 @@
     self.navigationController.navigationBar.shadowImage = [UIImage imageWithColor:kLineColor];
 }
 
-- (void)showTabBar
-
-{
-    if (self.tabBarController.tabBar.hidden == NO)
-    {
-        return;
-    }
-    UIView *contentView;
-    if ([[self.tabBarController.view.subviews objectAtIndex:0] isKindOfClass:[UITabBar class]])
-        
-        contentView = [self.tabBarController.view.subviews objectAtIndex:1];
-    
-    else
-        
-        contentView = [self.tabBarController.view.subviews objectAtIndex:0];
-    contentView.frame = CGRectMake(contentView.bounds.origin.x, contentView.bounds.origin.y,  contentView.bounds.size.width, contentView.bounds.size.height - self.tabBarController.tabBar.frame.size.height);
-    self.tabBarController.tabBar.hidden = NO;
-    
-}
 
 @end

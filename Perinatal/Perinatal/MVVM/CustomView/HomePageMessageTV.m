@@ -48,7 +48,7 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return section == 0 ? 47 : 0.1f;
+    return section == 0 ? 32 : 0.1f;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
@@ -60,9 +60,9 @@
     if (section > 0) {
         return nil;
     }
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 47)];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 32)];
     view.backgroundColor = white_color;
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(15.f, 15.f, SCREENWIDTH-30.f, 17.f)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(15.f, 15, SCREENWIDTH-30.f, 17.f)];
     label.backgroundColor = white_color;
     label.textColor = global_color;
     label.font = H12;

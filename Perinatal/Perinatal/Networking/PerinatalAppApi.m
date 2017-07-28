@@ -21,7 +21,7 @@
 }
 
 +(NSString *)GetFormatURLString:(URLType)type{
-    return nil;
+    return [[PerinatalAppApi defaultApi] getFormatURLString:type];
 }
 
 
@@ -35,7 +35,7 @@
                 pathFormatString = @"users/register?verificationCode=%@";//post
                 break;
             case URLTypeGetVerificationCode:
-                pathFormatString = @"verificationCodes/@%";//get
+                pathFormatString = @"verificationCodes/%@";//get
                 break;
             case URLTypeLogin:
                 pathFormatString = @"users/login";//post
@@ -59,7 +59,7 @@
                 pathFormatString = @"users/cancelFollow/%@";//get
                 break;
             case URLTypeFollows:
-                pathFormatString = @"users/myConcern";//post
+                pathFormatString = @"users/myConcern/%ld/%ld";//get pageno pagesize
                 break;
             case URLTypeForgotPassword:
                 pathFormatString = @"users/forgotPasswor";//post
@@ -70,11 +70,29 @@
             case URLTypeOAuthLogin:
                 pathFormatString = @"users/otherLogin";//post
                 break;
+            case URLTypeOtherBind:
+                pathFormatString = @"users/bind?terminalUserId=%@&phoneNumber=%@&verificationCode=%@";//put
+                break;
+            case URLTypeBindHostpital:
+                pathFormatString = @"users/boundHospital/%@";//put hospitalId
+                break;
+            case URLTypeCurrenHospital:
+                pathFormatString = @"users/cityHospital/%@";//get cityid
+                break;
+            case URLTypeIsFollow:
+                pathFormatString = @"users/whetherFollow/%@";//get doctorid
+                break;
+            case URLTypeUserCenter:
+                pathFormatString = @"users/personalCenter";//get
+                break;
             case URLTypeProblems:
                 pathFormatString = @"questions/%ld/%ld";//get page/size
                 break;
             case URLTypeProblemDetail:
                 pathFormatString = @"questions/detail/%@";//get id
+                break;
+            case URLTypeProblemDetailStatus:
+                pathFormatString = @"questions/problem/%@/%@";//get id status
                 break;
             case URLTypeProblemCategorys:
                 pathFormatString = @"questions/category";//get
@@ -82,8 +100,23 @@
             case URLTypeProblemPublish:
                 pathFormatString = @"questions/add";//post 发布一个新问题
                 break;
+            case URLTypeProblemAdd:
+                pathFormatString = @"questions/additional/%@/%@";//post 追加提问 id content
+                break;
             case URLTypeProblemComment:
                 pathFormatString = @"questions/comments";//post 评价
+                break;
+            case URLTypeProblemLike:
+                pathFormatString = @"questions/like?questionId=%@";//post 评价
+                break;
+            case URLTypeProblemOverTime:
+                pathFormatString = @"questions/like/%@/%@";//post 评价
+                break;
+            case URLTypeProblemDelete:
+                pathFormatString = @"questions/delete/%@";//delete 删除
+                break;
+            case URLTypeProblemConsultation:
+                pathFormatString = @"questions/consultation";//delete 删除
                 break;
             case URLTypeDoctorHots:
                 pathFormatString = @"doctors/hot/%ld/%ld";//page/size get
@@ -94,8 +127,20 @@
             case URLTypeDoctorDetail:
                 pathFormatString = @"doctors/detail/%@";//id
                 break;
+            case URLTypeProblemMyList:
+                pathFormatString = @"questions/questionList/%ld/%ld/%ld";
+                break;
+            case URLTypeProblemMyDetail:
+                pathFormatString = @"questions/problem/%@";
+                break;
             case URLTypeDoctorProblems:
                 pathFormatString = @"doctors/questions/%@/%ld/%ld";//id page  size
+                break;
+            case URLTypePayAli:
+                pathFormatString = @"pay/ali?payNo=%@&questionOrderId=%@&orderType=%@&questionId=%@";
+                break;
+            case URLTypePayWeChat:
+                pathFormatString = @"pay/weChat?payNo=%@&questionOrderId=%@&orderType=%@&questionId=%@";
                 break;
             case URLTypeHomePage:
                 pathFormatString = @"index/%@";

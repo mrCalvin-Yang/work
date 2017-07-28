@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="576" height="201"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="576" height="200"/>
+                <rect key="frame" x="0.0" y="0.0" width="576" height="200.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="248" text="问：宝宝现在6个月12天体重14斤，纯母乳，5个月时发烧感冒，六个月时候又鼻塞流鼻涕，呼吸有赫赫声" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBD-rF-Qie">
@@ -46,9 +46,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="孕妈育儿" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMZ-ki-jvo">
-                        <rect key="frame" x="501" y="170" width="60" height="15"/>
+                        <rect key="frame" x="501" y="169" width="60" height="18"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="3CZ-0V-mtg"/>
+                            <constraint firstAttribute="height" constant="18" id="NbL-Pl-EAS"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,7 +61,6 @@
                     <constraint firstItem="njg-HM-dMX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="5il-0e-RKz"/>
                     <constraint firstAttribute="trailing" secondItem="kBD-rF-Qie" secondAttribute="trailing" constant="15" id="BYH-Bj-RVl"/>
                     <constraint firstItem="Uz6-Ps-2E3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="HWH-il-2Wl"/>
-                    <constraint firstItem="Uz6-Ps-2E3" firstAttribute="top" secondItem="kBD-rF-Qie" secondAttribute="bottom" constant="10" id="XMs-nU-b5x"/>
                     <constraint firstItem="x1u-ns-mFt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="YrO-Le-qlX"/>
                     <constraint firstItem="njg-HM-dMX" firstAttribute="top" secondItem="Uz6-Ps-2E3" secondAttribute="bottom" constant="10" id="mck-LN-QpY"/>
                     <constraint firstItem="kBD-rF-Qie" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="oHm-fT-Zfb"/>

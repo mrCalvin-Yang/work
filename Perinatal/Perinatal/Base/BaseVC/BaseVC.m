@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = white_color;
-    [self setSubviews];
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 -(void)viewDidDisappear:(BOOL)animated{
@@ -63,6 +63,7 @@
         tipButton.backgroundColor = [UIColor clearColor];
         tipButton.titleLabel.numberOfLines = 0;
         [tipButton setTitle:tip forState:UIControlStateNormal];
+        [tipButton setTitleColor:kNormalFontColor forState:UIControlStateNormal];
         tipButton.titleLabel.font = [UIFont systemFontOfSize:14.0f];
         tipButton.tag = TIPBUTTONTAG;
         tipButton.frame = frame;
@@ -77,7 +78,7 @@
 }
 
 -(void)showButtonWithTip:(NSString *)tip clickBlock:(ClickBlock)clickBlock{
-    //[self showButtonWithTip:tip frame:CGRectMake(0, (self.view.height-200)/2, WIDTH, 100) clickBlock:clickBlock];
+    [self showButtonWithTip:tip frame:CGRectMake(0, (self.view.height-200)/2, SCREENWIDTH, 100) clickBlock:clickBlock];
 }
 
 -(void)clickTip:(UIButton *)btn{
@@ -112,6 +113,7 @@
 
 -(void)setNavigationBar:(UIColor *)color{
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:color] forBarMetrics:UIBarMetricsDefault];
+    
 }
 
 //-(UIStatusBarStyle)preferredStatusBarStyle{
@@ -134,6 +136,14 @@
     [self presentViewController:vc animated:YES completion:^{
         
     }];
+}
+
+-(void)getData{
+    
+}
+
+-(void)showToastWithMessage:(NSString *)message detaly:(CGFloat)time{
+    [self.view makeToast:message duration:time position:@"center"];
 }
 
 @end

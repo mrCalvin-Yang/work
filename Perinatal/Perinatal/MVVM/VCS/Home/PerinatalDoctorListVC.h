@@ -7,7 +7,8 @@
 //
 
 #import "BaseVC.h"
-
+#import "QuestionCategoryTypeModel.h"
 @interface PerinatalDoctorListVC : BaseVC
-
+@property(nonatomic,strong)NSArray *typeList;
+@property(nonatomic,strong)QuestionCategoryTypeModel *typeModel;
 @end

@@ -17,6 +17,7 @@
     if (!cell) {
         cell = [[NSBundle mainBundle] loadNibNamed:@"DoctorCell" owner:self options:nil].firstObject;
     }
+    cell.doctorModel = self.dataList[indexPath.row];
     [[cell.askBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(UIButton *x) {
         if (self.btnClickSignal) {
             x.tag = indexPath.row;
@@ -32,7 +33,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return self.dataList.count;
 }
 
 @end

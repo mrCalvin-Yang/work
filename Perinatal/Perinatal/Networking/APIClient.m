@@ -17,7 +17,8 @@
     dispatch_once(&onceToken, ^{
         _sharedClient = [[APIClient alloc] init];
         _sharedClient.requestSerializer.timeoutInterval = 10.0f;
-        _sharedClient.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"text/plain", @"charset=UTF-8", @"application/json", nil];
+        _sharedClient.requestSerializer = [AFJSONRequestSerializer serializer];
+        _sharedClient.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"text/plain", @"charset=UTF-8", @"application/json",@"multipart/form-data",@"image/jpeg", @"image/png", nil];
     });
     return _sharedClient;
 }

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "DoctorMsgModel.h"
 @interface DoctorCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *LogImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
@@ -18,5 +18,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *askLabel;
 @property (weak, nonatomic) IBOutlet UIButton *askBtn;
-
+@property (nonatomic, strong) DoctorMsgModel *doctorModel;
 @end

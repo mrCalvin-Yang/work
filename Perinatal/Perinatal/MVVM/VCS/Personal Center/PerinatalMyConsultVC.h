@@ -9,5 +9,6 @@
 #import "BaseVC.h"
 
 @interface PerinatalMyConsultVC : BaseVC
+@property(nonatomic,assign)NSInteger code;
 
 @end

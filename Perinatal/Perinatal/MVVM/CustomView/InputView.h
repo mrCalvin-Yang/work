@@ -11,6 +11,7 @@
 @interface InputView : UIView
 
 @property(nonnull,nonatomic,strong)UITextField *inputTextfield;
+@property(nonatomic,strong)RACSubject *textfieldSingal;
 
 -(nonnull id)initWithFrame:(CGRect)frame title:(nonnull NSString *)title image:(nonnull UIImage *)image placeHolder:(nonnull NSString *)holder isPassword:(BOOL)bPassword;
 

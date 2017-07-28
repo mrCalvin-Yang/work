@@ -9,7 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>BAPickView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MJRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,12 +47,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>35B09887F7723529B45523247D7E3185</key>
+		<key>04CF549EBEEE7BC87AEAE35397184D94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>586F2DFA9BDCC6675C2546793A69E5CC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5DC492C4D65518C45A00B0CA744BA1A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>757F40F0F9B8E252B4AD671157D3168B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>904F4F27FD314010A3812EB2A9306183</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9AB8BFF76760B8FE3993A7853D3548B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -48,11 +83,6 @@
 			<true/>
 		</dict>
 		<key>9E033EDB5EC0819481B0546434FA577B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F15E1BEAAB352A50EAD4064A8DD68486</key>
 		<dict>
 			<key>primary</key>
 			<true/>

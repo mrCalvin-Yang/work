@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class TQStarRatingView;
+#import "TQStarRatingView.h"
 
 @interface DoctorHomeCell : UITableViewCell
 @property(nonatomic,strong)UIImageView *topImageView;

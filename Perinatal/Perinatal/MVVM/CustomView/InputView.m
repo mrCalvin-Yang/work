@@ -14,13 +14,13 @@
 {
     if (self = [super initWithFrame:frame]) {
         
-        CGFloat x = 0, y = ui_offset, cx = frame.size.width, cy = frame.size.height - 2*ui_offset;
+        CGFloat x = 0, y = ui_offset*1.4, cx = frame.size.width, cy = frame.size.height - 2*ui_offset;
         UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
         imageView.frame = CGRectMake(x, y, image.size.width, image.size.height);
         [self addSubview:imageView];
         
-        x = imageView.right + ui_offset;
-        y = ui_offset;
+        x = imageView.right + ui_offset*1.5;
+        y = ui_offset*1.4;
         
         UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(x, y, cx - x - ui_offset, cy)];
         if (bPassword) {
@@ -29,8 +29,13 @@
         textField.placeholder = holder;
         textField.textAlignment = NSTextAlignmentLeft;
         textField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        textField.font = H12;
+        textField.font = H14;
         [self addSubview:textField];
+        if (self.textfieldSingal) {
+            [[textField rac_textSignal] subscribeNext:^(id x) {
+                [self.textfieldSingal sendNext:x];
+            }];
+        }
         _inputTextfield = textField;
     }
     return self;

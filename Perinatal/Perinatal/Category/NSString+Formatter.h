@@ -20,4 +20,15 @@
 //判断字符串是否为空，为啥是静态函数，是因为防止调用改方法的主体为NULL
 + (BOOL)isBlankString:(NSString *)string;
 
++(NSString *)getDeviceVersion;
+
+//获取今天
+
++(NSString *)getTodayString;
+
++(NSInteger)getTimeDifferenceWithString:(NSString *)time;
+
++ (NSString *)timeWithTimeIntervalString:(NSString *)timeString;
+
 @end
+

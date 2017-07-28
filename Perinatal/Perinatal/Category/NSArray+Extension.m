@@ -23,6 +23,10 @@
     if (array.count<1) {
         return YES;
     }
+    NSDictionary *dic = array[0];
+    if (dic.count == 0) {
+        return YES;
+    }
     return NO;
 }
 

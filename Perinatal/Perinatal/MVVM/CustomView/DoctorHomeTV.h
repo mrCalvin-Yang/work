@@ -7,7 +7,7 @@
 //
 
 #import "BaseTV.h"
-
+#import "DoctorMsgModel.h"
 @interface DoctorHomeTV : BaseTV
-
+@property(nonatomic,strong)DoctorMsgModel *doctorModel;
 @end

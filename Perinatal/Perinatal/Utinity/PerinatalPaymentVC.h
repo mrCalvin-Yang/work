@@ -10,4 +10,14 @@
 
 @interface PerinatalPaymentVC : BaseVC
 
+@property(nonatomic,copy)NSString *questionId;
+
+@property(nonatomic,copy)NSString *questionOrderId;
+
+@property(nonatomic,copy)NSString *payNo;
+
+@property(nonatomic,copy)NSString *cost;
+
+@property(nonatomic,copy)NSString *orderType;
+
 @end

@@ -30,6 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.shadowImage = [UIImage imageWithColor:kLineColor];
+    [self showBack];
     self.title = @"忘记密码";
     CGFloat y = [self loadRigsterView];
     [self addBttonWithMaxY:y];

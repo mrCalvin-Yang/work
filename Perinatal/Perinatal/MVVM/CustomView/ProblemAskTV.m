@@ -8,11 +8,12 @@
 
 #import "ProblemAskTV.h"
 #import "ProblemAskCell.h"
+#import "QuestionModel.h"
 
 @implementation ProblemAskTV
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 2;
+    return self.dataList.count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -26,8 +27,17 @@
         cell = [[NSBundle mainBundle] loadNibNamed:@"ProblemAskCell" owner:self options:nil].firstObject;
     }
     cell.selectionStyle = UITableViewCellEditingStyleNone;
+    QuestionModel *model = self.dataList[indexPath.row];
+    cell.model = model;
     
     return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 0.1f;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 0.1;
 }
 
 @end

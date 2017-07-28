@@ -13,6 +13,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.contentTextview.text = @"请详细输入你想咨询的内容，例如发生部分、主要症状";
+    self.contentTextview.delegate = self;
     [self.photoView removeFromSuperview];
     HXPhotoManager *manager = [[HXPhotoManager alloc] initWithType:HXPhotoManagerSelectedTypePhoto];
     manager.openCamera = YES;
@@ -31,6 +32,40 @@
     }];
 }
 
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView;
+{
+    if (!_textViewStr) {
+       textView.text = @"";
+    }else{
+        textView.text = _textViewStr;
+    }
+    textView.textColor = black_color;
+    return (textView.text.length < 240);
+
+}
+- (BOOL)textViewShouldEndEditing:(UITextView *)textView{
+    _textViewStr = textView.text;
+    return YES;
+}
+
+-(void)textViewDidChange:(UITextView *)textView{
+    NSInteger number = textView.text.length;
+    _textViewStr = textView.text;
+    self.numberLabel.text = [NSString stringWithFormat:@"%ld/240",number];
+}
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    if ([text isEqualToString:@"\n"])
+    {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    else
+    {
+        return YES;
+    }
+}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

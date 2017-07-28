@@ -9,16 +9,18 @@
 #import "IWantConsultTV.h"
 #import "DoctorMsgCell.h"
 #import "ConsultContentCell.h"
+#import "DoctorMsgModel.h"
 
 @implementation IWantConsultTV
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    DoctorMsgModel *model = self.dataList.firstObject;
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-            static NSString *idteifer = @"status";
+            static NSString *idteifer = @"IWantAskFlowCell";
             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:idteifer];
             if (!cell) {
-                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:idteifer];
+                cell = [[[NSBundle mainBundle] loadNibNamed:idteifer owner:self options:nil] firstObject];
             }
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
@@ -29,6 +31,11 @@
                 cell = [[DoctorMsgCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifer];
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
             }
+            cell.nameLabel.text = model.realName;
+            cell.titleLabel.text = model.jobTitle;
+            cell.hospitalLabel.text = model.hospitalName;
+            cell.workLabel.text = model.departmentName;
+            cell.skillLabel.text = string(@"擅长：", model.labelContext);
             return cell;
         }
     }else if(indexPath.section == 1){
@@ -38,7 +45,7 @@
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:idteifer];
             cell.textLabel.text = @"问题类型";
             UILabel *label = [[UILabel alloc] init];
-            label.text = @"孕前保健";
+            label.text = self.typeModel.name;
             label.textColor = RGBCOLOR(153, 153, 153);
             label.font = H14;
             [label sizeToFit];
@@ -125,4 +132,11 @@
     return section == 0 ? 2 : 1;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 1) {
+        
+    }else{
+        [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+    }
+}
 @end

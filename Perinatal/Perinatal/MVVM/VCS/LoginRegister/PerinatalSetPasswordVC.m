@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self showBack];
     self.title = @"忘记密码";
 }
 

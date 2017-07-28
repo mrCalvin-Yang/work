@@ -15,13 +15,25 @@
 #import <ReactiveCocoa.h>
 #import "PerinatalProblemAskVC.h"
 #import "PerinatalProblemDetailVC.h"
-@interface PerinatalHomeVC ()<UIScrollViewDelegate>
+#import "UIViewController+NavBarHidden.h"
+#import "PerinatalLoginVC.h"
+#import "HomePageVM.h"
+#import "PerinatalPregnacyVC.h"
+#import "QuestionModel.h"
+#import "BaseNavigationController.h"
+#import "JZDatepicker.h"
+#import "PerinatalMsgVC.h"
+@interface PerinatalHomeVC ()<LogInVCDelegate>
 {
     NSArray *titleArr, *imageArr;
 }
 @property (nonatomic, strong) UIScrollView *scrollView;
 //测试model
-@property (nonatomic, strong) NSMutableArray *dataArr;
+@property (nonatomic, strong) NSMutableArray *dataArr, *questionArr;
+
+@property (strong, nonatomic) JZDatepicker *datepicker;
+@property(nonatomic,strong)UILabel *dataLabel;
+
 @end
 
 @implementation PerinatalHomeVC
@@ -29,28 +41,77 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.scrollView];
-    [self showMenuMessageAndLoginOut];
+    self.navigationItem.titleView = [UIView new];
+    [self setNavBarBackgroundImage:[UIImage imageWithColor:global_color]];
+    [self setKeyScrollView:self.scrollView scrolOffsetY:200 options:HYHidenControlOptionLeft];
+    self.navigationItem.rightBarButtonItems = @[[self loginOut],[self message]];
+    self.navigationItem.leftBarButtonItems = @[[self dataImage],[self dateLabels]];
     [self getdata];
-    [self setupSubviews];
     
 }
 
+-(UIBarButtonItem *)dataImage{
+    UIBarButtonItem *dateImage = [[UIBarButtonItem alloc] initWithImage:V_IMAGE(@"icon-Calendar") style:UIBarButtonItemStylePlain target:self action:nil];
+    dateImage.tintColor = white_color;
+    return dateImage;
+}
+
+-(UIBarButtonItem *)dateLabels{
+    UIBarButtonItem *dateImage = [[UIBarButtonItem alloc] initWithCustomView:self.dataLabel];
+    return dateImage;
+}
+
+-(UIBarButtonItem *)loginOut{
+    UIBarButtonItem *rightBar = [[UIBarButtonItem alloc] initWithImage:V_IMAGE(@"icon-Messages On") style:UIBarButtonItemStylePlain target:self action:@selector(onClick:)];
+    rightBar.tag = 1000;
+    rightBar.tintColor = white_color;
+    return rightBar;
+}
+-(UIBarButtonItem *)message{
+    UIBarButtonItem *rightBar = [[UIBarButtonItem alloc] initWithImage:V_IMAGE(@"icon-Today") style:UIBarButtonItemStylePlain target:self action:@selector(onClick:)];
+    rightBar.tag = 1001;
+    rightBar.tintColor = white_color;
+    return rightBar;
+}
+
+-(UILabel *)dataLabel{
+    if (!_dataLabel) {
+        _dataLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 80, 17)];
+        _dataLabel.textColor = white_color;
+        _dataLabel.textAlignment = NSTextAlignmentCenter;
+    }
+    return _dataLabel;
+}
+
+
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self setNavigationBar];
+    [self hy_viewWillAppear:animated];
+//    [self pushVC:[PerinatalPregnacyVC new]];
+    
+}
+
+-(void)didRecvLogInResult:(id)sender result:(BOOL)flag{
+    if (flag) {
+        [self getdata];
+    }
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    self.navigationController.navigationBar.hidden = NO;
+    [self hy_viewWillDisappear:animated];
+}
+
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    [self hy_viewDidDisappear:animated];
 }
 //lazy init
 -(UIScrollView *)scrollView{
     if (_scrollView == nil) {
-        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT+64)];
+        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, -64, SCREENWIDTH, SCREENHEIGHT+64)];
         _scrollView.backgroundColor = white_color;
         _scrollView.showsVerticalScrollIndicator = NO;
-        _scrollView.delegate = self;
     }
     return _scrollView;
 }
@@ -64,33 +125,47 @@
     [self.view addSubview:navView];
 }
 
--(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
-    
-}
--(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
-    
-}
 
 
 
 //getdata
 -(void)getdata{
     _dataArr = [NSMutableArray array];
-    MessageModel *model = [[MessageModel alloc] init];
-    model.pregnantWomanNote = @"撒上看见阿哥克里斯朵夫加辣酱豆腐啊深刻的高发家里都快解放啦就是领导机构啦快点放假啊深刻的经历可噶家里都是克己奉公啦家里的咖啡机阿莱克斯的经历法就是打飞机啦啊快速的减肥啊深刻的高发家里都快解放啦就是领导机构啦快点放假啊深刻的经历可噶家里都是克己奉公啦家里的咖啡机阿莱克斯的经历法就是打飞机啦啊快速的减肥";
-    model.sectionNumber = 1;
-    [_dataArr addObject:model];
-    model = [[MessageModel alloc] init];
-    model.pregnantWomanNote = @"撒上看见阿哥克里斯朵夫加辣酱豆腐啊深刻的高发家里都快解放啦就是领导机构啦快点放假啊深刻的经历可噶家里都是克己奉公啦家里的咖啡机阿莱克斯的经历法就是打飞机啦啊快速的减肥";
-    model.sectionNumber = 2;
-    [_dataArr addObject:model];
-    
-    model = [[MessageModel alloc] init];
-    model.pregnantWomanNote = @"撒上看见阿哥克里斯朵夫加辣酱豆腐啊深刻的高发家里都快解放啦就是领导机构啦快点放假啊深刻的";
-    model.sectionNumber = 3;
-    [_dataArr addObject:model];
+    _questionArr = [NSMutableArray array];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    [HomePageVM getHomePageDataSucess:^(NSDictionary *respone) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        if ([[respone valueForKeyPath:@"code"] integerValue] == 0) {
+            NSDictionary *data = [respone valueForKeyPath:@"data"];
+            for (NSInteger i = 1; i < 4; i++) {
+                MessageModel *messageModel = [[MessageModel alloc] initWithDic:data withIndex:i];
+                [_dataArr addObject:messageModel];
+            }
+            NSArray *arr = [data valueForKeyPath:@"questionVoList"];
+            if (![NSArray isEmpty:arr]) {
+                for (NSDictionary *dic in arr) {
+                    QuestionModel *model = [[QuestionModel alloc] initWithDictionary:dic error:nil];
+                    [_questionArr addObject:model];
+                }
+            }
+            [self setupSubviews];
+        }else if ([[respone valueForKeyPath:@"code"] integerValue] == -7){
+            PerinatalLoginVC *login = [PerinatalLoginVC new];
+            login.delegate = self;
+            [self presentVC:[[BaseNavigationController alloc] initWithRootViewController:login]];
+        }else{
+            [self showButtonWithTip:respone[@"message"] clickBlock:^{
+                [self getdata];
+            }];
+        }
+    } fail:^(NSString *error) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [self showButtonWithTip:error clickBlock:^{
+            [self getdata];
+        }];
+    }];
     titleArr = @[@"孕期能否吃",@"孕期忌做",@"孕期该做",@"孕期食谱"];
-    imageArr = @[@"img",@"img",@"img",@"img"];
+    imageArr = @[@"icon-PW Tools1",@"icon-PW Tools2",@"icon-PW Tools3",@"icon-PW Tools4"];
 }
 //addsubviews
 -(void)setupSubviews{
@@ -118,36 +193,45 @@
     lineView.alpha = 0.4;
     [_scrollView addSubview:lineView];
     y = lineView.bottom;
-    
-    UIView *askView = [[UIView alloc] initWithFrame:CGRectMake(0, y, SCREENWIDTH - ui_offset *3, 30)];
-    askView.backgroundColor = white_color;
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(ui_offset *1.5, 10, SCREENWIDTH - ui_offset *3, 30)];
-    label.text = @"孕期问答";
-    label.font = HB16;
-    [label sizeToFit];
-    label.userInteractionEnabled = YES;
-    [askView addSubview:label];
-    [_scrollView addSubview:askView];
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
-    RACSignal *signal = [tap rac_gestureSignal];
-    [signal subscribeNext:^(id x) {
-        [self pushVC:[PerinatalProblemAskVC new]];
-    }];
-    [askView addGestureRecognizer:tap];
-    y = askView.bottom;
-    
-    ProblemAskTV *patv = [[ProblemAskTV alloc] initWithFrame:CGRectMake(0, y, SCREENWIDTH, 0)];
-    patv.showsVerticalScrollIndicator = NO;
-    patv.scrollEnabled = NO;
-    [patv reloadData];
-    patv.height = 350;
-    patv.selectItemSignal = [RACSubject subject];
-    [patv.selectItemSignal subscribeNext:^(id x) {
-        [self pushVC:[PerinatalProblemDetailVC new]];
-    }];
-    [_scrollView addSubview:patv];
-    y = patv.bottom+64;
-    [_scrollView setContentSize:CGSizeMake(SCREENWIDTH, y)];
+    if (_questionArr.count > 0) {
+        UIView *askView = [[UIView alloc] initWithFrame:CGRectMake(0, y, SCREENWIDTH - ui_offset *3, 45)];
+        askView.backgroundColor = white_color;
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(ui_offset *1.5, 11, SCREENWIDTH - ui_offset *3, 22)];
+        label.text = @"孕期问答";
+        label.font = HB16;
+        [label sizeToFit];
+        label.userInteractionEnabled = YES;
+        [askView addSubview:label];
+        [_scrollView addSubview:askView];
+        UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(ui_offset *1.5, askView.bottom, SCREENWIDTH-15, 1)];
+        lineView.backgroundColor = kLineColor;
+        lineView.alpha = 0.4;
+        [_scrollView addSubview:lineView];
+        
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
+        RACSignal *signal = [tap rac_gestureSignal];
+        [signal subscribeNext:^(id x) {
+            [self pushVC:[PerinatalProblemAskVC new]];
+        }];
+        [askView addGestureRecognizer:tap];
+        y = lineView.bottom;
+        
+        ProblemAskTV *patv = [[ProblemAskTV alloc] initWithFrame:CGRectMake(0, y, SCREENWIDTH, 0)];
+        patv.showsVerticalScrollIndicator = NO;
+        patv.scrollEnabled = NO;
+        patv.dataList = _questionArr;
+        [patv reloadData];
+        patv.height = 175*_questionArr.count;
+        patv.selectItemSignal = [RACSubject subject];
+        [patv.selectItemSignal subscribeNext:^(NSIndexPath *x) {
+            PerinatalProblemDetailVC *detaivc = [PerinatalProblemDetailVC new];
+            detaivc.model = _questionArr[x.row];
+            [self pushVC:detaivc];
+        }];
+        [_scrollView addSubview:patv];
+        y = patv.bottom;
+    }
+    [_scrollView setContentSize:CGSizeMake(SCREENWIDTH, y+64+44)];
     
     
 }
@@ -184,14 +268,15 @@
 
 
 -(UIView *)tableHeaderView{
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, -20, SCREENWIDTH, 256)];
-    headerView.backgroundColor = global_color;
+    UIImageView *headerView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT * 0.38)];
+    headerView.userInteractionEnabled = YES;
+    headerView.image = V_IMAGE(@"homeBg");
     UIImageView *imageview = [[UIImageView alloc] initWithFrame:CGRectMake(headerView.center.x - 40, headerView.center.y - 40, 80, 80)];
     imageview.backgroundColor = gray_color;
     imageview.layer.masksToBounds = YES;
     imageview.layer.cornerRadius = 40;
     imageview.layer.borderColor = white_color.CGColor;
-    imageview.layer.borderWidth = 1.0f;
+    imageview.layer.borderWidth = 4.0f;
     [headerView addSubview:imageview];
     
     UILabel *statusLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, imageview.bottom + 5, SCREENWIDTH, 20)];
@@ -200,7 +285,32 @@
     statusLabel.textAlignment = NSTextAlignmentCenter;
     statusLabel.textColor = white_color;
     [headerView addSubview:statusLabel];
+    
+    self.datepicker = [[JZDatepicker alloc] initWithFrame:CGRectMake(0, headerView.bottom - (SCREENWIDTH -10)/7-2, SCREENWIDTH, (SCREENWIDTH -10)/7)];
+    [self.datepicker addTarget:self action:@selector(updateSelectedDate) forControlEvents:UIControlEventValueChanged];
+    
+    [self.datepicker fillDatesFromDate:[NSDate date] numberOfDays:1000];
+    
+    [self.datepicker selectDateAtIndex:0];
+    
+    [self.datepicker setTintColor:[UIColor clearColor]];
+    [headerView addSubview:self.datepicker];
     return headerView;
+}
+
+- (void)updateSelectedDate
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"MM月dd日"];
+    self.dataLabel.text = [formatter stringFromDate:self.datepicker.selectedDate];
+}
+
+-(void)onClick:(UIBarButtonItem *)item{
+    if (item.tag == 1000) {
+        [self pushVC:[PerinatalMsgVC new]];
+    }else{
+        [self.datepicker resetSelectedDate];
+    }
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{

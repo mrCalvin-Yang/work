@@ -17,7 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self showBack];
     self.title = @"消息中心";
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self showWhiteNav];
 }
 
 - (void)didReceiveMemoryWarning {

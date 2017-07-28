@@ -64,4 +64,8 @@ typedef void (^ClickRightBarBlock)(UIBarButtonItem *sender);
 
 -(void)presentVC:(UIViewController *)vc;
 
+-(void)getData;
+
+-(void)showToastWithMessage:(NSString *)message detaly:(CGFloat)time;
+
 @end

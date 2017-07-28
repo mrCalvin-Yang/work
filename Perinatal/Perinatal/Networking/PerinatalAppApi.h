@@ -14,20 +14,34 @@ typedef NS_ENUM(NSInteger,URLType) {
     URLTypePerfectPregnancyInfo,//完善孕期信息
     URLTypeLogin,//登录
     URLTypeOAuthLogin,//第三方登录
+    URLTypeOtherBind,//用户绑定
+    URLTypeBindHostpital,//绑定医院
     URLTypeLoginOut,//注销
     URLTypeForgotPassword,//修改密码／忘记密码
-    URLTypeInfo,//个人中心
+    URLTypeInfo,//个人信息
     URLTypeUpdateInfo,//更新个人信息
     URLTypeUpdateAvatar,//更新头像
     URLTypeFollow,//关注医生
     URLTypeFollows,//关注的医生
     URLTypeUnFollow,//取消关注医生
+    URLTypeCurrenHospital,//当前医院
+    URLTypeUserCenter,//个人中心
+    URLTypeIsFollow,//是否关注
     
     URLTypeProblems,//问题列表
     URLTypeProblemPublish,//发布一个新问题
+    URLTypeProblemAdd,//追加问题
     URLTypeProblemDetail,//问题详情
+    URLTypeProblemMyList,//我的问题列表接口
+    URLTypeProblemMyDetail,//我的问题详情接口
+    URLTypeProblemDetailStatus,//个人问题详情接口
     URLTypeProblemCategorys,//问题类型
     URLTypeProblemComment,//问题评价
+    URLTypeProblemDelete,//问题删除
+    URLTypeProblemLike,//添加点赞接口
+    URLTypeProblemOverTime,//提问超时
+    URLTypeProblemConsultation,//是否有咨询问题
+    
     
     /*
      // 医生
@@ -40,6 +54,9 @@ typedef NS_ENUM(NSInteger,URLType) {
     URLTypeDoctorLimitFree,//限时免费医生列表
     URLTypeDoctorDetail,//医生详情信息
     URLTypeDoctorProblems,//获取医生所回答问题数据
+    
+    URLTypePayAli,
+    URLTypePayWeChat,
     
     URLTypeHomePage//主页
 };

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "QuestionModel.h"
 @interface ProblemAskCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *ProblemLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *userImageView;
@@ -16,5 +16,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *sourceLabel;
 @property (strong, nonatomic) UILabel *payLabel;
 @property (strong, nonatomic) UIImageView *CombinedImageView;
-
+@property (nonatomic,strong)QuestionModel *model;
 @end

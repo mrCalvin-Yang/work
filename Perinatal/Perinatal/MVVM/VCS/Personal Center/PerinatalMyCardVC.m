@@ -7,9 +7,10 @@
 //
 
 #import "PerinatalMyCardVC.h"
+#import "MyHospitalCardTV.h"
 
 @interface PerinatalMyCardVC ()
-
+@property(nonatomic,strong)MyHospitalCardTV *cardTv;
 @end
 
 @implementation PerinatalMyCardVC
@@ -18,7 +19,15 @@
     [super viewDidLoad];
     [self showBack];
     [self showTitle:@"我的就诊卡"];
-    // Do any additional setup after loading the view.
+    [self.view addSubview:self.cardTv];
+}
+
+-(MyHospitalCardTV *)cardTv{
+    if (!_cardTv) {
+        _cardTv = [[MyHospitalCardTV alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
+        _cardTv.backgroundColor = kBackColor;
+    }
+    return _cardTv;
 }
 
 - (void)didReceiveMemoryWarning {

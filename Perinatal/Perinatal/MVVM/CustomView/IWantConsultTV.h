@@ -7,7 +7,9 @@
 //
 
 #import "BaseTV.h"
+#import "QuestionCategoryTypeModel.h"
 
 @interface IWantConsultTV : BaseTV
-
+@property(nonatomic,strong)QuestionCategoryTypeModel *typeModel;
+@property(nonatomic,strong)NSArray *typeList;
 @end

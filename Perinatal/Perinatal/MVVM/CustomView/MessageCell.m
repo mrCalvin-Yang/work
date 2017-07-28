@@ -31,9 +31,9 @@
         _model = model;
         if (model.sectionNumber == 1) {
             self.messageLabel.text = @"今日胎宝宝发育变化";
-            self.statuLabel.text = model.pregnantWomanNote;
+            self.statuLabel.text = model.babyNote;
             CGRect rect = self.statuLabel.frame;
-            rect.size.height = [[self class] addressHeight:model.pregnantWomanNote];
+            rect.size.height = [[self class] addressHeight:model.babyNote];
             self.statuLabel.frame = rect;
             
         }else if (model.sectionNumber == 2){
@@ -44,16 +44,24 @@
             self.statuLabel.frame = rect;
         }else{
             self.messageLabel.text = @"每日胎教";
-            self.statuLabel.text = model.pregnantWomanNote;
+            self.statuLabel.text = model.prenatalEducation;
             CGRect rect = self.statuLabel.frame;
-            rect.size.height = [[self class] addressHeight:model.pregnantWomanNote];
+            rect.size.height = [[self class] addressHeight:model.prenatalEducation];
             self.statuLabel.frame = rect;
         }
     }
 }
 
 +(CGFloat)cellHeight:(MessageModel *)model{
-    CGFloat height = [self addressHeight:model.pregnantWomanNote] + 50;
+    CGFloat height = 0;
+    if (model.sectionNumber == 1) {
+        height = [self addressHeight:model.babyNote] + 50;
+    }else if (model.sectionNumber == 2){
+        height = [self addressHeight:model.pregnantWomanNote]+ 50;
+    }else{
+       height = [self addressHeight:model.prenatalEducation] + 50;
+    }
+    
     return height;
 }
 

@@ -11,14 +11,14 @@
 
 @interface HttpRequest : NSObject
 
-+(void) sendGetUrl:(NSString *)url headBody1:(NSString *)body1 headBody2:(NSString *)body2 param:(NSDictionary *)param success:(void (^)(id respone))success fail:(void (^)(NSString *respone))fail;
++(void) sendGetUrl:(NSString *)url param:(NSDictionary *)param success:(void (^)(id respone))success fail:(void (^)(NSString *respone))fail;
 
 
-+(void) sendPostUrl:(NSString *)url param:(NSDictionary *)param headBody1:(NSString *)body1 headBody2:(NSString *)body2 success:(void (^)(id respone))success fail:(void (^)(NSString *respone))fail;
++(void) sendPostUrl:(NSString *)url param:(NSDictionary *)param success:(void (^)(id respone))success fail:(void (^)(NSString *respone))fail;
 
-+(void) sendPutUrl:(NSString *)url param:(NSDictionary *)param headBody1:(NSString *)body1 headBody2:(NSString *)body2 success:(void (^)(id respone))success fail:(void (^)(NSString *respone))fail;
++(void) sendPutUrl:(NSString *)url param:(NSDictionary *)param success:(void (^)(id respone))success fail:(void (^)(NSString *respone))fail;
 
-+(void) sendDelete:(NSString *) url param:(NSDictionary *)param headBody1:(NSString *)body1 headBody2:(NSString *)body2 success:(void (^)(id respone))success fail:(void (^)(NSString *respone))fail;
++(void) sendDelete:(NSString *) url param:(NSDictionary *)param success:(void (^)(id respone))success fail:(void (^)(NSString *respone))fail;
 /**
  *  传入返回报文，检查是否操作成功  通过比较status是否为0  判断是否成功
  *

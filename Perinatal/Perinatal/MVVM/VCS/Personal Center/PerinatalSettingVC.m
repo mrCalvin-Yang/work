@@ -7,9 +7,10 @@
 //
 
 #import "PerinatalSettingVC.h"
+#import "SettingTV.h"
 
 @interface PerinatalSettingVC ()
-
+@property(nonatomic, strong) SettingTV *settingTV;
 @end
 
 @implementation PerinatalSettingVC
@@ -18,7 +19,16 @@
     [super viewDidLoad];
     [self showTitle:@"设置"];
     [self showBack];
-    // Do any additional setup after loading the view.
+    [self.view addSubview:self.settingTV];
+    
+}
+
+-(SettingTV *)settingTV{
+    if (!_settingTV) {
+        _settingTV = [[SettingTV alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT) style:UITableViewStyleGrouped];
+        _settingTV.backgroundColor = kBackColor;
+    }
+    return _settingTV;
 }
 
 - (void)didReceiveMemoryWarning {

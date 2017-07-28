@@ -24,6 +24,19 @@
     }];
 }
 
+-(void)setDoctorModel:(DoctorMsgModel *)doctorModel{
+    if (doctorModel) {
+        _doctorModel = doctorModel;
+        self.nameLabel.text = doctorModel.realName;
+        self.titleLabel.text = doctorModel.jobTitle;
+        self.hospitalLabel.text = doctorModel.hospitalName;
+        self.workLabel.text = doctorModel.departmentName;
+        self.skillLabel.text = string(@"擅长：", doctorModel.labelContext);
+        self.priceLabel.text = string(@"¥ ", doctorModel.cost.stringValue);
+        self.askLabel.text = string(doctorModel.answerNum, @"个回答");
+    }
+}
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

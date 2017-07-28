@@ -7,9 +7,10 @@
 //
 
 #import "PrinatalCareDcotorVC.h"
+#import "DoctorMsgTV.h"
 
 @interface PrinatalCareDcotorVC ()
-
+@property(nonatomic,strong)DoctorMsgTV *messageTv;
 @end
 
 @implementation PrinatalCareDcotorVC
@@ -18,6 +19,15 @@
     [super viewDidLoad];
     [self showBack];
     [self showTitle:@"关注的医生"];
+    [self.view addSubview:self.messageTv];
+}
+
+-(DoctorMsgTV *)messageTv{
+    if (!_messageTv) {
+        _messageTv = [[DoctorMsgTV alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
+        
+    }
+    return _messageTv;
 }
 
 - (void)didReceiveMemoryWarning {

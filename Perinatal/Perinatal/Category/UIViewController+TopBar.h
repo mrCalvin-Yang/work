@@ -60,6 +60,6 @@
 
 - (void)showWhiteNav;
 
-- (void)showTabBar;
+
 
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "DoctorHomeCell.h"
-#import "TQStarRatingView.h"
 
 @interface DoctorHomeCell ()
 @property(nonatomic,strong)UIView *starView;
@@ -46,6 +45,7 @@
     self.nameLabel.textColor = kImportFontColor;
     self.nameLabel.text = @"张小蕾";
     [self.nameLabel sizeToFit];
+    self.nameLabel.adjustsFontSizeToFitWidth = YES;
     [self.contentView addSubview:self.nameLabel];
 }
 
@@ -102,7 +102,7 @@
     CGFloat padding15 = 15.f;
     CGFloat padding14 = 14.f;
     CGFloat padding10 = 10.f;
-    CGFloat w = 50;
+    CGFloat w = 80;
     CGFloat h = 20.f;
     [self.topImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.offset(padding15);

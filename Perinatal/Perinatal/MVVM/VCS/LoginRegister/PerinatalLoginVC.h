@@ -18,6 +18,6 @@
 
 @property(nonatomic, weak) id<LogInVCDelegate>delegate;
 -(void)onClickedLoginBtn;
--(void)login:(NSString*)account password:(NSString*)password;
+//-(void)login:(NSString*)account password:(NSString*)password;
 
 @end

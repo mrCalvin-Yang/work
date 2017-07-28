@@ -14,6 +14,8 @@
 #import "PerinatalSettingVC.h"
 #import "PerinatalMyIncomeVC.h"
 #import "PerinatalMyConsultVC.h"
+#import "QuestionConsultationVM.h"
+#import "PerinatalCurrentHospitalVC.h"
 
 @interface PerinatalPersonalCenterVC ()<UITableViewDelegate,UITableViewDataSource,CLLocationManagerDelegate>
 {
@@ -172,13 +174,13 @@
     if (indexPath.section == 0) {
         switch (indexPath.row) {
             case 0:
-                
+                [self pushVC:[PerinatalCurrentHospitalVC new]];
                 break;
             case 1:
                 [self pushVC:[PerinatalMyCardVC new]];
                 break;
             case 2:
-                
+                [self haveConsultation];
                 break;
             case 3:
                 [self pushVC:[PrinatalCareDcotorVC new]];
@@ -192,6 +194,21 @@
     }else{
         [self pushVC:[PerinatalSettingVC new]];
     }
+}
+
+-(void)haveConsultation{
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    [QuestionConsultationVM haveConsultationsucess:^(NSDictionary *respone) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        PerinatalMyConsultVC *vc = [PerinatalMyConsultVC new];
+        vc.code = [respone[@"code"] integerValue];
+        [self pushVC:vc];
+    } fail:^(NSString *error) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        PerinatalMyConsultVC *vc = [PerinatalMyConsultVC new];
+        vc.code = 0;
+        [self pushVC:vc];
+    }];
 }
 
 

@@ -88,14 +88,14 @@
     [headerView addSubview:view];
     
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(15, view.y - 45, 200, 30)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(15, view.y - 45, 200, 22)];
     label.text = @"中山大学附属医院";
     label.textColor = white_color;
     label.font = HB16;
     [headerView addSubview:label];
-    
-    UIImageView *imgview = [[UIImageView alloc] initWithFrame:CGRectMake(SCREENWIDTH - 40, view.y - 40, 30, 30)];
-    imgview.backgroundColor = red_color;
+    UIImage *image = V_IMAGE(@"icon-Arrow White");
+    UIImageView *imgview = [[UIImageView alloc] initWithFrame:CGRectMake(SCREENWIDTH - image.size.width - 15, label.y, image.size.width, image.size.height)];
+    imgview.image = image;
     [headerView addSubview:imgview];
     
     UIButton *clickbtn = [UIButton buttonWithType:UIButtonTypeCustom];

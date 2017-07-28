@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D345E3F1F0F1933005AC0D8 /* HYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D345E3C1F0F1933005AC0D8 /* HYViewController.m */; };
 		0D345E401F0F1933005AC0D8 /* UIViewController+NavBarHidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D345E3E1F0F1933005AC0D8 /* UIViewController+NavBarHidden.m */; };
-		0D345E431F0F237A005AC0D8 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D345E421F0F237A005AC0D8 /* MessageModel.m */; };
 		0D345E461F0F5231005AC0D8 /* MedicalServiceCV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D345E451F0F5231005AC0D8 /* MedicalServiceCV.m */; };
-		0D345E491F0F5885005AC0D8 /* CanEatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D345E481F0F5885005AC0D8 /* CanEatModel.m */; };
 		0D345E4C1F0F5E53005AC0D8 /* TitleBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D345E4B1F0F5E53005AC0D8 /* TitleBtn.m */; };
 		0D345E4F1F0F6F7B005AC0D8 /* ProblemAskTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D345E4E1F0F6F7B005AC0D8 /* ProblemAskTV.m */; };
 		0D345E531F0F6FFD005AC0D8 /* ProblemAskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D345E511F0F6FFD005AC0D8 /* ProblemAskCell.m */; };
@@ -42,12 +40,93 @@
 		0D6D0BF91F1240730059ACE6 /* libIQKeyboardManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6D0BF61F1240730059ACE6 /* libIQKeyboardManager.a */; };
 		0D6D0BFA1F1240730059ACE6 /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6D0BF71F1240730059ACE6 /* libReactiveCocoa.a */; };
 		0D6D0BFD1F127C400059ACE6 /* PerinatalCanEatCV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D0BFC1F127C400059ACE6 /* PerinatalCanEatCV.m */; };
+		0D9523C01F1E4EBF00503AFD /* CanEatVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523BF1F1E4EBF00503AFD /* CanEatVM.m */; };
+		0D9523C41F1E552900503AFD /* ProblemAskListVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523C31F1E552900503AFD /* ProblemAskListVM.m */; };
+		0D9523C71F1E583F00503AFD /* ProblemAskDetailVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523C61F1E583F00503AFD /* ProblemAskDetailVM.m */; };
+		0D9523CA1F1E595600503AFD /* PerinatalAskCategoryVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523C91F1E595600503AFD /* PerinatalAskCategoryVM.m */; };
+		0D9523CD1F1E5B4900503AFD /* DoctorListVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523CC1F1E5B4900503AFD /* DoctorListVM.m */; };
+		0D9523D01F1E5D5E00503AFD /* DoctorDetailVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523CF1F1E5D5E00503AFD /* DoctorDetailVM.m */; };
+		0D9523D31F1E5E4A00503AFD /* DoctorQuestionList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523D21F1E5E4A00503AFD /* DoctorQuestionList.m */; };
+		0D9523D61F1E5F8400503AFD /* CityListVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523D51F1E5F8400503AFD /* CityListVM.m */; };
+		0D9523D91F1EE78900503AFD /* DoctorAddFollowVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523D81F1EE78900503AFD /* DoctorAddFollowVM.m */; };
+		0D9523DF1F1EE89A00503AFD /* OtherUserBindVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523DE1F1EE89A00503AFD /* OtherUserBindVM.m */; };
+		0D9523E61F1EECAE00503AFD /* PayVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523E51F1EECAE00503AFD /* PayVM.m */; };
+		0D9523E91F1EF1E100503AFD /* QuestionAddVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523E81F1EF1E100503AFD /* QuestionAddVM.m */; };
+		0D9523EC1F1F062800503AFD /* QuestionsCommentVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523EB1F1F062800503AFD /* QuestionsCommentVM.m */; };
+		0D9523EF1F1F089E00503AFD /* QuestionAddAginVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523EE1F1F089E00503AFD /* QuestionAddAginVM.m */; };
+		0D9523F21F1F0BEF00503AFD /* QuestionConsultationVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523F11F1F0BEF00503AFD /* QuestionConsultationVM.m */; };
+		0D9523F51F1F0D3900503AFD /* QuestionDeleteVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523F41F1F0D3900503AFD /* QuestionDeleteVM.m */; };
+		0D9523F81F1F400B00503AFD /* UserCenterInfoVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523F71F1F400B00503AFD /* UserCenterInfoVM.m */; };
+		0D9524231F1F469200503AFD /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523FB1F1F469200503AFD /* JSONKeyMapper.m */; };
+		0D9524241F1F469200503AFD /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523FD1F1F469200503AFD /* JSONModel.m */; };
+		0D9524251F1F469200503AFD /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9523FF1F1F469200503AFD /* JSONModelClassProperty.m */; };
+		0D9524261F1F469200503AFD /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524011F1F469200503AFD /* JSONModelError.m */; };
+		0D9524271F1F469200503AFD /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524031F1F469200503AFD /* JSONValueTransformer.m */; };
+		0D9524431F20501C00503AFD /* QuestionCategoryTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D95243D1F20501C00503AFD /* QuestionCategoryTypeModel.m */; };
+		0D9524441F20501C00503AFD /* QuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D95243F1F20501C00503AFD /* QuestionModel.m */; };
+		0D9524451F20501C00503AFD /* PerinatalUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524421F20501C00503AFD /* PerinatalUserModel.m */; };
+		0D9524481F20503900503AFD /* DoctorMsgModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524471F20503900503AFD /* DoctorMsgModel.m */; };
+		0D95244B1F2053B800503AFD /* CanEatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D95244A1F2053B800503AFD /* CanEatModel.m */; };
+		0D95244E1F21A3A400503AFD /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0D95244C1F21A3A300503AFD /* AlipaySDK.bundle */; };
+		0D95244F1F21A3A400503AFD /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D95244D1F21A3A300503AFD /* AlipaySDK.framework */; };
+		0D9524511F21A43C00503AFD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D9524501F21A43C00503AFD /* libz.tbd */; };
+		0D9524531F21A44F00503AFD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D9524521F21A44F00503AFD /* libc++.tbd */; };
+		0D9524551F21A45F00503AFD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D9524541F21A45F00503AFD /* CoreMotion.framework */; };
+		0D9524571F21A47100503AFD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D9524561F21A47100503AFD /* CFNetwork.framework */; };
+		0D9524591F21A55500503AFD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D9524581F21A55500503AFD /* CoreTelephony.framework */; };
+		0D95245B1F21A55E00503AFD /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D95245A1F21A55E00503AFD /* CoreText.framework */; };
+		0D9524621F21A66B00503AFD /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D95245D1F21A66B00503AFD /* libWeChatSDK.a */; };
+		0D9524631F21A66B00503AFD /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0D95245E1F21A66B00503AFD /* README.txt */; };
+		0D9524651F21A69000503AFD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D9524641F21A69000503AFD /* Security.framework */; };
+		0D9524681F21D74700503AFD /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524671F21D74700503AFD /* Toast+UIView.m */; };
+		0D95246C1F21DD5C00503AFD /* WeixinPayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D95246B1F21DD5C00503AFD /* WeixinPayModel.m */; };
+		0D95246F1F21EA3400503AFD /* QuestionAddResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D95246E1F21EA3400503AFD /* QuestionAddResultModel.m */; };
+		0D9524721F24D89E00503AFD /* DoctorMsgTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524711F24D89E00503AFD /* DoctorMsgTV.m */; };
+		0D9524751F24DA8E00503AFD /* SettingTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524741F24DA8E00503AFD /* SettingTV.m */; };
+		0D9524791F24E25800503AFD /* IWantAskFlowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524771F24E25800503AFD /* IWantAskFlowCell.m */; };
+		0D95247A1F24E25800503AFD /* IWantAskFlowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D9524781F24E25800503AFD /* IWantAskFlowCell.xib */; };
+		0D95247E1F24EC8E00503AFD /* MyCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D95247C1F24EC8D00503AFD /* MyCardCell.m */; };
+		0D95247F1F24EC8E00503AFD /* MyCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D95247D1F24EC8D00503AFD /* MyCardCell.xib */; };
+		0D9524821F24F14A00503AFD /* MyHospitalCardTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524811F24F14A00503AFD /* MyHospitalCardTV.m */; };
+		0D9524851F25998100503AFD /* PerinatalMyConsultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524841F25998100503AFD /* PerinatalMyConsultView.m */; };
+		0D9524891F25D97300503AFD /* MyconsultationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524871F25D97300503AFD /* MyconsultationCell.m */; };
+		0D95248A1F25D97300503AFD /* MyconsultationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D9524881F25D97300503AFD /* MyconsultationCell.xib */; };
+		0D95248D1F25E2F300503AFD /* MyConsultationTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D95248C1F25E2F300503AFD /* MyConsultationTV.m */; };
+		0D9524911F25EB2300503AFD /* MyconsultaitonControlCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D95248F1F25EB2300503AFD /* MyconsultaitonControlCell.m */; };
+		0D9524921F25EB2300503AFD /* MyconsultaitonControlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D9524901F25EB2300503AFD /* MyconsultaitonControlCell.xib */; };
+		0D9524951F25F9EB00503AFD /* MyConsultationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524941F25F9EB00503AFD /* MyConsultationModel.m */; };
+		0D95249B1F26EA4B00503AFD /* MyConsultationDetailTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D95249A1F26EA4B00503AFD /* MyConsultationDetailTV.m */; };
+		0D95249F1F26EA8D00503AFD /* MyconsultationDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D95249D1F26EA8D00503AFD /* MyconsultationDetailCell.m */; };
+		0D9524A01F26EA8D00503AFD /* MyconsultationDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D95249E1F26EA8D00503AFD /* MyconsultationDetailCell.xib */; };
+		0D9524A81F28239500503AFD /* JZDatepicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524A31F28239500503AFD /* JZDatepicker.m */; };
+		0D9524A91F28239500503AFD /* JZDatepickerCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524A51F28239500503AFD /* JZDatepickerCircleView.m */; };
+		0D9524AA1F28239500503AFD /* JZDatepickerDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524A71F28239500503AFD /* JZDatepickerDateView.m */; };
+		0D9524AD1F283FD400503AFD /* DoctorAskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524AC1F283FD400503AFD /* DoctorAskCell.m */; };
+		0D9524B01F287A7700503AFD /* QuestionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524AF1F287A7700503AFD /* QuestionHeadView.m */; };
+		0D9524B31F287BD800503AFD /* QuestionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524B21F287BD800503AFD /* QuestionFooterView.m */; };
+		0D9524B61F288DD500503AFD /* ProblemDetailIsPayTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524B51F288DD500503AFD /* ProblemDetailIsPayTV.m */; };
+		0D9524B91F2891FF00503AFD /* DoctorAskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524B81F2891FF00503AFD /* DoctorAskModel.m */; };
+		0D9524BC1F28947600503AFD /* UserAskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524BB1F28947600503AFD /* UserAskCell.m */; };
+		0D9524BE1F28DBDD00503AFD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D9524BD1F28DBDD00503AFD /* CoreLocation.framework */; };
+		0D9524C11F28E05200503AFD /* CurrentHospitalTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524C01F28E05200503AFD /* CurrentHospitalTV.m */; };
+		0D9524C51F28EC8800503AFD /* PerinatalMyConsultDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524C41F28EC8800503AFD /* PerinatalMyConsultDetailVC.m */; };
+		0D9524C81F28ED0700503AFD /* PerinatalMyConsultIsPayDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524C71F28ED0700503AFD /* PerinatalMyConsultIsPayDetailVC.m */; };
+		0D9524CB1F28ED2300503AFD /* PerinatalMyConsultNoPayDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524CA1F28ED2300503AFD /* PerinatalMyConsultNoPayDetailVC.m */; };
+		0D9524CE1F28ED4100503AFD /* PerinatalMyConsultNoAskDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524CD1F28ED4100503AFD /* PerinatalMyConsultNoAskDetailVC.m */; };
+		0D9524D11F28ED5E00503AFD /* PerinatalMyConsultAskedDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524D01F28ED5E00503AFD /* PerinatalMyConsultAskedDetailVC.m */; };
+		0D9524D41F28ED7F00503AFD /* PerinatalMyConsultIsCommentDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524D31F28ED7F00503AFD /* PerinatalMyConsultIsCommentDetailVC.m */; };
+		0D9524D71F28ED9800503AFD /* PerinatalMyConsultClosedDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524D61F28ED9800503AFD /* PerinatalMyConsultClosedDetailVC.m */; };
+		0D9524DA1F28EDAB00503AFD /* PerinatalMyConsultShutDownDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524D91F28EDAB00503AFD /* PerinatalMyConsultShutDownDetailVC.m */; };
+		0D9524DD1F2980CE00503AFD /* SystemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524DC1F2980CE00503AFD /* SystemCell.m */; };
+		0D9524E01F29F35500503AFD /* ProblemMyDetailIsPayTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524DF1F29F35500503AFD /* ProblemMyDetailIsPayTV.m */; };
+		0D9524E21F2A280B00503AFD /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D9524E11F2A280B00503AFD /* city.json */; };
+		0D9524E41F2A281A00503AFD /* cityList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D9524E31F2A281A00503AFD /* cityList.plist */; };
+		0D9524E71F2A285000503AFD /* CitySelectTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9524E61F2A285000503AFD /* CitySelectTV.m */; };
 		0D9825B81F0E447A0077FF5C /* HomePageMessageTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9825B71F0E447A0077FF5C /* HomePageMessageTV.m */; };
 		0D9825BB1F0E460D0077FF5C /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9825BA1F0E460D0077FF5C /* MessageCell.m */; };
 		0D9865521F1870C4008497DE /* TextfildCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9865501F1870C4008497DE /* TextfildCell.m */; };
 		0D9865531F1870C4008497DE /* TextfildCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D9865511F1870C4008497DE /* TextfildCell.xib */; };
 		0D9865561F187474008497DE /* PerinatalUserMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9865551F187474008497DE /* PerinatalUserMessageVC.m */; };
-		0D9865591F189D62008497DE /* PerinatalUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9865581F189D62008497DE /* PerinatalUserModel.m */; };
 		0D98655C1F1B46C8008497DE /* PerinatalMyCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D98655B1F1B46C8008497DE /* PerinatalMyCardVC.m */; };
 		0D98655F1F1B4723008497DE /* PrinatalCareDcotorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D98655E1F1B4723008497DE /* PrinatalCareDcotorVC.m */; };
 		0D9865621F1B47AC008497DE /* PerinatalMyConsultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9865611F1B47AC008497DE /* PerinatalMyConsultVC.m */; };
@@ -191,6 +270,15 @@
 		0DAF3ECC1F17678D001831B5 /* DoctorHomeTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF3ECB1F17678D001831B5 /* DoctorHomeTV.m */; };
 		0DAF3ECF1F177783001831B5 /* AlerVCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF3ECE1F177783001831B5 /* AlerVCManager.m */; };
 		0DAF3ED51F1778D4001831B5 /* ProblemDetailTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF3ED41F1778D4001831B5 /* ProblemDetailTV.m */; };
+		0DDF206B1F1DA7ED002A8129 /* CountdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF206A1F1DA7ED002A8129 /* CountdownButton.m */; };
+		0DDF20771F1DCA4C002A8129 /* SendMessageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF20761F1DCA4C002A8129 /* SendMessageViewModel.m */; };
+		0DDF207A1F1DCA79002A8129 /* RegisterVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF20791F1DCA79002A8129 /* RegisterVM.m */; };
+		0DDF207D1F1DCAC7002A8129 /* LoginVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF207C1F1DCAC7002A8129 /* LoginVM.m */; };
+		0DDF20801F1DCB73002A8129 /* PerfectPernacyVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF207F1F1DCB73002A8129 /* PerfectPernacyVM.m */; };
+		0DDF20831F1DCB98002A8129 /* SetPasswordVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF20821F1DCB98002A8129 /* SetPasswordVM.m */; };
+		0DDF20861F1DCEAF002A8129 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF20851F1DCEAF002A8129 /* NSString+Base64.m */; };
+		0DDF20891F1DFE28002A8129 /* HomePageVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF20881F1DFE28002A8129 /* HomePageVM.m */; };
+		0DDF208D1F1E0670002A8129 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF208C1F1E0670002A8129 /* MessageModel.m */; };
 		CA1CB7F10AAE7E647BA2EFBE /* libPods-Perinatal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9CCDFECBE787CF89732E70 /* libPods-Perinatal.a */; };
 /* End PBXBuildFile section */
 
@@ -217,12 +305,8 @@
 		0D345E3C1F0F1933005AC0D8 /* HYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYViewController.m; sourceTree = "<group>"; };
 		0D345E3D1F0F1933005AC0D8 /* UIViewController+NavBarHidden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavBarHidden.h"; sourceTree = "<group>"; };
 		0D345E3E1F0F1933005AC0D8 /* UIViewController+NavBarHidden.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavBarHidden.m"; sourceTree = "<group>"; };
-		0D345E411F0F237A005AC0D8 /* MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
-		0D345E421F0F237A005AC0D8 /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
 		0D345E441F0F5231005AC0D8 /* MedicalServiceCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalServiceCV.h; sourceTree = "<group>"; };
 		0D345E451F0F5231005AC0D8 /* MedicalServiceCV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalServiceCV.m; sourceTree = "<group>"; };
-		0D345E471F0F5885005AC0D8 /* CanEatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanEatModel.h; sourceTree = "<group>"; };
-		0D345E481F0F5885005AC0D8 /* CanEatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanEatModel.m; sourceTree = "<group>"; };
 		0D345E4A1F0F5E53005AC0D8 /* TitleBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleBtn.h; sourceTree = "<group>"; };
 		0D345E4B1F0F5E53005AC0D8 /* TitleBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleBtn.m; sourceTree = "<group>"; };
 		0D345E4D1F0F6F7B005AC0D8 /* ProblemAskTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemAskTV.h; sourceTree = "<group>"; };
@@ -288,6 +372,154 @@
 		0D6D0BF71F1240730059ACE6 /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "Pods/../build/Debug-iphoneos/ReactiveCocoa/libReactiveCocoa.a"; sourceTree = "<group>"; };
 		0D6D0BFB1F127C400059ACE6 /* PerinatalCanEatCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalCanEatCV.h; sourceTree = "<group>"; };
 		0D6D0BFC1F127C400059ACE6 /* PerinatalCanEatCV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalCanEatCV.m; sourceTree = "<group>"; };
+		0D9523BE1F1E4EBF00503AFD /* CanEatVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanEatVM.h; sourceTree = "<group>"; };
+		0D9523BF1F1E4EBF00503AFD /* CanEatVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanEatVM.m; sourceTree = "<group>"; };
+		0D9523C21F1E552900503AFD /* ProblemAskListVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemAskListVM.h; sourceTree = "<group>"; };
+		0D9523C31F1E552900503AFD /* ProblemAskListVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemAskListVM.m; sourceTree = "<group>"; };
+		0D9523C51F1E583F00503AFD /* ProblemAskDetailVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemAskDetailVM.h; sourceTree = "<group>"; };
+		0D9523C61F1E583F00503AFD /* ProblemAskDetailVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemAskDetailVM.m; sourceTree = "<group>"; };
+		0D9523C81F1E595600503AFD /* PerinatalAskCategoryVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalAskCategoryVM.h; sourceTree = "<group>"; };
+		0D9523C91F1E595600503AFD /* PerinatalAskCategoryVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalAskCategoryVM.m; sourceTree = "<group>"; };
+		0D9523CB1F1E5B4900503AFD /* DoctorListVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorListVM.h; sourceTree = "<group>"; };
+		0D9523CC1F1E5B4900503AFD /* DoctorListVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorListVM.m; sourceTree = "<group>"; };
+		0D9523CE1F1E5D5E00503AFD /* DoctorDetailVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorDetailVM.h; sourceTree = "<group>"; };
+		0D9523CF1F1E5D5E00503AFD /* DoctorDetailVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorDetailVM.m; sourceTree = "<group>"; };
+		0D9523D11F1E5E4A00503AFD /* DoctorQuestionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorQuestionList.h; sourceTree = "<group>"; };
+		0D9523D21F1E5E4A00503AFD /* DoctorQuestionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorQuestionList.m; sourceTree = "<group>"; };
+		0D9523D41F1E5F8400503AFD /* CityListVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListVM.h; sourceTree = "<group>"; };
+		0D9523D51F1E5F8400503AFD /* CityListVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListVM.m; sourceTree = "<group>"; };
+		0D9523D71F1EE78900503AFD /* DoctorAddFollowVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorAddFollowVM.h; sourceTree = "<group>"; };
+		0D9523D81F1EE78900503AFD /* DoctorAddFollowVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorAddFollowVM.m; sourceTree = "<group>"; };
+		0D9523DD1F1EE89A00503AFD /* OtherUserBindVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherUserBindVM.h; sourceTree = "<group>"; };
+		0D9523DE1F1EE89A00503AFD /* OtherUserBindVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherUserBindVM.m; sourceTree = "<group>"; };
+		0D9523E41F1EECAE00503AFD /* PayVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayVM.h; sourceTree = "<group>"; };
+		0D9523E51F1EECAE00503AFD /* PayVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayVM.m; sourceTree = "<group>"; };
+		0D9523E71F1EF1E100503AFD /* QuestionAddVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionAddVM.h; sourceTree = "<group>"; };
+		0D9523E81F1EF1E100503AFD /* QuestionAddVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionAddVM.m; sourceTree = "<group>"; };
+		0D9523EA1F1F062800503AFD /* QuestionsCommentVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsCommentVM.h; sourceTree = "<group>"; };
+		0D9523EB1F1F062800503AFD /* QuestionsCommentVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsCommentVM.m; sourceTree = "<group>"; };
+		0D9523ED1F1F089E00503AFD /* QuestionAddAginVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionAddAginVM.h; sourceTree = "<group>"; };
+		0D9523EE1F1F089E00503AFD /* QuestionAddAginVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionAddAginVM.m; sourceTree = "<group>"; };
+		0D9523F01F1F0BEF00503AFD /* QuestionConsultationVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionConsultationVM.h; sourceTree = "<group>"; };
+		0D9523F11F1F0BEF00503AFD /* QuestionConsultationVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionConsultationVM.m; sourceTree = "<group>"; };
+		0D9523F31F1F0D3900503AFD /* QuestionDeleteVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionDeleteVM.h; sourceTree = "<group>"; };
+		0D9523F41F1F0D3900503AFD /* QuestionDeleteVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionDeleteVM.m; sourceTree = "<group>"; };
+		0D9523F61F1F400B00503AFD /* UserCenterInfoVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterInfoVM.h; sourceTree = "<group>"; };
+		0D9523F71F1F400B00503AFD /* UserCenterInfoVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterInfoVM.m; sourceTree = "<group>"; };
+		0D9523FA1F1F469200503AFD /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		0D9523FB1F1F469200503AFD /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		0D9523FC1F1F469200503AFD /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		0D9523FD1F1F469200503AFD /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		0D9523FE1F1F469200503AFD /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		0D9523FF1F1F469200503AFD /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		0D9524001F1F469200503AFD /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		0D9524011F1F469200503AFD /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		0D9524021F1F469200503AFD /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		0D9524031F1F469200503AFD /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		0D95243C1F20501C00503AFD /* QuestionCategoryTypeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionCategoryTypeModel.h; sourceTree = "<group>"; };
+		0D95243D1F20501C00503AFD /* QuestionCategoryTypeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionCategoryTypeModel.m; sourceTree = "<group>"; };
+		0D95243E1F20501C00503AFD /* QuestionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionModel.h; sourceTree = "<group>"; };
+		0D95243F1F20501C00503AFD /* QuestionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionModel.m; sourceTree = "<group>"; };
+		0D9524411F20501C00503AFD /* PerinatalUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalUserModel.h; sourceTree = "<group>"; };
+		0D9524421F20501C00503AFD /* PerinatalUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalUserModel.m; sourceTree = "<group>"; };
+		0D9524461F20503900503AFD /* DoctorMsgModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorMsgModel.h; sourceTree = "<group>"; };
+		0D9524471F20503900503AFD /* DoctorMsgModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorMsgModel.m; sourceTree = "<group>"; };
+		0D9524491F2053B800503AFD /* CanEatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanEatModel.h; sourceTree = "<group>"; };
+		0D95244A1F2053B800503AFD /* CanEatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanEatModel.m; sourceTree = "<group>"; };
+		0D95244C1F21A3A300503AFD /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		0D95244D1F21A3A300503AFD /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		0D9524501F21A43C00503AFD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0D9524521F21A44F00503AFD /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0D9524541F21A45F00503AFD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		0D9524561F21A47100503AFD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0D9524581F21A55500503AFD /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0D95245A1F21A55E00503AFD /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		0D95245D1F21A66B00503AFD /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		0D95245E1F21A66B00503AFD /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		0D95245F1F21A66B00503AFD /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		0D9524601F21A66B00503AFD /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		0D9524611F21A66B00503AFD /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		0D9524641F21A69000503AFD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0D9524661F21D74700503AFD /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
+		0D9524671F21D74700503AFD /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
+		0D95246A1F21DD5C00503AFD /* WeixinPayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeixinPayModel.h; sourceTree = "<group>"; };
+		0D95246B1F21DD5C00503AFD /* WeixinPayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeixinPayModel.m; sourceTree = "<group>"; };
+		0D95246D1F21EA3400503AFD /* QuestionAddResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionAddResultModel.h; sourceTree = "<group>"; };
+		0D95246E1F21EA3400503AFD /* QuestionAddResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionAddResultModel.m; sourceTree = "<group>"; };
+		0D9524701F24D89E00503AFD /* DoctorMsgTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorMsgTV.h; sourceTree = "<group>"; };
+		0D9524711F24D89E00503AFD /* DoctorMsgTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorMsgTV.m; sourceTree = "<group>"; };
+		0D9524731F24DA8E00503AFD /* SettingTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTV.h; sourceTree = "<group>"; };
+		0D9524741F24DA8E00503AFD /* SettingTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTV.m; sourceTree = "<group>"; };
+		0D9524761F24E25800503AFD /* IWantAskFlowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWantAskFlowCell.h; sourceTree = "<group>"; };
+		0D9524771F24E25800503AFD /* IWantAskFlowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWantAskFlowCell.m; sourceTree = "<group>"; };
+		0D9524781F24E25800503AFD /* IWantAskFlowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IWantAskFlowCell.xib; sourceTree = "<group>"; };
+		0D95247B1F24EC8D00503AFD /* MyCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCardCell.h; sourceTree = "<group>"; };
+		0D95247C1F24EC8D00503AFD /* MyCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCardCell.m; sourceTree = "<group>"; };
+		0D95247D1F24EC8D00503AFD /* MyCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCardCell.xib; sourceTree = "<group>"; };
+		0D9524801F24F14A00503AFD /* MyHospitalCardTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHospitalCardTV.h; sourceTree = "<group>"; };
+		0D9524811F24F14A00503AFD /* MyHospitalCardTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHospitalCardTV.m; sourceTree = "<group>"; };
+		0D9524831F25998100503AFD /* PerinatalMyConsultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalMyConsultView.h; sourceTree = "<group>"; };
+		0D9524841F25998100503AFD /* PerinatalMyConsultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalMyConsultView.m; sourceTree = "<group>"; };
+		0D9524861F25D97300503AFD /* MyconsultationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyconsultationCell.h; sourceTree = "<group>"; };
+		0D9524871F25D97300503AFD /* MyconsultationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyconsultationCell.m; sourceTree = "<group>"; };
+		0D9524881F25D97300503AFD /* MyconsultationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyconsultationCell.xib; sourceTree = "<group>"; };
+		0D95248B1F25E2F300503AFD /* MyConsultationTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyConsultationTV.h; sourceTree = "<group>"; };
+		0D95248C1F25E2F300503AFD /* MyConsultationTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyConsultationTV.m; sourceTree = "<group>"; };
+		0D95248E1F25EB2300503AFD /* MyconsultaitonControlCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyconsultaitonControlCell.h; sourceTree = "<group>"; };
+		0D95248F1F25EB2300503AFD /* MyconsultaitonControlCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyconsultaitonControlCell.m; sourceTree = "<group>"; };
+		0D9524901F25EB2300503AFD /* MyconsultaitonControlCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyconsultaitonControlCell.xib; sourceTree = "<group>"; };
+		0D9524931F25F9EB00503AFD /* MyConsultationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyConsultationModel.h; sourceTree = "<group>"; };
+		0D9524941F25F9EB00503AFD /* MyConsultationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyConsultationModel.m; sourceTree = "<group>"; };
+		0D9524991F26EA4B00503AFD /* MyConsultationDetailTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyConsultationDetailTV.h; sourceTree = "<group>"; };
+		0D95249A1F26EA4B00503AFD /* MyConsultationDetailTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyConsultationDetailTV.m; sourceTree = "<group>"; };
+		0D95249C1F26EA8D00503AFD /* MyconsultationDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyconsultationDetailCell.h; sourceTree = "<group>"; };
+		0D95249D1F26EA8D00503AFD /* MyconsultationDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyconsultationDetailCell.m; sourceTree = "<group>"; };
+		0D95249E1F26EA8D00503AFD /* MyconsultationDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyconsultationDetailCell.xib; sourceTree = "<group>"; };
+		0D9524A21F28239500503AFD /* JZDatepicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZDatepicker.h; sourceTree = "<group>"; };
+		0D9524A31F28239500503AFD /* JZDatepicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZDatepicker.m; sourceTree = "<group>"; };
+		0D9524A41F28239500503AFD /* JZDatepickerCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZDatepickerCircleView.h; sourceTree = "<group>"; };
+		0D9524A51F28239500503AFD /* JZDatepickerCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZDatepickerCircleView.m; sourceTree = "<group>"; };
+		0D9524A61F28239500503AFD /* JZDatepickerDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZDatepickerDateView.h; sourceTree = "<group>"; };
+		0D9524A71F28239500503AFD /* JZDatepickerDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZDatepickerDateView.m; sourceTree = "<group>"; };
+		0D9524AB1F283FD400503AFD /* DoctorAskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorAskCell.h; sourceTree = "<group>"; };
+		0D9524AC1F283FD400503AFD /* DoctorAskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorAskCell.m; sourceTree = "<group>"; };
+		0D9524AE1F287A7700503AFD /* QuestionHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionHeadView.h; sourceTree = "<group>"; };
+		0D9524AF1F287A7700503AFD /* QuestionHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionHeadView.m; sourceTree = "<group>"; };
+		0D9524B11F287BD800503AFD /* QuestionFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionFooterView.h; sourceTree = "<group>"; };
+		0D9524B21F287BD800503AFD /* QuestionFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionFooterView.m; sourceTree = "<group>"; };
+		0D9524B41F288DD500503AFD /* ProblemDetailIsPayTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemDetailIsPayTV.h; sourceTree = "<group>"; };
+		0D9524B51F288DD500503AFD /* ProblemDetailIsPayTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemDetailIsPayTV.m; sourceTree = "<group>"; };
+		0D9524B71F2891FF00503AFD /* DoctorAskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorAskModel.h; sourceTree = "<group>"; };
+		0D9524B81F2891FF00503AFD /* DoctorAskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorAskModel.m; sourceTree = "<group>"; };
+		0D9524BA1F28947600503AFD /* UserAskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAskCell.h; sourceTree = "<group>"; };
+		0D9524BB1F28947600503AFD /* UserAskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAskCell.m; sourceTree = "<group>"; };
+		0D9524BD1F28DBDD00503AFD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0D9524BF1F28E05200503AFD /* CurrentHospitalTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentHospitalTV.h; sourceTree = "<group>"; };
+		0D9524C01F28E05200503AFD /* CurrentHospitalTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentHospitalTV.m; sourceTree = "<group>"; };
+		0D9524C31F28EC8800503AFD /* PerinatalMyConsultDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalMyConsultDetailVC.h; sourceTree = "<group>"; };
+		0D9524C41F28EC8800503AFD /* PerinatalMyConsultDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalMyConsultDetailVC.m; sourceTree = "<group>"; };
+		0D9524C61F28ED0700503AFD /* PerinatalMyConsultIsPayDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalMyConsultIsPayDetailVC.h; sourceTree = "<group>"; };
+		0D9524C71F28ED0700503AFD /* PerinatalMyConsultIsPayDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalMyConsultIsPayDetailVC.m; sourceTree = "<group>"; };
+		0D9524C91F28ED2300503AFD /* PerinatalMyConsultNoPayDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalMyConsultNoPayDetailVC.h; sourceTree = "<group>"; };
+		0D9524CA1F28ED2300503AFD /* PerinatalMyConsultNoPayDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalMyConsultNoPayDetailVC.m; sourceTree = "<group>"; };
+		0D9524CC1F28ED4100503AFD /* PerinatalMyConsultNoAskDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalMyConsultNoAskDetailVC.h; sourceTree = "<group>"; };
+		0D9524CD1F28ED4100503AFD /* PerinatalMyConsultNoAskDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalMyConsultNoAskDetailVC.m; sourceTree = "<group>"; };
+		0D9524CF1F28ED5E00503AFD /* PerinatalMyConsultAskedDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalMyConsultAskedDetailVC.h; sourceTree = "<group>"; };
+		0D9524D01F28ED5E00503AFD /* PerinatalMyConsultAskedDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalMyConsultAskedDetailVC.m; sourceTree = "<group>"; };
+		0D9524D21F28ED7F00503AFD /* PerinatalMyConsultIsCommentDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalMyConsultIsCommentDetailVC.h; sourceTree = "<group>"; };
+		0D9524D31F28ED7F00503AFD /* PerinatalMyConsultIsCommentDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalMyConsultIsCommentDetailVC.m; sourceTree = "<group>"; };
+		0D9524D51F28ED9800503AFD /* PerinatalMyConsultClosedDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalMyConsultClosedDetailVC.h; sourceTree = "<group>"; };
+		0D9524D61F28ED9800503AFD /* PerinatalMyConsultClosedDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalMyConsultClosedDetailVC.m; sourceTree = "<group>"; };
+		0D9524D81F28EDAB00503AFD /* PerinatalMyConsultShutDownDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalMyConsultShutDownDetailVC.h; sourceTree = "<group>"; };
+		0D9524D91F28EDAB00503AFD /* PerinatalMyConsultShutDownDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalMyConsultShutDownDetailVC.m; sourceTree = "<group>"; };
+		0D9524DB1F2980CE00503AFD /* SystemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemCell.h; sourceTree = "<group>"; };
+		0D9524DC1F2980CE00503AFD /* SystemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemCell.m; sourceTree = "<group>"; };
+		0D9524DE1F29F35500503AFD /* ProblemMyDetailIsPayTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemMyDetailIsPayTV.h; sourceTree = "<group>"; };
+		0D9524DF1F29F35500503AFD /* ProblemMyDetailIsPayTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemMyDetailIsPayTV.m; sourceTree = "<group>"; };
+		0D9524E11F2A280B00503AFD /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
+		0D9524E31F2A281A00503AFD /* cityList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityList.plist; sourceTree = "<group>"; };
+		0D9524E51F2A285000503AFD /* CitySelectTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySelectTV.h; sourceTree = "<group>"; };
+		0D9524E61F2A285000503AFD /* CitySelectTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySelectTV.m; sourceTree = "<group>"; };
 		0D9825B61F0E447A0077FF5C /* HomePageMessageTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageMessageTV.h; sourceTree = "<group>"; };
 		0D9825B71F0E447A0077FF5C /* HomePageMessageTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageMessageTV.m; sourceTree = "<group>"; };
 		0D9825B91F0E460D0077FF5C /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
@@ -299,8 +531,6 @@
 		0D9865511F1870C4008497DE /* TextfildCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextfildCell.xib; sourceTree = "<group>"; };
 		0D9865541F187474008497DE /* PerinatalUserMessageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalUserMessageVC.h; sourceTree = "<group>"; };
 		0D9865551F187474008497DE /* PerinatalUserMessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalUserMessageVC.m; sourceTree = "<group>"; };
-		0D9865571F189D62008497DE /* PerinatalUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalUserModel.h; sourceTree = "<group>"; };
-		0D9865581F189D62008497DE /* PerinatalUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalUserModel.m; sourceTree = "<group>"; };
 		0D98655A1F1B46C8008497DE /* PerinatalMyCardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerinatalMyCardVC.h; sourceTree = "<group>"; };
 		0D98655B1F1B46C8008497DE /* PerinatalMyCardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerinatalMyCardVC.m; sourceTree = "<group>"; };
 		0D98655D1F1B4723008497DE /* PrinatalCareDcotorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinatalCareDcotorVC.h; sourceTree = "<group>"; };
@@ -516,6 +746,24 @@
 		0DAF3ECE1F177783001831B5 /* AlerVCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlerVCManager.m; sourceTree = "<group>"; };
 		0DAF3ED31F1778D4001831B5 /* ProblemDetailTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemDetailTV.h; sourceTree = "<group>"; };
 		0DAF3ED41F1778D4001831B5 /* ProblemDetailTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemDetailTV.m; sourceTree = "<group>"; };
+		0DDF20691F1DA7ED002A8129 /* CountdownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownButton.h; sourceTree = "<group>"; };
+		0DDF206A1F1DA7ED002A8129 /* CountdownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownButton.m; sourceTree = "<group>"; };
+		0DDF20751F1DCA4C002A8129 /* SendMessageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendMessageViewModel.h; sourceTree = "<group>"; };
+		0DDF20761F1DCA4C002A8129 /* SendMessageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendMessageViewModel.m; sourceTree = "<group>"; };
+		0DDF20781F1DCA79002A8129 /* RegisterVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterVM.h; sourceTree = "<group>"; };
+		0DDF20791F1DCA79002A8129 /* RegisterVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterVM.m; sourceTree = "<group>"; };
+		0DDF207B1F1DCAC7002A8129 /* LoginVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVM.h; sourceTree = "<group>"; };
+		0DDF207C1F1DCAC7002A8129 /* LoginVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVM.m; sourceTree = "<group>"; };
+		0DDF207E1F1DCB73002A8129 /* PerfectPernacyVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerfectPernacyVM.h; sourceTree = "<group>"; };
+		0DDF207F1F1DCB73002A8129 /* PerfectPernacyVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerfectPernacyVM.m; sourceTree = "<group>"; };
+		0DDF20811F1DCB98002A8129 /* SetPasswordVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetPasswordVM.h; sourceTree = "<group>"; };
+		0DDF20821F1DCB98002A8129 /* SetPasswordVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetPasswordVM.m; sourceTree = "<group>"; };
+		0DDF20841F1DCEAF002A8129 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		0DDF20851F1DCEAF002A8129 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		0DDF20871F1DFE28002A8129 /* HomePageVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageVM.h; sourceTree = "<group>"; };
+		0DDF20881F1DFE28002A8129 /* HomePageVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageVM.m; sourceTree = "<group>"; };
+		0DDF208B1F1E0670002A8129 /* MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
+		0DDF208C1F1E0670002A8129 /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
 		5C9CCDFECBE787CF89732E70 /* libPods-Perinatal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Perinatal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA4F21DE2541C2181D451DC /* Pods-Perinatal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perinatal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Perinatal/Pods-Perinatal.release.xcconfig"; sourceTree = "<group>"; };
 		A919F081B6DC270552D83B8E /* Pods-Perinatal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perinatal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Perinatal/Pods-Perinatal.debug.xcconfig"; sourceTree = "<group>"; };
@@ -526,11 +774,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D9524BE1F28DBDD00503AFD /* CoreLocation.framework in Frameworks */,
+				0D9524651F21A69000503AFD /* Security.framework in Frameworks */,
+				0D95245B1F21A55E00503AFD /* CoreText.framework in Frameworks */,
+				0D9524591F21A55500503AFD /* CoreTelephony.framework in Frameworks */,
+				0D9524511F21A43C00503AFD /* libz.tbd in Frameworks */,
+				0D9524571F21A47100503AFD /* CFNetwork.framework in Frameworks */,
+				0D9524621F21A66B00503AFD /* libWeChatSDK.a in Frameworks */,
+				0D9524551F21A45F00503AFD /* CoreMotion.framework in Frameworks */,
+				0D9524531F21A44F00503AFD /* libc++.tbd in Frameworks */,
 				0DAF3EB61F170B80001831B5 /* Photos.framework in Frameworks */,
 				0D6D0BF81F1240730059ACE6 /* libAFNetworking.a in Frameworks */,
 				0D6D0BF91F1240730059ACE6 /* libIQKeyboardManager.a in Frameworks */,
 				0D6D0BFA1F1240730059ACE6 /* libReactiveCocoa.a in Frameworks */,
 				CA1CB7F10AAE7E647BA2EFBE /* libPods-Perinatal.a in Frameworks */,
+				0D95244F1F21A3A400503AFD /* AlipaySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +883,8 @@
 				0D3DE5EA1F0E27EB00680C56 /* NSArray+Extension.m */,
 				0D3DE5EB1F0E27EB00680C56 /* NSString+Formatter.h */,
 				0D3DE5EC1F0E27EB00680C56 /* NSString+Formatter.m */,
+				0DDF20841F1DCEAF002A8129 /* NSString+Base64.h */,
+				0DDF20851F1DCEAF002A8129 /* NSString+Base64.m */,
 				0D3DE5ED1F0E27EB00680C56 /* UIColor+Extension.h */,
 				0D3DE5EE1F0E27EB00680C56 /* UIColor+Extension.m */,
 				0D3DE5EF1F0E27EB00680C56 /* UIImage+Extension.h */,
@@ -637,6 +897,8 @@
 				0D3DE5F61F0E27EB00680C56 /* UIView+frameAccessor.m */,
 				0D3DE5F71F0E27EB00680C56 /* UIViewController+TopBar.h */,
 				0D3DE5F81F0E27EB00680C56 /* UIViewController+TopBar.m */,
+				0D9524661F21D74700503AFD /* Toast+UIView.h */,
+				0D9524671F21D74700503AFD /* Toast+UIView.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -705,6 +967,8 @@
 				0DAF3ECE1F177783001831B5 /* AlerVCManager.m */,
 				0DAB019B1F13168E0077F63C /* SweetTextField.h */,
 				0DAB019C1F13168E0077F63C /* SweetTextField.m */,
+				0DDF20691F1DA7ED002A8129 /* CountdownButton.h */,
+				0DDF206A1F1DA7ED002A8129 /* CountdownButton.m */,
 				0DAF3EB71F1725AC001831B5 /* PerinatalPaymentVC.h */,
 				0DAF3EB81F1725AC001831B5 /* PerinatalPaymentVC.m */,
 			);
@@ -714,6 +978,8 @@
 		0D3DE61D1F0E29E100680C56 /* Supporting File */ = {
 			isa = PBXGroup;
 			children = (
+				0D9524E31F2A281A00503AFD /* cityList.plist */,
+				0D9524E11F2A280B00503AFD /* city.json */,
 				0D3DE61F1F0E29E100680C56 /* Info.plist */,
 				0D3DE61E1F0E29E100680C56 /* Assets.xcassets */,
 				0D3DE6201F0E29E100680C56 /* LaunchScreen.storyboard */,
@@ -734,10 +1000,10 @@
 		0D3DE6281F0E2A8A00680C56 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				0DDF20701F1DCA4C002A8129 /* ViewModel */,
 				0D3DE6321F0E316300680C56 /* VCS */,
 				0D3DE6291F0E2A8A00680C56 /* CustomView */,
 				0D3DE62A1F0E2A8A00680C56 /* Model */,
-				0D3DE62B1F0E2A8A00680C56 /* ViewModel */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -747,12 +1013,22 @@
 			children = (
 				0DAB019E1F1323A00077F63C /* InputView.h */,
 				0DAB019F1F1323A00077F63C /* InputView.m */,
+				0D9524AE1F287A7700503AFD /* QuestionHeadView.h */,
+				0D9524AF1F287A7700503AFD /* QuestionHeadView.m */,
+				0D9524B11F287BD800503AFD /* QuestionFooterView.h */,
+				0D9524B21F287BD800503AFD /* QuestionFooterView.m */,
+				0D9524831F25998100503AFD /* PerinatalMyConsultView.h */,
+				0D9524841F25998100503AFD /* PerinatalMyConsultView.m */,
 				0D9825B61F0E447A0077FF5C /* HomePageMessageTV.h */,
 				0D9825B71F0E447A0077FF5C /* HomePageMessageTV.m */,
 				0D345E4D1F0F6F7B005AC0D8 /* ProblemAskTV.h */,
 				0D345E4E1F0F6F7B005AC0D8 /* ProblemAskTV.m */,
 				0DAF3ED31F1778D4001831B5 /* ProblemDetailTV.h */,
 				0DAF3ED41F1778D4001831B5 /* ProblemDetailTV.m */,
+				0D9524B41F288DD500503AFD /* ProblemDetailIsPayTV.h */,
+				0D9524B51F288DD500503AFD /* ProblemDetailIsPayTV.m */,
+				0D9524DE1F29F35500503AFD /* ProblemMyDetailIsPayTV.h */,
+				0D9524DF1F29F35500503AFD /* ProblemMyDetailIsPayTV.m */,
 				0D345E441F0F5231005AC0D8 /* MedicalServiceCV.h */,
 				0D345E451F0F5231005AC0D8 /* MedicalServiceCV.m */,
 				0D6D0BFB1F127C400059ACE6 /* PerinatalCanEatCV.h */,
@@ -765,6 +1041,20 @@
 				0DAF3DE31F15FB7B001831B5 /* IWantConsultTV.m */,
 				0DAF3ECA1F17678D001831B5 /* DoctorHomeTV.h */,
 				0DAF3ECB1F17678D001831B5 /* DoctorHomeTV.m */,
+				0D9524701F24D89E00503AFD /* DoctorMsgTV.h */,
+				0D9524711F24D89E00503AFD /* DoctorMsgTV.m */,
+				0D9524801F24F14A00503AFD /* MyHospitalCardTV.h */,
+				0D9524811F24F14A00503AFD /* MyHospitalCardTV.m */,
+				0D95248B1F25E2F300503AFD /* MyConsultationTV.h */,
+				0D95248C1F25E2F300503AFD /* MyConsultationTV.m */,
+				0D9524991F26EA4B00503AFD /* MyConsultationDetailTV.h */,
+				0D95249A1F26EA4B00503AFD /* MyConsultationDetailTV.m */,
+				0D9524731F24DA8E00503AFD /* SettingTV.h */,
+				0D9524741F24DA8E00503AFD /* SettingTV.m */,
+				0D9524BF1F28E05200503AFD /* CurrentHospitalTV.h */,
+				0D9524C01F28E05200503AFD /* CurrentHospitalTV.m */,
+				0D9524E51F2A285000503AFD /* CitySelectTV.h */,
+				0D9524E61F2A285000503AFD /* CitySelectTV.m */,
 				0DAF3DD71F14C357001831B5 /* DoctorCell.h */,
 				0DAF3DD81F14C357001831B5 /* DoctorCell.m */,
 				0DAF3DD91F14C357001831B5 /* DoctorCell.xib */,
@@ -791,6 +1081,27 @@
 				0D98654F1F1870C4008497DE /* TextfildCell.h */,
 				0D9865501F1870C4008497DE /* TextfildCell.m */,
 				0D9865511F1870C4008497DE /* TextfildCell.xib */,
+				0D9524761F24E25800503AFD /* IWantAskFlowCell.h */,
+				0D9524771F24E25800503AFD /* IWantAskFlowCell.m */,
+				0D9524781F24E25800503AFD /* IWantAskFlowCell.xib */,
+				0D95247B1F24EC8D00503AFD /* MyCardCell.h */,
+				0D95247C1F24EC8D00503AFD /* MyCardCell.m */,
+				0D95247D1F24EC8D00503AFD /* MyCardCell.xib */,
+				0D9524861F25D97300503AFD /* MyconsultationCell.h */,
+				0D9524871F25D97300503AFD /* MyconsultationCell.m */,
+				0D9524881F25D97300503AFD /* MyconsultationCell.xib */,
+				0D95249C1F26EA8D00503AFD /* MyconsultationDetailCell.h */,
+				0D95249D1F26EA8D00503AFD /* MyconsultationDetailCell.m */,
+				0D95249E1F26EA8D00503AFD /* MyconsultationDetailCell.xib */,
+				0D95248E1F25EB2300503AFD /* MyconsultaitonControlCell.h */,
+				0D95248F1F25EB2300503AFD /* MyconsultaitonControlCell.m */,
+				0D9524901F25EB2300503AFD /* MyconsultaitonControlCell.xib */,
+				0D9524AB1F283FD400503AFD /* DoctorAskCell.h */,
+				0D9524AC1F283FD400503AFD /* DoctorAskCell.m */,
+				0D9524BA1F28947600503AFD /* UserAskCell.h */,
+				0D9524BB1F28947600503AFD /* UserAskCell.m */,
+				0D9524DB1F2980CE00503AFD /* SystemCell.h */,
+				0D9524DC1F2980CE00503AFD /* SystemCell.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -798,26 +1109,23 @@
 		0D3DE62A1F0E2A8A00680C56 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0D345E411F0F237A005AC0D8 /* MessageModel.h */,
-				0D345E421F0F237A005AC0D8 /* MessageModel.m */,
-				0D9865571F189D62008497DE /* PerinatalUserModel.h */,
-				0D9865581F189D62008497DE /* PerinatalUserModel.m */,
-				0D345E471F0F5885005AC0D8 /* CanEatModel.h */,
-				0D345E481F0F5885005AC0D8 /* CanEatModel.m */,
+				0D9524691F21DD4000503AFD /* PayModel */,
+				0D95243A1F20501C00503AFD /* DoctorModel */,
+				0D95243B1F20501C00503AFD /* QuestionModel */,
+				0D9524401F20501C00503AFD /* UserModel */,
+				0DDF208A1F1E0670002A8129 /* HomePageModel */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		0D3DE62B1F0E2A8A00680C56 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		0D3DE62C1F0E2AD100680C56 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				0D9524A11F28239500503AFD /* JZDatepicker */,
+				0D95245C1F21A66B00503AFD /* OpenSDK1.7.8 */,
+				0D95244C1F21A3A300503AFD /* AlipaySDK.bundle */,
+				0D95244D1F21A3A300503AFD /* AlipaySDK.framework */,
+				0D9523F91F1F469200503AFD /* JSONModel */,
 				0DAF3EBA1F175B87001831B5 /* TQStarRating */,
 				0DAF3DF21F17080B001831B5 /* HXWeiboPhotoPicker */,
 				0D345E3A1F0F1933005AC0D8 /* HYNavBarHidden */,
@@ -841,6 +1149,7 @@
 		0D3DE6321F0E316300680C56 /* VCS */ = {
 			isa = PBXGroup;
 			children = (
+				0D9524C21F28EC8800503AFD /* QuestionVC */,
 				0D3DE6361F0E332900680C56 /* Home */,
 				0D3DE6371F0E332900680C56 /* LoginRegister */,
 				0D3DE6381F0E332900680C56 /* Medical Service */,
@@ -943,6 +1252,147 @@
 				0DA931B01F137D8E0038E893 /* PerinatalMsgVC.m */,
 			);
 			path = "Personal Center";
+			sourceTree = "<group>";
+		};
+		0D9523C11F1E550300503AFD /* ProblemAsk */ = {
+			isa = PBXGroup;
+			children = (
+				0D9523C21F1E552900503AFD /* ProblemAskListVM.h */,
+				0D9523C31F1E552900503AFD /* ProblemAskListVM.m */,
+				0D9523C51F1E583F00503AFD /* ProblemAskDetailVM.h */,
+				0D9523C61F1E583F00503AFD /* ProblemAskDetailVM.m */,
+				0D9523C81F1E595600503AFD /* PerinatalAskCategoryVM.h */,
+				0D9523C91F1E595600503AFD /* PerinatalAskCategoryVM.m */,
+				0D9523E71F1EF1E100503AFD /* QuestionAddVM.h */,
+				0D9523E81F1EF1E100503AFD /* QuestionAddVM.m */,
+				0D9523ED1F1F089E00503AFD /* QuestionAddAginVM.h */,
+				0D9523EE1F1F089E00503AFD /* QuestionAddAginVM.m */,
+				0D9523EA1F1F062800503AFD /* QuestionsCommentVM.h */,
+				0D9523EB1F1F062800503AFD /* QuestionsCommentVM.m */,
+				0D9523F01F1F0BEF00503AFD /* QuestionConsultationVM.h */,
+				0D9523F11F1F0BEF00503AFD /* QuestionConsultationVM.m */,
+				0D9523F31F1F0D3900503AFD /* QuestionDeleteVM.h */,
+				0D9523F41F1F0D3900503AFD /* QuestionDeleteVM.m */,
+			);
+			path = ProblemAsk;
+			sourceTree = "<group>";
+		};
+		0D9523E01F1EEC1400503AFD /* PayVM */ = {
+			isa = PBXGroup;
+			children = (
+				0D9523E41F1EECAE00503AFD /* PayVM.h */,
+				0D9523E51F1EECAE00503AFD /* PayVM.m */,
+			);
+			path = PayVM;
+			sourceTree = "<group>";
+		};
+		0D9523F91F1F469200503AFD /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D9523FA1F1F469200503AFD /* JSONKeyMapper.h */,
+				0D9523FB1F1F469200503AFD /* JSONKeyMapper.m */,
+				0D9523FC1F1F469200503AFD /* JSONModel.h */,
+				0D9523FD1F1F469200503AFD /* JSONModel.m */,
+				0D9523FE1F1F469200503AFD /* JSONModelClassProperty.h */,
+				0D9523FF1F1F469200503AFD /* JSONModelClassProperty.m */,
+				0D9524001F1F469200503AFD /* JSONModelError.h */,
+				0D9524011F1F469200503AFD /* JSONModelError.m */,
+				0D9524021F1F469200503AFD /* JSONValueTransformer.h */,
+				0D9524031F1F469200503AFD /* JSONValueTransformer.m */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		0D95243A1F20501C00503AFD /* DoctorModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D9524461F20503900503AFD /* DoctorMsgModel.h */,
+				0D9524471F20503900503AFD /* DoctorMsgModel.m */,
+			);
+			path = DoctorModel;
+			sourceTree = "<group>";
+		};
+		0D95243B1F20501C00503AFD /* QuestionModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D95243C1F20501C00503AFD /* QuestionCategoryTypeModel.h */,
+				0D95243D1F20501C00503AFD /* QuestionCategoryTypeModel.m */,
+				0D95243E1F20501C00503AFD /* QuestionModel.h */,
+				0D95243F1F20501C00503AFD /* QuestionModel.m */,
+				0D95246D1F21EA3400503AFD /* QuestionAddResultModel.h */,
+				0D95246E1F21EA3400503AFD /* QuestionAddResultModel.m */,
+				0D9524931F25F9EB00503AFD /* MyConsultationModel.h */,
+				0D9524941F25F9EB00503AFD /* MyConsultationModel.m */,
+				0D9524B71F2891FF00503AFD /* DoctorAskModel.h */,
+				0D9524B81F2891FF00503AFD /* DoctorAskModel.m */,
+			);
+			path = QuestionModel;
+			sourceTree = "<group>";
+		};
+		0D9524401F20501C00503AFD /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D9524411F20501C00503AFD /* PerinatalUserModel.h */,
+				0D9524421F20501C00503AFD /* PerinatalUserModel.m */,
+			);
+			path = UserModel;
+			sourceTree = "<group>";
+		};
+		0D95245C1F21A66B00503AFD /* OpenSDK1.7.8 */ = {
+			isa = PBXGroup;
+			children = (
+				0D95245D1F21A66B00503AFD /* libWeChatSDK.a */,
+				0D95245E1F21A66B00503AFD /* README.txt */,
+				0D95245F1F21A66B00503AFD /* WechatAuthSDK.h */,
+				0D9524601F21A66B00503AFD /* WXApi.h */,
+				0D9524611F21A66B00503AFD /* WXApiObject.h */,
+			);
+			path = OpenSDK1.7.8;
+			sourceTree = "<group>";
+		};
+		0D9524691F21DD4000503AFD /* PayModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D95246A1F21DD5C00503AFD /* WeixinPayModel.h */,
+				0D95246B1F21DD5C00503AFD /* WeixinPayModel.m */,
+			);
+			path = PayModel;
+			sourceTree = "<group>";
+		};
+		0D9524A11F28239500503AFD /* JZDatepicker */ = {
+			isa = PBXGroup;
+			children = (
+				0D9524A21F28239500503AFD /* JZDatepicker.h */,
+				0D9524A31F28239500503AFD /* JZDatepicker.m */,
+				0D9524A41F28239500503AFD /* JZDatepickerCircleView.h */,
+				0D9524A51F28239500503AFD /* JZDatepickerCircleView.m */,
+				0D9524A61F28239500503AFD /* JZDatepickerDateView.h */,
+				0D9524A71F28239500503AFD /* JZDatepickerDateView.m */,
+			);
+			path = JZDatepicker;
+			sourceTree = "<group>";
+		};
+		0D9524C21F28EC8800503AFD /* QuestionVC */ = {
+			isa = PBXGroup;
+			children = (
+				0D9524C31F28EC8800503AFD /* PerinatalMyConsultDetailVC.h */,
+				0D9524C41F28EC8800503AFD /* PerinatalMyConsultDetailVC.m */,
+				0D9524C61F28ED0700503AFD /* PerinatalMyConsultIsPayDetailVC.h */,
+				0D9524C71F28ED0700503AFD /* PerinatalMyConsultIsPayDetailVC.m */,
+				0D9524C91F28ED2300503AFD /* PerinatalMyConsultNoPayDetailVC.h */,
+				0D9524CA1F28ED2300503AFD /* PerinatalMyConsultNoPayDetailVC.m */,
+				0D9524CC1F28ED4100503AFD /* PerinatalMyConsultNoAskDetailVC.h */,
+				0D9524CD1F28ED4100503AFD /* PerinatalMyConsultNoAskDetailVC.m */,
+				0D9524CF1F28ED5E00503AFD /* PerinatalMyConsultAskedDetailVC.h */,
+				0D9524D01F28ED5E00503AFD /* PerinatalMyConsultAskedDetailVC.m */,
+				0D9524D21F28ED7F00503AFD /* PerinatalMyConsultIsCommentDetailVC.h */,
+				0D9524D31F28ED7F00503AFD /* PerinatalMyConsultIsCommentDetailVC.m */,
+				0D9524D51F28ED9800503AFD /* PerinatalMyConsultClosedDetailVC.h */,
+				0D9524D61F28ED9800503AFD /* PerinatalMyConsultClosedDetailVC.m */,
+				0D9524D81F28EDAB00503AFD /* PerinatalMyConsultShutDownDetailVC.h */,
+				0D9524D91F28EDAB00503AFD /* PerinatalMyConsultShutDownDetailVC.m */,
+			);
+			path = QuestionVC;
 			sourceTree = "<group>";
 		};
 		0DAF3DF21F17080B001831B5 /* HXWeiboPhotoPicker */ = {
@@ -1089,9 +1539,97 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		0DDF20701F1DCA4C002A8129 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D9523E01F1EEC1400503AFD /* PayVM */,
+				0D9523C11F1E550300503AFD /* ProblemAsk */,
+				0DDF20711F1DCA4C002A8129 /* DoctorVM */,
+				0DDF20721F1DCA4C002A8129 /* HomePageVM */,
+				0DDF20731F1DCA4C002A8129 /* MedicaServiceVM */,
+				0DDF20741F1DCA4C002A8129 /* UserVM */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0DDF20711F1DCA4C002A8129 /* DoctorVM */ = {
+			isa = PBXGroup;
+			children = (
+				0D9523CB1F1E5B4900503AFD /* DoctorListVM.h */,
+				0D9523CC1F1E5B4900503AFD /* DoctorListVM.m */,
+				0D9523CE1F1E5D5E00503AFD /* DoctorDetailVM.h */,
+				0D9523CF1F1E5D5E00503AFD /* DoctorDetailVM.m */,
+				0D9523D11F1E5E4A00503AFD /* DoctorQuestionList.h */,
+				0D9523D21F1E5E4A00503AFD /* DoctorQuestionList.m */,
+				0D9523D71F1EE78900503AFD /* DoctorAddFollowVM.h */,
+				0D9523D81F1EE78900503AFD /* DoctorAddFollowVM.m */,
+			);
+			path = DoctorVM;
+			sourceTree = "<group>";
+		};
+		0DDF20721F1DCA4C002A8129 /* HomePageVM */ = {
+			isa = PBXGroup;
+			children = (
+				0DDF20871F1DFE28002A8129 /* HomePageVM.h */,
+				0DDF20881F1DFE28002A8129 /* HomePageVM.m */,
+				0D9523BE1F1E4EBF00503AFD /* CanEatVM.h */,
+				0D9523BF1F1E4EBF00503AFD /* CanEatVM.m */,
+			);
+			path = HomePageVM;
+			sourceTree = "<group>";
+		};
+		0DDF20731F1DCA4C002A8129 /* MedicaServiceVM */ = {
+			isa = PBXGroup;
+			children = (
+				0D9523D41F1E5F8400503AFD /* CityListVM.h */,
+				0D9523D51F1E5F8400503AFD /* CityListVM.m */,
+			);
+			path = MedicaServiceVM;
+			sourceTree = "<group>";
+		};
+		0DDF20741F1DCA4C002A8129 /* UserVM */ = {
+			isa = PBXGroup;
+			children = (
+				0DDF20751F1DCA4C002A8129 /* SendMessageViewModel.h */,
+				0DDF20761F1DCA4C002A8129 /* SendMessageViewModel.m */,
+				0DDF20781F1DCA79002A8129 /* RegisterVM.h */,
+				0DDF20791F1DCA79002A8129 /* RegisterVM.m */,
+				0DDF207B1F1DCAC7002A8129 /* LoginVM.h */,
+				0DDF207C1F1DCAC7002A8129 /* LoginVM.m */,
+				0DDF207E1F1DCB73002A8129 /* PerfectPernacyVM.h */,
+				0DDF207F1F1DCB73002A8129 /* PerfectPernacyVM.m */,
+				0DDF20811F1DCB98002A8129 /* SetPasswordVM.h */,
+				0DDF20821F1DCB98002A8129 /* SetPasswordVM.m */,
+				0D9523DD1F1EE89A00503AFD /* OtherUserBindVM.h */,
+				0D9523DE1F1EE89A00503AFD /* OtherUserBindVM.m */,
+				0D9523F61F1F400B00503AFD /* UserCenterInfoVM.h */,
+				0D9523F71F1F400B00503AFD /* UserCenterInfoVM.m */,
+			);
+			path = UserVM;
+			sourceTree = "<group>";
+		};
+		0DDF208A1F1E0670002A8129 /* HomePageModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D9524491F2053B800503AFD /* CanEatModel.h */,
+				0D95244A1F2053B800503AFD /* CanEatModel.m */,
+				0DDF208B1F1E0670002A8129 /* MessageModel.h */,
+				0DDF208C1F1E0670002A8129 /* MessageModel.m */,
+			);
+			path = HomePageModel;
+			sourceTree = "<group>";
+		};
 		73F4B46592829B6DA689DCCA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D9524BD1F28DBDD00503AFD /* CoreLocation.framework */,
+				0D9524641F21A69000503AFD /* Security.framework */,
+				0D95245A1F21A55E00503AFD /* CoreText.framework */,
+				0D9524581F21A55500503AFD /* CoreTelephony.framework */,
+				0D9524561F21A47100503AFD /* CFNetwork.framework */,
+				0D9524541F21A45F00503AFD /* CoreMotion.framework */,
+				0D9524521F21A44F00503AFD /* libc++.tbd */,
+				0D9524501F21A43C00503AFD /* libz.tbd */,
 				0D98654D1F186648008497DE /* AssetsLibrary.framework */,
 				0D98654B1F186624008497DE /* PhotosUI.framework */,
 				0DAF3EB51F170B80001831B5 /* Photos.framework */,
@@ -1183,6 +1721,7 @@
 				TargetAttributes = {
 					0D3DE5841F0DDE7800680C56 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 29HJCHGT5D;
 						ProvisioningStyle = Automatic;
 					};
 					0D3DE59D1F0DDE7800680C56 = {
@@ -1242,6 +1781,7 @@
 				0DAF3EA61F17080B001831B5 /* multimedia_videocard_play@2x.png in Resources */,
 				0DAF3E901F17080B001831B5 /* compose_live_photo_close_icon@3x.png in Resources */,
 				0DAF3E881F17080B001831B5 /* compose_gifbutton_background@2x.png in Resources */,
+				0D9524E21F2A280B00503AFD /* city.json in Resources */,
 				0DAF3E941F17080B001831B5 /* compose_live_photo_open_only_icon@3x.png in Resources */,
 				0DAF3E9E1F17080B001831B5 /* compose_photo_video@2x.png in Resources */,
 				0DAF3EA01F17080B001831B5 /* compose_pic_add@2x.png in Resources */,
@@ -1251,7 +1791,9 @@
 				0D3DE6221F0E29E100680C56 /* Assets.xcassets in Resources */,
 				0DAF3EA71F17080B001831B5 /* page_score_pic_background@2x.png in Resources */,
 				0DAF3EC21F175B87001831B5 /* backgroundStar.png in Resources */,
+				0D95248A1F25D97300503AFD /* MyconsultationCell.xib in Resources */,
 				0DAF3EC31F175B87001831B5 /* backgroundStar@2x.png in Resources */,
+				0D95244E1F21A3A400503AFD /* AlipaySDK.bundle in Resources */,
 				0DAF3E8B1F17080B001831B5 /* compose_guide_check_box_default@2x副本.png in Resources */,
 				0DAF3EA81F17080B001831B5 /* timeline_image_gif@2x.png in Resources */,
 				0D345E541F0F6FFD005AC0D8 /* ProblemAskCell.xib in Resources */,
@@ -1270,13 +1812,17 @@
 				0DAF3E8C1F17080B001831B5 /* compose_guide_check_box_right@2x.png in Resources */,
 				0DAF3E9A1F17080B001831B5 /* compose_photo_preview_disable@2x.png in Resources */,
 				0DAF3E771F17080B001831B5 /* camera_camera_background_highlighted@2x.png in Resources */,
+				0D9524E41F2A281A00503AFD /* cityList.plist in Resources */,
 				0DAF3E801F17080B001831B5 /* camera_flashlight_open_disable@2x.png in Resources */,
 				0DAF3EA91F17080B001831B5 /* video_delete_button@2x.png in Resources */,
 				0DAF3E991F17080B001831B5 /* compose_photo_photograph_highlighted@2x.png in Resources */,
 				0DAF3E8A1F17080B001831B5 /* compose_guide_check_box_default@2x.png in Resources */,
 				0DAF3E961F17080B001831B5 /* compose_photo_original@2x.png in Resources */,
+				0D9524631F21A66B00503AFD /* README.txt in Resources */,
 				0DAF3E811F17080B001831B5 /* camera_image_capture_background_highlighted@2x.png in Resources */,
 				0DAF3E8E1F17080B001831B5 /* compose_live_photo_background@3x.png in Resources */,
+				0D95247F1F24EC8E00503AFD /* MyCardCell.xib in Resources */,
+				0D95247A1F24E25800503AFD /* IWantAskFlowCell.xib in Resources */,
 				0DAF3E8D1F17080B001831B5 /* compose_live_photo_background@2x.png in Resources */,
 				0DAF3E9B1F17080B001831B5 /* compose_photo_preview_highlighted@2x.png in Resources */,
 				0DAF3EAD1F17080B001831B5 /* video_next_button_disabled@2x.png in Resources */,
@@ -1289,12 +1835,14 @@
 				0DAF3E751F17080B001831B5 /* camera_ Focusing@2x.png in Resources */,
 				0DAF3EAB1F17080B001831B5 /* video_delete_dustbin@2x.png in Resources */,
 				0DAF3E821F17080B001831B5 /* camera_overturn@2x.png in Resources */,
+				0D9524921F25EB2300503AFD /* MyconsultaitonControlCell.xib in Resources */,
 				0DAF3EA21F17080B001831B5 /* headlines_icon_arrow@2x.png in Resources */,
 				0DAF3E9F1F17080B001831B5 /* compose_photo_video_highlighted@2x.png in Resources */,
 				0DAF3E931F17080B001831B5 /* compose_live_photo_open_only_icon@2x.png in Resources */,
 				0DAF3EB11F17080B001831B5 /* 椭圆-1@2x.png in Resources */,
 				0D9865531F1870C4008497DE /* TextfildCell.xib in Resources */,
 				0DAF3E871F17080B001831B5 /* compose_delete@2x.png in Resources */,
+				0D9524A01F26EA8D00503AFD /* MyconsultationDetailCell.xib in Resources */,
 				0DAF3DE91F15FCF2001831B5 /* FlowCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1368,47 +1916,79 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DDF20891F1DFE28002A8129 /* HomePageVM.m in Sources */,
+				0D9524791F24E25800503AFD /* IWantAskFlowCell.m in Sources */,
+				0D9523EC1F1F062800503AFD /* QuestionsCommentVM.m in Sources */,
+				0D9524A81F28239500503AFD /* JZDatepicker.m in Sources */,
 				0D345E4F1F0F6F7B005AC0D8 /* ProblemAskTV.m in Sources */,
 				0DAF3DBC1F14683C001831B5 /* PerinatalCanEatTV.m in Sources */,
+				0DDF20771F1DCA4C002A8129 /* SendMessageViewModel.m in Sources */,
 				0D3DE5FF1F0E27EB00680C56 /* UIView+frameAccessor.m in Sources */,
+				0D9524681F21D74700503AFD /* Toast+UIView.m in Sources */,
+				0D95248D1F25E2F300503AFD /* MyConsultationTV.m in Sources */,
 				0D3DE5FB1F0E27EB00680C56 /* UIColor+Extension.m in Sources */,
 				0DAF3EB41F17080B001831B5 /* UIView+HXExtension.m in Sources */,
 				0DAF3E701F17080B001831B5 /* HXPresentTransition.m in Sources */,
 				0D9865561F187474008497DE /* PerinatalUserMessageVC.m in Sources */,
+				0D9524451F20501C00503AFD /* PerinatalUserModel.m in Sources */,
 				0D98655C1F1B46C8008497DE /* PerinatalMyCardVC.m in Sources */,
+				0D9523F51F1F0D3900503AFD /* QuestionDeleteVM.m in Sources */,
 				0DAF3E681F17080B001831B5 /* HXPhotoModel.m in Sources */,
+				0D9524B91F2891FF00503AFD /* DoctorAskModel.m in Sources */,
 				0DAF3ECC1F17678D001831B5 /* DoctorHomeTV.m in Sources */,
 				0DAF3E601F17080B001831B5 /* HXAlbumListView.m in Sources */,
+				0D9524E01F29F35500503AFD /* ProblemMyDetailIsPayTV.m in Sources */,
 				0DAF3EB91F1725AD001831B5 /* PerinatalPaymentVC.m in Sources */,
 				0D345E461F0F5231005AC0D8 /* MedicalServiceCV.m in Sources */,
 				0DAF3E671F17080B001831B5 /* HXPhotoManager.m in Sources */,
 				0DAF3E631F17080B001831B5 /* HXCameraPreviewViewController.m in Sources */,
+				0D9524D41F28ED7F00503AFD /* PerinatalMyConsultIsCommentDetailVC.m in Sources */,
 				0D9865521F1870C4008497DE /* TextfildCell.m in Sources */,
+				0D9524A91F28239500503AFD /* JZDatepickerCircleView.m in Sources */,
+				0D95247E1F24EC8E00503AFD /* MyCardCell.m in Sources */,
 				0D345E401F0F1933005AC0D8 /* UIViewController+NavBarHidden.m in Sources */,
+				0D9524251F1F469200503AFD /* JSONModelClassProperty.m in Sources */,
+				0D9524CE1F28ED4100503AFD /* PerinatalMyConsultNoAskDetailVC.m in Sources */,
+				0DDF20831F1DCB98002A8129 /* SetPasswordVM.m in Sources */,
+				0D9524B31F287BD800503AFD /* QuestionFooterView.m in Sources */,
+				0D9523D91F1EE78900503AFD /* DoctorAddFollowVM.m in Sources */,
 				0DA931B11F137D8E0038E893 /* PerinatalMsgVC.m in Sources */,
 				0D9865621F1B47AC008497DE /* PerinatalMyConsultVC.m in Sources */,
 				0D9865861F1C8F69008497DE /* PerinatalAppApi.m in Sources */,
+				0D9523F21F1F0BEF00503AFD /* QuestionConsultationVM.m in Sources */,
 				0D3DE6041F0E291600680C56 /* AppDelegate.m in Sources */,
+				0D9524481F20503900503AFD /* DoctorMsgModel.m in Sources */,
 				0DAB01971F1313CC0077F63C /* PerinatalPregnacyVC.m in Sources */,
+				0D9523D01F1E5D5E00503AFD /* DoctorDetailVM.m in Sources */,
 				0D9865711F1B4AF8008497DE /* PrinatalCardDetailVC.m in Sources */,
 				0D3DE6191F0E297700680C56 /* BaseVC.m in Sources */,
 				0D3DE61A1F0E297700680C56 /* BaseCV.m in Sources */,
 				0DAF3DE81F15FCF2001831B5 /* FlowCell.m in Sources */,
+				0D9524821F24F14A00503AFD /* MyHospitalCardTV.m in Sources */,
+				0D9524AD1F283FD400503AFD /* DoctorAskCell.m in Sources */,
 				0DAF3E691F17080B001831B5 /* HXPhotoPreviewViewCell.m in Sources */,
 				0D345E4C1F0F5E53005AC0D8 /* TitleBtn.m in Sources */,
+				0D9524AA1F28239500503AFD /* JZDatepickerDateView.m in Sources */,
+				0D9524E71F2A285000503AFD /* CitySelectTV.m in Sources */,
 				0DAB01911F1313760077F63C /* PerinatalForgetPasswordVC.m in Sources */,
+				0D9524271F1F469200503AFD /* JSONValueTransformer.m in Sources */,
 				0D3DE63C1F0E338500680C56 /* PerinatalHomeVC.m in Sources */,
+				0D9524431F20501C00503AFD /* QuestionCategoryTypeModel.m in Sources */,
 				0D98658B1F1CA6A1008497DE /* APIClient.m in Sources */,
 				0DAF3E711F17080B001831B5 /* HXTransition.m in Sources */,
+				0D9523CA1F1E595600503AFD /* PerinatalAskCategoryVM.m in Sources */,
 				0D3DE6001F0E27EB00680C56 /* UIViewController+TopBar.m in Sources */,
 				0D98656B1F1B4978008497DE /* PerinatalAboutVC.m in Sources */,
 				0D3DE6421F0E342D00680C56 /* PerinatalPersonalCenterVC.m in Sources */,
 				0DAF3DDE1F15F36C001831B5 /* PerinatalWantConsultVC.m in Sources */,
+				0D9523D61F1E5F8400503AFD /* CityListVM.m in Sources */,
 				0DAF3DEC1F15FD29001831B5 /* DoctorMsgCell.m in Sources */,
 				0DAF3E611F17080B001831B5 /* HXAlbumModel.m in Sources */,
+				0D9524D71F28ED9800503AFD /* PerinatalMyConsultClosedDetailVC.m in Sources */,
 				0DAF3EB21F17080B001831B5 /* UIButton+HXExtension.m in Sources */,
 				0DAF3DCA1F1482DF001831B5 /* PerinatalProblemAskTypeVC.m in Sources */,
 				0D9865831F1C63D4008497DE /* PerinatalHospitalNewsVC.m in Sources */,
+				0D9523EF1F1F089E00503AFD /* QuestionAddAginVM.m in Sources */,
 				0D98655F1F1B4723008497DE /* PrinatalCareDcotorVC.m in Sources */,
 				0D9865801F1C63AC008497DE /* PerinatalHospitalIntroduceVC.m in Sources */,
 				0DAF3E641F17080B001831B5 /* HXCameraViewController.m in Sources */,
@@ -1416,62 +1996,99 @@
 				0DAF3DE11F15F3DF001831B5 /* PerinatalDoctorHomeVC.m in Sources */,
 				0DAB01A01F1323A00077F63C /* InputView.m in Sources */,
 				0DAB018E1F13133B0077F63C /* PerinatalRigisterVC.m in Sources */,
+				0D95249F1F26EA8D00503AFD /* MyconsultationDetailCell.m in Sources */,
 				0DAF3DD31F14C2B5001831B5 /* PerinatalDoctorTV.m in Sources */,
-				0D9865591F189D62008497DE /* PerinatalUserModel.m in Sources */,
+				0DDF206B1F1DA7ED002A8129 /* CountdownButton.m in Sources */,
 				0D98656E1F1B4ABB008497DE /* PerinatalAddCardVC.m in Sources */,
 				0DAF3ECF1F177783001831B5 /* AlerVCManager.m in Sources */,
 				0DAB019A1F1313F00077F63C /* PerinatalBindMoblieVC.m in Sources */,
 				0D9865651F1B48A1008497DE /* PerinatalMyIncomeVC.m in Sources */,
+				0DDF207D1F1DCAC7002A8129 /* LoginVM.m in Sources */,
 				0D98657A1F1C6308008497DE /* PerinatalSelectCityVC.m in Sources */,
+				0D9524721F24D89E00503AFD /* DoctorMsgTV.m in Sources */,
 				0D9825B81F0E447A0077FF5C /* HomePageMessageTV.m in Sources */,
 				0DAF3DC71F14826A001831B5 /* PerinatalProblemDetailVC.m in Sources */,
 				0D3DE5FD1F0E27EB00680C56 /* UISearchBar+Extension.m in Sources */,
 				0DAF3DC41F14723A001831B5 /* PerinatalProblemAskVC.m in Sources */,
 				0DAF3E651F17080B001831B5 /* HXCollectionView.m in Sources */,
-				0D345E491F0F5885005AC0D8 /* CanEatModel.m in Sources */,
-				0D345E431F0F237A005AC0D8 /* MessageModel.m in Sources */,
+				0D9524DA1F28EDAB00503AFD /* PerinatalMyConsultShutDownDetailVC.m in Sources */,
 				0D3DE5FE1F0E27EB00680C56 /* UIView+Extension.m in Sources */,
 				0DA931B41F1382C30038E893 /* PerinatalCanEatVC.m in Sources */,
+				0D95246F1F21EA3400503AFD /* QuestionAddResultModel.m in Sources */,
+				0D95246C1F21DD5C00503AFD /* WeixinPayModel.m in Sources */,
 				0DAF3E6F1F17080B001831B5 /* HXPhotoViewController.m in Sources */,
 				0DAF3DD01F14B74B001831B5 /* PerinatalDoctorListVC.m in Sources */,
+				0DDF207A1F1DCA79002A8129 /* RegisterVM.m in Sources */,
+				0D9523C01F1E4EBF00503AFD /* CanEatVM.m in Sources */,
 				0D9865741F1B4B6A008497DE /* PrinatalMyIncomeDetailVC.m in Sources */,
 				0DAF3DC01F146876001831B5 /* CanEatCell.m in Sources */,
 				0DAF3E6B1F17080B001831B5 /* HXPhotoSubViewCell.m in Sources */,
+				0D9524B61F288DD500503AFD /* ProblemDetailIsPayTV.m in Sources */,
 				0DAF3DF01F1621E2001831B5 /* ConsultContentCell.m in Sources */,
+				0D9523C71F1E583F00503AFD /* ProblemAskDetailVM.m in Sources */,
 				0DAF3ED51F1778D4001831B5 /* ProblemDetailTV.m in Sources */,
 				0D9865681F1B493B008497DE /* PerinatalSettingVC.m in Sources */,
+				0D9523CD1F1E5B4900503AFD /* DoctorListVM.m in Sources */,
 				0D3DE61B1F0E297700680C56 /* BaseTV.m in Sources */,
 				0D345E3F1F0F1933005AC0D8 /* HYViewController.m in Sources */,
 				0D9865771F1C62A9008497DE /* PerinatalCurrentHospitalVC.m in Sources */,
 				0DAB018B1F1312F60077F63C /* PerinatalLoginVC.m in Sources */,
+				0D9524261F1F469200503AFD /* JSONModelError.m in Sources */,
 				0DAF3E6E1F17080B001831B5 /* HXPhotoViewCell.m in Sources */,
 				0DAF3E621F17080B001831B5 /* HXAlbumTitleButton.m in Sources */,
+				0D9524751F24DA8E00503AFD /* SettingTV.m in Sources */,
 				0DAF3E661F17080B001831B5 /* HXPhotoConst.m in Sources */,
+				0D9524CB1F28ED2300503AFD /* PerinatalMyConsultNoPayDetailVC.m in Sources */,
 				0DAB019D1F13168E0077F63C /* SweetTextField.m in Sources */,
+				0D9523C41F1E552900503AFD /* ProblemAskListVM.m in Sources */,
 				0DAF3DB91F146787001831B5 /* PerinatalCanEatDetailVC.m in Sources */,
 				0D345E531F0F6FFD005AC0D8 /* ProblemAskCell.m in Sources */,
+				0D95249B1F26EA4B00503AFD /* MyConsultationDetailTV.m in Sources */,
+				0D9524441F20501C00503AFD /* QuestionModel.m in Sources */,
 				0DAF3DE41F15FB7B001831B5 /* IWantConsultTV.m in Sources */,
+				0D9524231F1F469200503AFD /* JSONKeyMapper.m in Sources */,
+				0D9524C81F28ED0700503AFD /* PerinatalMyConsultIsPayDetailVC.m in Sources */,
 				0DAB01941F1313930077F63C /* PerinatalSetPasswordVC.m in Sources */,
 				0D3DE5FC1F0E27EB00680C56 /* UIImage+Extension.m in Sources */,
 				0DAF3DCD1F1483A0001831B5 /* PerinatalAskContentVC.m in Sources */,
 				0DAF3E721F17080B001831B5 /* HXVideoPresentTransition.m in Sources */,
 				0D98657D1F1C6359008497DE /* PerinatalAutoCreateFileVC.m in Sources */,
+				0D95244B1F2053B800503AFD /* CanEatModel.m in Sources */,
+				0D9524DD1F2980CE00503AFD /* SystemCell.m in Sources */,
 				0D3DE63F1F0E33C600680C56 /* PerinatalMedicalServiceVC.m in Sources */,
 				0D98658C1F1CA6A1008497DE /* HttpRequest.m in Sources */,
 				0D9825BB1F0E460D0077FF5C /* MessageCell.m in Sources */,
 				0DAF3E6C1F17080B001831B5 /* HXPhotoTools.m in Sources */,
+				0D9524B01F287A7700503AFD /* QuestionHeadView.m in Sources */,
 				0D3DE5FA1F0E27EB00680C56 /* NSString+Formatter.m in Sources */,
+				0D9523E61F1EECAE00503AFD /* PayVM.m in Sources */,
+				0D9524851F25998100503AFD /* PerinatalMyConsultView.m in Sources */,
 				0DAF3E6A1F17080B001831B5 /* HXPhotoPreviewViewController.m in Sources */,
+				0D9523E91F1EF1E100503AFD /* QuestionAddVM.m in Sources */,
+				0D9524911F25EB2300503AFD /* MyconsultaitonControlCell.m in Sources */,
 				0D3DE5F91F0E27EB00680C56 /* NSArray+Extension.m in Sources */,
+				0D9524D11F28ED5E00503AFD /* PerinatalMyConsultAskedDetailVC.m in Sources */,
+				0D9524C11F28E05200503AFD /* CurrentHospitalTV.m in Sources */,
 				0D3DE6251F0E29E100680C56 /* main.m in Sources */,
+				0D9524241F1F469200503AFD /* JSONModel.m in Sources */,
 				0DAF3EC91F176228001831B5 /* DoctorHomeCell.m in Sources */,
+				0D9524BC1F28947600503AFD /* UserAskCell.m in Sources */,
 				0DAF3E6D1F17080B001831B5 /* HXPhotoView.m in Sources */,
+				0D9523D31F1E5E4A00503AFD /* DoctorQuestionList.m in Sources */,
 				0D6D0BFD1F127C400059ACE6 /* PerinatalCanEatCV.m in Sources */,
+				0DDF20801F1DCB73002A8129 /* PerfectPernacyVM.m in Sources */,
+				0DDF20861F1DCEAF002A8129 /* NSString+Base64.m in Sources */,
+				0D9524C51F28EC8800503AFD /* PerinatalMyConsultDetailVC.m in Sources */,
 				0D3DE6181F0E297700680C56 /* BaseNavigationController.m in Sources */,
 				0DAF3EC61F175B87001831B5 /* TQStarRatingView.m in Sources */,
+				0D9524951F25F9EB00503AFD /* MyConsultationModel.m in Sources */,
 				0DAF3EB31F17080B001831B5 /* UIImage+HXExtension.m in Sources */,
+				0D9524891F25D97300503AFD /* MyconsultationCell.m in Sources */,
 				0D3DE6311F0E30EA00680C56 /* BaseTabarController.m in Sources */,
+				0D9523F81F1F400B00503AFD /* UserCenterInfoVM.m in Sources */,
+				0D9523DF1F1EE89A00503AFD /* OtherUserBindVM.m in Sources */,
 				0DAF3E731F17080B001831B5 /* HXVideoPreviewViewController.m in Sources */,
+				0DDF208D1F1E0670002A8129 /* MessageModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1604,13 +2221,16 @@
 			baseConfigurationReference = A919F081B6DC270552D83B8E /* Pods-Perinatal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 29HJCHGT5D;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ReactiveCocoa",
+					"$(PROJECT_DIR)/Perinatal/SDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/oy/Documents/work/默尼/Perinatal/Perinatal/Supporting File/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Perinatal/Supporting File/PrefixHeader.pch";
 				INFOPLIST_FILE = "Perinatal/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1618,8 +2238,44 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/IQKeyboardManager",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ReactiveCocoa",
+					"$(PROJECT_DIR)/Perinatal/SDK/OpenSDK1.7.8",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"IQKeyboardManager\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"ReactiveCocoa\"",
+					"-l\"SocialQQ\"",
+					"-l\"SocialWeChat\"",
+					"-l\"UMSocialLog\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UMSocialCore\"",
+					"-framework",
+					"\"UMSocialNetwork\"",
+					"-Objc",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.moni.Perinatal;
+				PRODUCT_MODULE_NAME = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1629,13 +2285,16 @@
 			baseConfigurationReference = 8BA4F21DE2541C2181D451DC /* Pods-Perinatal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 29HJCHGT5D;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ReactiveCocoa",
+					"$(PROJECT_DIR)/Perinatal/SDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/oy/Documents/work/默尼/Perinatal/Perinatal/Supporting File/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Perinatal/Supporting File/PrefixHeader.pch";
 				INFOPLIST_FILE = "Perinatal/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1643,8 +2302,44 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/IQKeyboardManager",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ReactiveCocoa",
+					"$(PROJECT_DIR)/Perinatal/SDK/OpenSDK1.7.8",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"IQKeyboardManager\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"ReactiveCocoa\"",
+					"-l\"SocialQQ\"",
+					"-l\"SocialWeChat\"",
+					"-l\"UMSocialLog\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UMSocialCore\"",
+					"-framework",
+					"\"UMSocialNetwork\"",
+					"-Objc",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.moni.Perinatal;
+				PRODUCT_MODULE_NAME = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
